@@ -2,6 +2,7 @@
 layout: post
 title:  "Review: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research"
 date:   2016-07-26 14:05:00 +0200
+comments: true
 categories: [what I'm reading]
 ---
 ![](http://journals.plos.org/plosbiology/article/figure/image?size=inline&id=info:doi/10.1371/journal.pbio.1002506.g001){: .center-image }
