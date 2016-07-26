@@ -5,7 +5,7 @@ date:   2016-07-26 14:05:00 +0200
 categories: [what I'm reading]
 ---
 
-Others have described the benefits and importance of open science more eloquently than me. 
+
 
 This is a test.
 
