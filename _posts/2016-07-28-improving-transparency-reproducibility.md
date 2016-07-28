@@ -15,7 +15,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
 
 > "Having access to a plethora of denoising and modelling algorithms can be both good and bad. On one side, there are many aspects of brain anatomy and function that we can extract and use as dependent variables, which maximizes the chances of finding the most appropriate and powerful measure to ask a particular question. On the other side, the incentive structure of the current scientific enterprise combined with methodological plurality can be a dangerous mix. Scientists rarely approach a problem without a theory, hypothesis, or a set of assumptions, and the high number of “researcher degrees of freedom” can implicitly drive researchers to choose analysis workflows that provide results that are most consistent with their hypotheses."
 
-As we stand on the verge of a reproducibility crisis in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their [paper](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506) succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort. Here is my bullet point version of their paper.
+As we stand on the verge of a reproducibility crisis[*](http://pps.sagepub.com/content/7/6/657) in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their [paper](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506) succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort. Here is my bullet point version of their paper.
 
 ## Data
 
@@ -27,7 +27,7 @@ Openly accessible data allows for:
 * more citations
 * maximizing benefits to research participants 
 
-But there are several hurdles to making neuroimaging data openly available
+But there are several hurdles to making neuroimaging data openly available:
 
 ### Consent Forms
 

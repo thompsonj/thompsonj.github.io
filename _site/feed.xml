@@ -5,60 +5,182 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 26 Jul 2016 18:43:04 +0200</pubDate>
-    <lastBuildDate>Tue, 26 Jul 2016 18:43:04 +0200</lastBuildDate>
+    <pubDate>Thu, 28 Jul 2016 16:29:14 +0200</pubDate>
+    <lastBuildDate>Thu, 28 Jul 2016 16:29:14 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>List of tools for encoding style neuroimage analysis</title>
-        <description>&lt;p&gt;How does markdown work?&lt;/p&gt;
-
-&lt;h2 id=&quot;matlab&quot;&gt;MATLAB&lt;/h2&gt;
-
-&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;pyMVPA&lt;/li&gt;
-  &lt;li&gt;nilearn&lt;/li&gt;
-&lt;/ul&gt;
+        <title>Papers related to the integration of deep learning and neuroscience</title>
+        <description>&lt;p&gt;Towards the integration of deep learning and neuroscience&lt;/p&gt;
 </description>
-        <pubDate>Tue, 26 Jul 2016 15:34:00 +0200</pubDate>
-        <link>http://thompsonj.github.io/encoding-tools</link>
-        <guid isPermaLink="true">http://thompsonj.github.io/encoding-tools</guid>
+        <pubDate>Sat, 30 Jul 2016 15:34:00 +0200</pubDate>
+        <link>http://thompsonj.github.io/deep-learning-neuroscience</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/deep-learning-neuroscience</guid>
         
         
-        <category>tools</category>
+        <category>Deep learning</category>
         
       </item>
     
       <item>
         <title>Review: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://journals.plos.org/plosbiology/article/figure/image?size=inline&amp;amp;id=info:doi/10.1371/journal.pbio.1002506.g001&quot; alt=&quot;&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://journals.plos.org/plosbiology/article/figure/image?size=inline&amp;amp;id=info:doi/10.1371/journal.pbio.1002506.g001&quot; alt=&quot;&quot; class=&quot;center-image&quot; /&gt;
+&lt;em&gt;Fig 1. Three pillars of Open Science: data, code, and papers.&lt;/em&gt;&lt;/p&gt;
 
-&lt;div class=&quot;well well-sm&quot;&gt;
+&lt;!-- &lt;div class=&quot;well well-sm&quot;&gt;
 Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506
-&lt;/div&gt;
+&lt;/div&gt; --&gt;
+&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Having access to a plethora of denoising and modelling algorithms can be both good and bad. On one side, there are many aspects of brain anatomy and function that we can extract and use as dependent variables, which maximizes the chances of finding the most appropriate and powerful measure to ask a particular question. On the other side, the incentive structure of the current scientific enterprise combined with methodological plurality can be a dangerous mix. Scientists rarely approach a problem without a theory, hypothesis, or a set of assumptions, and the high number of “researcher degrees of freedom” can implicitly drive researchers to choose analysis workflows that provide results that are most consistent with their hypotheses.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As we stand on the verge of a reproducibility crisis&lt;a href=&quot;http://pps.sagepub.com/content/7/6/657&quot;&gt;*&lt;/a&gt; in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their &lt;a href=&quot;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506&quot;&gt;paper&lt;/a&gt; succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort. Here is my bullet point version of their paper.&lt;/p&gt;
 
 &lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
 
+&lt;p&gt;Openly accessible data allows for:&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;Consent Forms&lt;/li&gt;
-  &lt;li&gt;Data Organization&lt;/li&gt;
-  &lt;li&gt;Publishing Data&lt;/li&gt;
+  &lt;li&gt;validation of results&lt;/li&gt;
+  &lt;li&gt;novel analyses&lt;/li&gt;
+  &lt;li&gt;combining data from multiple sources&lt;/li&gt;
+  &lt;li&gt;more citations&lt;/li&gt;
+  &lt;li&gt;maximizing benefits to research participants&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But there are several hurdles to making neuroimaging data openly available:&lt;/p&gt;
+
+&lt;h3 id=&quot;consent-forms&quot;&gt;Consent Forms&lt;/h3&gt;
+
+&lt;p&gt;Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several templates of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information.&lt;/p&gt;
+
+&lt;h3 id=&quot;data-organization&quot;&gt;Data Organization&lt;/h3&gt;
+
+&lt;p&gt;We need common standards of data description and organization to facilitate sharing. The &lt;a href=&quot;http://www.nature.com/articles/sdata201644&quot;&gt;Brain Imaging Data Structure (BIDS)&lt;/a&gt; was recently proposed as a simple scheme to describe most MRI datasets.&lt;/p&gt;
+
+&lt;h3 id=&quot;publishing-data&quot;&gt;Publishing Data&lt;/h3&gt;
+
+&lt;p&gt;Data should be uploaded to a repository &lt;em&gt;before&lt;/em&gt; the work is submitted for publication.&lt;/p&gt;
+
+&lt;p&gt;Field-specific Repositories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Functional Connectome Project/International Neuroimaging Data-Sharing Initiative (FCP/INDI)&lt;/li&gt;
+  &lt;li&gt;OpenfMRI&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Field-agostic repositories:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FigShare&lt;/li&gt;
+  &lt;li&gt;Dryad&lt;/li&gt;
+  &lt;li&gt;DataVerse&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Other suggestions:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Consider long-term data retention&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;www.osf.io&quot;&gt;Open Science Framework (OSF)&lt;/a&gt; to link datasets with code and preprints&lt;/li&gt;
+  &lt;li&gt;Embargo period on submitted dataset to protect against “scooping”&lt;/li&gt;
+  &lt;li&gt;Make sure the necessary data and metadata are present using BIDS or XML-based Clinical and Experimental Data Exchange (XCEDE)&lt;/li&gt;
+  &lt;li&gt;Data paper - publication to describe new dataset rather than its analysis when dataset is large or complicated&lt;/li&gt;
+  &lt;li&gt;Share preprocessed volumes, statistical maps (see &lt;a href=&quot;NeuroVault.org&quot;&gt;NeuroVault.org&lt;/a&gt;), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.&lt;/li&gt;
+  &lt;li&gt;Accompany data with an appropriate license. The authors recommend an unrestricted Public Domain license (such as &lt;a href=&quot;https://wiki.creativecommons.org/wiki/CC0_use_ for_data&quot;&gt;CC0&lt;/a&gt; or PDDL). Note that data a treated differently than creative works or software by the legal system.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
 
-&lt;h2 id=&quot;papers&quot;&gt;Papers&lt;/h2&gt;
+&lt;p&gt;Sharing of analysis code is incredibly important not just for the interpretation and validation of results but also to address new research questions and accelerate science.&lt;/p&gt;
+
+&lt;p&gt;Reasons people don’t share code:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Most researchers are not trained in software engineering so the code may be undocumented and lack formal tests&lt;/li&gt;
+  &lt;li&gt;Fear of obligation to provide user support&lt;/li&gt;
+  &lt;li&gt;Few incentives to spend the time writing high-quality, well documented code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Changes in the incentive structure of science will take years, but in the meantime, perceived poor quality of code and lack of thorough documentation should not prevent scientists from publishing it.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Why you should do it anyway:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sharing undocumented code is much better than not sharing code at all. See &lt;a href=&quot;http://www.nature.com/news/2010/101013/full/467753a.html&quot;&gt;Publish your computer code: it is good enough&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sharing does not oblige to provide user support - consider establishing community-driven user support systems (e.g. google groups, NeuroStars.org).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;How to improve the quality and “sharability” of your code:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Use a version control system (VCS) like git. Version control will change your life, seriously. See &lt;a href=&quot;http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668&quot;&gt;A Quick Introduction to Version Control with Git and GitHub&lt;/a&gt; or this great free &lt;a href=&quot;https://www.udacity.com/course/how-to-use-git-and-github--ud775&quot;&gt;Udacity course&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Automate whenever possible. A series of GUI clicks is not reproducible in the way that a script is. The authors have created a &lt;a href=&quot;https://github.com/poldrack/myconnectome-vm&quot;&gt;fully automated analysis pipeline&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Adopt philosophy of “literate programming” for interactive data interrogation, combining analysis code, plots and text narrative. Tools like &lt;a href=&quot;http://jupyter.org&quot;&gt;Jupyter&lt;/a&gt; (for R, Python and Julia), &lt;a href=&quot;http://rmarkdown.rstudio.com&quot;&gt;R Markdown&lt;/a&gt; (for R), and &lt;a href=&quot;https://www.ctan.org/pkg/matlabweb&quot;&gt;matlabweb&lt;/a&gt; (for MATLAB) allow you to revisit a past interactive analysis and share with collaborators.&lt;/li&gt;
+  &lt;li&gt;Share with an appropriate license, such as Apache 2.0, MIT, or GNU General Public License.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;publications&quot;&gt;Publications&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript.&lt;/li&gt;
+  &lt;li&gt;All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.&lt;/li&gt;
+  &lt;li&gt;See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) &lt;a href=&quot;http://www. humanbrainmapping.org/cobidas/&quot;&gt;report&lt;/a&gt; for detailed recommendations on reporting.&lt;/li&gt;
+  &lt;li&gt;Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal.&lt;/li&gt;
+  &lt;li&gt;Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See [SherPa/ROMEO]((http://www.sherpa.ac. uk/romeo) to check what you are allowed to share.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;emerging-trends&quot;&gt;Emerging Trends&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Preregistration - Write and register a study plan to reduce biases in published results. Some journals are participating in the Registered Reports program, wherein an experimental plan can receive “in-principle acceptance” and the journal guarantees to publish the final version of the paper.&lt;/li&gt;
+  &lt;li&gt;Public reviews - To motivate better quality reviews and give credit to reviewers. On occasions where anonymous reviews remain important, there should still be some method of assigning credit to the reviewers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;well well-sm&quot;&gt;&lt;h2&gt;Box 1. Simple Steps towards Open Science&lt;/h2&gt;
+Data: 
+&lt;ul&gt;&lt;li&gt;Include a section about data sharing in your consent forms.&lt;/li&gt;
+&lt;li&gt;Share your raw data upon paper submission using a repository dedicated to neuroimaging.&lt;/li&gt;
+&lt;li&gt;Consider writing a separate data paper for more complex and interesting datasets.&lt;/li&gt;
+&lt;li&gt;Remember that sharing your data improves the impact and citation rates of your research!&lt;/li&gt;
+&lt;/ul&gt;
+Code:
+&lt;ul&gt;&lt;li&gt;Use VCS’s for all your projects.&lt;/li&gt;
+&lt;li&gt;Share your code on GitHub.com &lt;mark&gt;even if it’s not well documented&lt;/mark&gt;.&lt;/li&gt;
+&lt;li&gt;Set up a mailing list for user-related questions.&lt;/li&gt;
+&lt;li&gt;People reusing the code you shared will cite the relevant papers.&lt;/li&gt;
+&lt;/ul&gt;
+Papers: 
+&lt;ul&gt;&lt;li&gt;Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.&lt;/li&gt;
+&lt;li&gt;Submit preprints to claim precedence, solicit feedback, and give access to your research.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. --&gt;
+&lt;/div&gt;
 </description>
-        <pubDate>Tue, 26 Jul 2016 14:05:00 +0200</pubDate>
+        <pubDate>Thu, 28 Jul 2016 14:05:00 +0200</pubDate>
         <link>http://thompsonj.github.io/improving-transparency-reproducibility</link>
         <guid isPermaLink="true">http://thompsonj.github.io/improving-transparency-reproducibility</guid>
         
         
-        <category>what I&#39;m reading</category>
+        <category>Journal club</category>
+        
+      </item>
+    
+      <item>
+        <title>First post</title>
+        <description>&lt;p&gt;I’ve wanted to make a new blog/website using github pages for a while now. I like the idea of hosting everything on github for free and the simplicity yet flexibility of Jekyll. We considered it briefly when we were deciding what to use for the new &lt;a href=&quot;wimlworkshop.org&quot;&gt;Women in Machine Learning&lt;/a&gt; website but ended up going with wordpress instead, which was almost definitely the right choice in retrospect and I’m happy with how that website is shaping up. But for my own page, wordpress seemed like overkill and I much prefer to have access to all the moving parts :grin:&lt;/p&gt;
+
+&lt;p&gt;I finally decided to make this page after various conversations about the value of open science and about how to make the process of actually doing science more open and collaborative, not just at the publication stage. So this blog can be a place to discuss recent papers and half-baked ideas and will hopefully help me to document my own process as well, even if no one reads. I’ve enabled comments with disqus so that folks who &lt;em&gt;do&lt;/em&gt; read can (please!) leave a note to participate in the discussion.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Jul 2016 14:34:00 +0200</pubDate>
+        <link>http://thompsonj.github.io/first-post</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/first-post</guid>
+        
         
       </item>
     
