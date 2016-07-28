@@ -13,12 +13,9 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
 </div> -->
 <div class="alert alert-success" role="alert">Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506</div>
 
-
-As we stand on the verge of a reproducibility crisis in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their [paper](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506) succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort.
-
-<!-- <mark>Marked</mark> -->
-
 > "Having access to a plethora of denoising and modelling algorithms can be both good and bad. On one side, there are many aspects of brain anatomy and function that we can extract and use as dependent variables, which maximizes the chances of finding the most appropriate and powerful measure to ask a particular question. On the other side, the incentive structure of the current scientific enterprise combined with methodological plurality can be a dangerous mix. Scientists rarely approach a problem without a theory, hypothesis, or a set of assumptions, and the high number of “researcher degrees of freedom” can implicitly drive researchers to choose analysis workflows that provide results that are most consistent with their hypotheses."
+
+As we stand on the verge of a reproducibility crisis in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their [paper](http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506) succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort. Here is my bullet point version of their paper.
 
 ## Data
 
