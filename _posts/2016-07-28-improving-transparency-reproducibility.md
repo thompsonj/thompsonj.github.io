@@ -5,7 +5,7 @@ date:   2016-07-28 14:05:00 +0200
 comments: true
 categories: [Journal club]
 ---
-![](http://journals.plos.org/plosbiology/article/figure/image?size=inline&id=info:doi/10.1371/journal.pbio.1002506.g001){: .center-image }
+![Fig 1. Three pillars of Open Science: data, code, and papers.](http://journals.plos.org/plosbiology/article/figure/image?size=inline&id=info:doi/10.1371/journal.pbio.1002506.g001){: .center-image }
 *Fig 1. Three pillars of Open Science: data, code, and papers.*
 
 <!-- <div class="well well-sm">
@@ -31,7 +31,7 @@ But there are several hurdles to making neuroimaging data openly available:
 
 ### Consent Forms
 
-Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several templates of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information. 
+Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several [templates](http://open-brain-consent.readthedocs.io/en/latest/ultimate.html) of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information. 
 
 ### Data Organization
 
@@ -59,7 +59,7 @@ Other suggestions:
 * Embargo period on submitted dataset to protect against "scooping"
 * Make sure the necessary data and metadata are present using BIDS or XML-based Clinical and Experimental Data Exchange (XCEDE)
 * Data paper - publication to describe new dataset rather than its analysis when dataset is large or complicated
-* Share preprocessed volumes, statistical maps (see [NeuroVault.org](NeuroVault.org)), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.
+* Share preprocessed volumes, statistical maps (see [NeuroVault.org](http://NeuroVault.org)), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.
 * Accompany data with an appropriate license. The authors recommend an unrestricted Public Domain license (such as [CC0](https://wiki.creativecommons.org/wiki/CC0_use_ for_data) or PDDL). Note that data a treated differently than creative works or software by the legal system.
 
 ## Code
