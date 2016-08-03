@@ -6,7 +6,7 @@ comments: true
 categories: [Journal club]
 ---
 ![Fig 1. Three pillars of Open Science: data, code, and papers.](http://journals.plos.org/plosbiology/article/figure/image?size=inline&id=info:doi/10.1371/journal.pbio.1002506.g001){: .center-image }
-*Fig 1. Three pillars of Open Science: data, code, and papers.*
+*Three pillars of Open Science: data, code, and papers.*
 
 <!-- <div class="well well-sm">
 Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506
@@ -46,7 +46,7 @@ Field-specific Repositories:
 * Functional Connectome Project/International Neuroimaging Data-Sharing Initiative (FCP/INDI)
 * OpenfMRI
 
-Field-agostic repositories:
+Field-agnostic repositories:
 
 * FigShare
 * Dryad
@@ -100,7 +100,7 @@ How to improve the quality and "sharability" of your code:
 * Public reviews - To motivate better quality reviews and give credit to reviewers. On occasions where anonymous reviews remain important, there should still be some method of assigning credit to the reviewers.
 
 <p></p>
-<div class="well well-sm"><h2>Box 1. Simple Steps towards Open Science</h2>
+<div class="well well-sm"><h2>Simple Steps towards Open Science</h2>
 Data: 
 <ul><li>Include a section about data sharing in your consent forms.</li>
 <li>Share your raw data upon paper submission using a repository dedicated to neuroimaging.</li>
@@ -117,5 +117,6 @@ Papers:
 <ul><li>Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.</li>
 <li>Submit preprints to claim precedence, solicit feedback, and give access to your research.</li>
 </ul>
+*Courtesy of Gorgolewski and Poldrack 2016*
 
 <!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. -->
