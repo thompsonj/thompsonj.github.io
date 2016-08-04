@@ -5,8 +5,8 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 28 Jul 2016 16:29:14 +0200</pubDate>
-    <lastBuildDate>Thu, 28 Jul 2016 16:29:14 +0200</lastBuildDate>
+    <pubDate>Thu, 04 Aug 2016 17:05:12 +0200</pubDate>
+    <lastBuildDate>Thu, 04 Aug 2016 17:05:12 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -23,9 +23,51 @@
       </item>
     
       <item>
+        <title>List of tools for encoding style neuroimage analysis</title>
+        <description>&lt;p&gt;How does markdown work?&lt;/p&gt;
+
+&lt;h2 id=&quot;matlab&quot;&gt;MATLAB&lt;/h2&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pyMVPA&lt;/li&gt;
+  &lt;li&gt;nilearn&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;Use&lt;/th&gt;
+      &lt;th&gt;Use&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;pyMVPA&lt;/td&gt;
+      &lt;td&gt;Kasai&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://twitter.com/ellekasai&quot;&gt;@ellekasai&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 15:34:00 +0200</pubDate>
+        <link>http://thompsonj.github.io/encoding-tools</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/encoding-tools</guid>
+        
+        
+        <category>Python</category>
+        
+        <category>Tools</category>
+        
+      </item>
+    
+      <item>
         <title>Review: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://journals.plos.org/plosbiology/article/figure/image?size=inline&amp;amp;id=info:doi/10.1371/journal.pbio.1002506.g001&quot; alt=&quot;&quot; class=&quot;center-image&quot; /&gt;
-&lt;em&gt;Fig 1. Three pillars of Open Science: data, code, and papers.&lt;/em&gt;&lt;/p&gt;
+        <description>&lt;p&gt;&lt;img src=&quot;http://journals.plos.org/plosbiology/article/figure/image?size=inline&amp;amp;id=info:doi/10.1371/journal.pbio.1002506.g001&quot; alt=&quot;Fig 1. Three pillars of Open Science: data, code, and papers.&quot; class=&quot;center-image&quot; /&gt;
+&lt;em&gt;Three pillars of Open Science: data, code, and papers.&lt;/em&gt;&lt;/p&gt;
 
 &lt;!-- &lt;div class=&quot;well well-sm&quot;&gt;
 Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506
@@ -54,7 +96,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
 
 &lt;h3 id=&quot;consent-forms&quot;&gt;Consent Forms&lt;/h3&gt;
 
-&lt;p&gt;Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several templates of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information.&lt;/p&gt;
+&lt;p&gt;Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several &lt;a href=&quot;http://open-brain-consent.readthedocs.io/en/latest/ultimate.html&quot;&gt;templates&lt;/a&gt; of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information.&lt;/p&gt;
 
 &lt;h3 id=&quot;data-organization&quot;&gt;Data Organization&lt;/h3&gt;
 
@@ -71,7 +113,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
   &lt;li&gt;OpenfMRI&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Field-agostic repositories:&lt;/p&gt;
+&lt;p&gt;Field-agnostic repositories:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;FigShare&lt;/li&gt;
@@ -87,7 +129,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
   &lt;li&gt;Embargo period on submitted dataset to protect against “scooping”&lt;/li&gt;
   &lt;li&gt;Make sure the necessary data and metadata are present using BIDS or XML-based Clinical and Experimental Data Exchange (XCEDE)&lt;/li&gt;
   &lt;li&gt;Data paper - publication to describe new dataset rather than its analysis when dataset is large or complicated&lt;/li&gt;
-  &lt;li&gt;Share preprocessed volumes, statistical maps (see &lt;a href=&quot;NeuroVault.org&quot;&gt;NeuroVault.org&lt;/a&gt;), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.&lt;/li&gt;
+  &lt;li&gt;Share preprocessed volumes, statistical maps (see &lt;a href=&quot;http://NeuroVault.org&quot;&gt;NeuroVault.org&lt;/a&gt;), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.&lt;/li&gt;
   &lt;li&gt;Accompany data with an appropriate license. The authors recommend an unrestricted Public Domain license (such as &lt;a href=&quot;https://wiki.creativecommons.org/wiki/CC0_use_ for_data&quot;&gt;CC0&lt;/a&gt; or PDDL). Note that data a treated differently than creative works or software by the legal system.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -130,7 +172,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
   &lt;li&gt;All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.&lt;/li&gt;
   &lt;li&gt;See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) &lt;a href=&quot;http://www. humanbrainmapping.org/cobidas/&quot;&gt;report&lt;/a&gt; for detailed recommendations on reporting.&lt;/li&gt;
   &lt;li&gt;Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal.&lt;/li&gt;
-  &lt;li&gt;Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See [SherPa/ROMEO]((http://www.sherpa.ac. uk/romeo) to check what you are allowed to share.&lt;/li&gt;
+  &lt;li&gt;Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See &lt;a href=&quot;http://www.sherpa.ac. uk/romeo&quot;&gt;SherPa/ROMEO&lt;/a&gt; to check what you are allowed to share.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;emerging-trends&quot;&gt;Emerging Trends&lt;/h2&gt;
@@ -141,7 +183,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;
-&lt;div class=&quot;well well-sm&quot;&gt;&lt;h2&gt;Box 1. Simple Steps towards Open Science&lt;/h2&gt;
+&lt;div class=&quot;well well-sm&quot;&gt;&lt;h2&gt;Simple Steps towards Open Science&lt;/h2&gt;
 Data: 
 &lt;ul&gt;&lt;li&gt;Include a section about data sharing in your consent forms.&lt;/li&gt;
 &lt;li&gt;Share your raw data upon paper submission using a repository dedicated to neuroimaging.&lt;/li&gt;
@@ -158,6 +200,7 @@ Papers:
 &lt;ul&gt;&lt;li&gt;Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.&lt;/li&gt;
 &lt;li&gt;Submit preprints to claim precedence, solicit feedback, and give access to your research.&lt;/li&gt;
 &lt;/ul&gt;
+*Courtesy of Gorgolewski and Poldrack 2016*
 
 &lt;!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. --&gt;
 &lt;/div&gt;
@@ -173,9 +216,9 @@ Papers:
     
       <item>
         <title>First post</title>
-        <description>&lt;p&gt;I’ve wanted to make a new blog/website using github pages for a while now. I like the idea of hosting everything on github for free and the simplicity yet flexibility of Jekyll. We considered it briefly when we were deciding what to use for the new &lt;a href=&quot;wimlworkshop.org&quot;&gt;Women in Machine Learning&lt;/a&gt; website but ended up going with wordpress instead, which was almost definitely the right choice in retrospect and I’m happy with how that website is shaping up. But for my own page, wordpress seemed like overkill and I much prefer to have access to all the moving parts :grin:&lt;/p&gt;
+        <description>&lt;p&gt;I’ve wanted to make a new blog/website using github pages for a while now. I like the idea of hosting everything on github for free and the simplicity yet flexibility of Jekyll. We considered it briefly when we were deciding what to use for the new &lt;a href=&quot;http://wimlworkshop.org&quot;&gt;Women in Machine Learning&lt;/a&gt; website but ended up going with wordpress instead, which was almost definitely the right choice in retrospect and I’m happy with how that website is shaping up. But for my own page, wordpress seemed like overkill and I much prefer to have access to all the moving parts :grin:&lt;/p&gt;
 
-&lt;p&gt;I finally decided to make this page after various conversations about the value of open science and about how to make the process of actually doing science more open and collaborative, not just at the publication stage. So this blog can be a place to discuss recent papers and half-baked ideas and will hopefully help me to document my own process as well, even if no one reads. I’ve enabled comments with disqus so that folks who &lt;em&gt;do&lt;/em&gt; read can (please!) leave a note to participate in the discussion.&lt;/p&gt;
+&lt;p&gt;I finally decided to make this page after various conversations about the value of open science and about how to make the process of actually doing science more open and collaborative, not just at the publication stage. I recently heard the term “&lt;a href=&quot;https://en.wikipedia.org/wiki/Open_notebook_science&quot;&gt;open notebook science&lt;/a&gt;” which refers to the idea of keeping a public record of the evolution of a research project. I like the idea of structuring my work around blog posts: “I need to write a blog post about this paper” instead of “I need to read this paper and understand it” gives me something more concrete and documented to work on. So this blog can be a place to discuss recent papers and half-baked ideas and will hopefully help me to document my own process as well, even if no one reads. I’ve enabled comments with disqus so that folks who &lt;em&gt;do&lt;/em&gt; read can (please!) leave a note to participate in the discussion.&lt;/p&gt;
 </description>
         <pubDate>Wed, 27 Jul 2016 14:34:00 +0200</pubDate>
         <link>http://thompsonj.github.io/first-post</link>
