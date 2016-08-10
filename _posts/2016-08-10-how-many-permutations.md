@@ -5,7 +5,7 @@ date:   2016-08-10 14:05:00 +0200
 comments: true
 categories: [stats]
 ---
-Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions on the data. In the recent [paper by Eklund et al.](http://http://www.pnas.org/content/113/28/7900.abstract) non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range. 
+Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions of the data. In the recent [paper by Eklund et al.](http://http://www.pnas.org/content/113/28/7900.abstract) non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range. 
 
 But how many permutations or randomizations should you perform? Answers range from "all of them" to "as many as you can" to "no more than a couple hundred". Below I briefly describe the relationship between number of permutations performed and the confidence you can have in the resultant p-value. 
 
@@ -46,6 +46,7 @@ $$
 Thus, for the example above, I would need to perform 43,884 permutations in order to reject \\(H_0\\) with \\(\hat{p}=0.048\\). Alternatively, had I found \\(\hat{p}=0.03\\), I would only have needed 280 permutations.  
 
 <img src={{ site.baseurl }}"/images/how-many-perms.png" alt="Permutations required" width="2000">
+
 
 
 ## References
