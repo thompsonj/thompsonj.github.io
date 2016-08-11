@@ -10,7 +10,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="canonical" href="http://thompsonj.github.io/how-many-permutations">
     <link rel="shortcut icon" href="/favicon.ico">
-    <title>How many permutations should I perform? | Jessica AF Thompson</title>
+    <title>How many permutations should you perform? | Jessica AF Thompson</title>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -60,7 +60,7 @@
         
           <div class="col-sm-8">
             <div class="post-header">
-  <h1 class="post-title-main">How many permutations should I perform?</h1>
+  <h1 class="post-title-main">How many permutations should you perform?</h1>
   <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
 
 <p class="text-muted">10 Aug 2016</p>
@@ -80,7 +80,7 @@
 \hat{p} = \frac{1 + \sum_{i=1}^{M}I(t_i \geq t^*)}{M + 1}
 \end{align*}</script>
 
-<p>where \(M\) is the number of permutations performed, \(t^*\) is the observed test statistic and \(t_i\) is the test statistic found on the \(i^{th}\) permutation. The Monte Carlo p value \(\hat{p}\) will vary depending on which subset of all permutations are selected. Since \(\hat{p}\) is an unbiased estimator of \(p\), we can use \(\hat{p}\) to construct a confidence interval for \(p\) based on a Normal approximation of the Binomial distribution.</p>
+<p>where \(M\) is the number of permutations performed, \(t^<em>\) is the observed test statistic and \(t_i\) is the test statistic found on the \(i^{th}\) permutation. The Monte Carlo p value \(\hat{p}\) will vary depending on which subset of all permutations are selected. Since \(\hat{p}\) is an unbiased estimator of \(p\), we can use \(\hat{p}\) to construct a confidence interval for \(p\) based on a Normal approximation of the Binomial distribution. (Note that we *could</em> do this part non-parametrically also, but let’s not).</p>
 
 <script type="math/tex; mode=display">% <![CDATA[
 \begin{align}
@@ -104,9 +104,11 @@ e^+ & = \hat{p}+zs \\
 M & = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\big)^2}
 \end{align*} %]]></script>
 
-<p>Thus, for the example above, I would need to perform 43,884 permutations in order to reject \(H_0\) with \(\hat{p}=0.048\). Alternatively, had I found \(\hat{p}=0.03\), I would only have needed 280 permutations.</p>
+<p>Thus, for the example above, if I choose \(\alpha=0.05\) and \(z=1.96\) for 95% confidence, I would need to perform 43,884 permutations in order to reject \(H_0\) with \(p=0.048\). Alternatively, had I found \(p=0.03\), I would only have needed 280 permutations.</p>
 
 <p><img src="/images/how-many-perms.png" alt="Permutations required" width="2000" /></p>
+
+<p>So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform “as many as you can” to maximize the precision of your p value since you won’t know \(\hat{p}\) ahead of time. I wonder if there could be some procedure to estimate \(\hat{p}\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose. Please comment below if you have other ideas.</p>
 
 <h2 id="references">References</h2>
 

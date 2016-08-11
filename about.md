@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am a PhD student at University of Montreal. My advisors are Marc Schoenwiesner and Yoshua Bengio. I also collaborate with Elia Formisano's group at Maastricht University. 
+I am a PhD student at Universit&eacute; de Montr&eacute;al. My advisors are Marc Schoenwiesner and Yoshua Bengio. I also collaborate with Elia Formisano's group at Maastricht University. 
 
 
 

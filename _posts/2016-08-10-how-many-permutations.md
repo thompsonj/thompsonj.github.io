@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How many permutations should I perform?"
+title:  "How many permutations should you perform?"
 date:   2016-08-10 14:05:00 +0200
 comments: true
 categories: [stats]
@@ -17,7 +17,7 @@ $$
 \end{align*}
 $$
 
-where \\(M\\) is the number of permutations performed, \\(t^*\\) is the observed test statistic and \\(t_i\\) is the test statistic found on the \\(i^{th}\\) permutation. The Monte Carlo p value \\(\hat{p}\\) will vary depending on which subset of all permutations are selected. Since \\(\hat{p}\\) is an unbiased estimator of \\(p\\), we can use \\(\hat{p}\\) to construct a confidence interval for \\(p\\) based on a Normal approximation of the Binomial distribution.
+where \\(M\\) is the number of permutations performed, \\(t^*\\) is the observed test statistic and \\(t_i\\) is the test statistic found on the \\(i^{th}\\) permutation. The Monte Carlo p value \\(\hat{p}\\) will vary depending on which subset of all permutations are selected. Since \\(\hat{p}\\) is an unbiased estimator of \\(p\\), we can use \\(\hat{p}\\) to construct a confidence interval for \\(p\\) based on a Normal approximation of the Binomial distribution. (Note that we *could* do this part non-parametrically also, but let's not). 
 
  $$
 \begin{align}
@@ -43,11 +43,11 @@ M & = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\big)^
 \end{align*}
 $$
 
-Thus, for the example above, I would need to perform 43,884 permutations in order to reject \\(H_0\\) with \\(\hat{p}=0.048\\). Alternatively, had I found \\(\hat{p}=0.03\\), I would only have needed 280 permutations.  
+Thus, for the example above, if I choose \\(\alpha=0.05\\) and \\(z=1.96\\) for 95% confidence, I would need to perform 43,884 permutations in order to reject \\(H_0\\) with \\(p=0.048\\). Alternatively, had I found \\(p=0.03\\), I would only have needed 280 permutations.  
 
 <img src={{ site.baseurl }}"/images/how-many-perms.png" alt="Permutations required" width="2000">
 
-
+So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform "as many as you can" to maximize the precision of your p value since you won't know \\(\hat{p}\\) ahead of time. I wonder if there could be some procedure to estimate \\(\hat{p}\\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose. Please comment below if you have other ideas. 
 
 ## References
 
