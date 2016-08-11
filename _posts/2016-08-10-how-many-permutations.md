@@ -58,3 +58,6 @@ So how many permutations should you perform? Perhaps unsatisfactorily, it does s
 5. Phipson, B., and Smyth, G. K. (2010). [Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn](http://www.statsci.org/webguide/smyth/pubs/permp.pdf. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.
 6. Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) [Fewer permutations, more accurate P-values](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/). Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211
 
+*Note: Thanks to Giancarlo Valente for his help with this post!*
+
+
