@@ -5,8 +5,8 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Aug 2016 12:29:38 +0200</pubDate>
-    <lastBuildDate>Thu, 11 Aug 2016 12:29:38 +0200</lastBuildDate>
+    <pubDate>Thu, 11 Aug 2016 15:16:54 +0200</pubDate>
+    <lastBuildDate>Thu, 11 Aug 2016 15:16:54 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -58,7 +58,7 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
   &lt;li&gt;Wallis, S. (retrieved Aug 10 2016) &lt;a href=&quot;http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf&quot;&gt;Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm&quot;&gt;Calculation Of The Confidence Interval&lt;/a&gt; (retrieved Aug 10 2016)&lt;/li&gt;
   &lt;li&gt;Eklund, A., Nichols, T. E., &amp;amp; Knutsson, H. (2016). &lt;a href=&quot;http://www.pnas.org/content/113/28/7900.abstract&quot;&gt;Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates&lt;/a&gt;. Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113&lt;/li&gt;
-  &lt;li&gt;Phipson, B., and Smyth, G. K. (2010). [Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn](http://www.statsci.org/webguide/smyth/pubs/permp.pdf. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.&lt;/li&gt;
+  &lt;li&gt;Phipson, B., and Smyth, G. K. (2010). &lt;a href=&quot;http://www.statsci.org/webguide/smyth/pubs/permp.pdf&quot;&gt;Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn&lt;/a&gt;. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.&lt;/li&gt;
   &lt;li&gt;Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/&quot;&gt;Fewer permutations, more accurate P-values&lt;/a&gt;. Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211&lt;/li&gt;
 &lt;/ol&gt;
 

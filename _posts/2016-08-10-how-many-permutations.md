@@ -55,7 +55,7 @@ So how many permutations should you perform? Perhaps unsatisfactorily, it does s
 2. Wallis, S. (retrieved Aug 10 2016) [Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods](http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf)
 3. [Calculation Of The Confidence Interval](http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm) (retrieved Aug 10 2016)
 4. Eklund, A., Nichols, T. E., & Knutsson, H. (2016). [Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates](http://www.pnas.org/content/113/28/7900.abstract). Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113
-5. Phipson, B., and Smyth, G. K. (2010). [Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn](http://www.statsci.org/webguide/smyth/pubs/permp.pdf. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.
+5. Phipson, B., and Smyth, G. K. (2010). [Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn](http://www.statsci.org/webguide/smyth/pubs/permp.pdf). Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.
 6. Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) [Fewer permutations, more accurate P-values](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/). Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211
 
 *Note: Thanks to Giancarlo Valente for his help with this post!*
