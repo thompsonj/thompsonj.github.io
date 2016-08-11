@@ -5,7 +5,7 @@ date:   2016-08-10 14:05:00 +0200
 comments: true
 categories: [stats]
 ---
-Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions of the data. In the recent [paper by Eklund et al.](http://http://www.pnas.org/content/113/28/7900.abstract) non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range. 
+Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions of the data. In the recent [paper by Eklund et al.](http://www.pnas.org/content/113/28/7900.abstract) non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range. 
 
 But how many permutations or randomizations should you perform? Answers range from "all of them" to "as many as you can" to "no more than a couple hundred". Below I briefly describe the relationship between number of permutations performed and the confidence you can have in the resultant p-value. 
 
@@ -28,7 +28,7 @@ $$
 
 where \\(z\\) is the critical value derived from the Normal curve and defines the level of confidence. 
 
-For example, let's say I performed 1000 permutations and achieved a \\(\hat{p}\\) of 0.048 (true story). Should I reject the null hypothesis? To calculate a 95% confidence interval, I will plug in \\(z = 1.96\\) to the equations above, which gives the interval \\([0.035, 0.061]\\). For an \\(\alpha\\) of .05, I cannot reject the null hypothesis because the extreme of my confidence interval exceeds .05. The size of the confidence interval will increase with \\(\hat{p}\\) and decrease with the number of permutations. So for very small \\(\hat{p}\\), only few permutations are needed. But for \\(\hat{p}\\) near \\(\alpha\\), it may be impossible to perform sufficient permutations to confidently reject \\(H_0\\).
+For example, let's say I performed 1000 permutations and achieved a \\(\hat{p}\\) of 0.048 (true story). Should I reject the null hypothesis? To calculate a 95% confidence interval, I will plug in \\(z = 1.96\\) to the equations above, which gives the interval \\([0.035, 0.061]\\). For an \\(\alpha\\) of 0.05, I cannot reject the null hypothesis because the extreme of my confidence interval exceeds 0.05. The size of the confidence interval will increase with \\(\hat{p}\\) and decrease with the number of permutations. So for very small \\(\hat{p}\\), only few permutations are needed. But for \\(\hat{p}\\) near \\(\alpha\\), it may be impossible to perform sufficient permutations to confidently reject \\(H_0\\).
 
 <img src={{ site.baseurl }}"/images/std_p.png" alt="Standard deviation" width="2000">
 
@@ -54,4 +54,5 @@ So how many permutations should you perform? Perhaps unsatisfactorily, it does s
 * Ernst, M. D. (2004). [Permutation Methods: A Basis for Exact Inference](http://http://www.win.tue.nl/~rmcastro/AppStat2013/files/Ernst_Permutation.pdf). Statistical Science, 19(4), 676–685. doi:10.1214/088342304000000396
 * Wallis, S. (retrieved Aug 10 2016) [Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods](http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf)
 * [Calculation Of The Confidence Interval](http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm) (retrieved Aug 10 2016)
+* Eklund, A., Nichols, T. E., & Knutsson, H. (2016). [Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates](http://www.pnas.org/content/113/28/7900.abstract). Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113
 
