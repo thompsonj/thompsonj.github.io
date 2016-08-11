@@ -17,7 +17,7 @@ $$
 \end{align*}
 $$
 
-where \\(M\\) is the number of permutations performed, \\(t^*\\) is the observed test statistic and \\(t_i\\) is the test statistic found on the \\(i^{th}\\) permutation. The Monte Carlo p value \\(\hat{p}\\) will vary depending on which subset of all permutations are selected. Since \\(\hat{p}\\) is an unbiased estimator of \\(p\\), we can use \\(\hat{p}\\) to construct a confidence interval for \\(p\\) based on a Normal approximation of the Binomial distribution. (Note that we *could* do this part non-parametrically also, but let's not). 
+where \\(M\\) is the number of permutations performed, \\(t^*\\) is the observed test statistic and \\(t_i\\) is the test statistic found on the \\(i^{th}\\) permutation. The Monte Carlo p value \\(\hat{p}\\) will vary depending on which subset of all permutations are selected. Since \\(\hat{p}\\) is an unbiased estimator of \\(p\\), we can use \\(\hat{p}\\) to construct a confidence interval for \\(p\\) based on a Normal approximation of the Binomial distribution. (Note that we **could** do this part non-parametrically also, but let's not). 
 
  $$
 \begin{align}
