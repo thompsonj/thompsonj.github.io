@@ -28,7 +28,7 @@ $$
 
 where \\(z\\) is the critical value derived from the Normal curve and defines the level of confidence. 
 
-For example, let's say I performed 1000 permutations and achieved a \\(\hat{p}\\) of 0.048 (true story). Should I reject the null hypothesis? To calculate a 95% confidence interval, I will plug in \\(z = 1.96\\) to the equations above, which gives the interval \\([0.035, 0.061]\\). For an \\(\alpha\\) of 0.05, I cannot reject the null hypothesis because the extreme of my confidence interval exceeds 0.05. The size of the confidence interval will increase with \\(\hat{p}\\) and decrease with the number of permutations. So for very small \\(\hat{p}\\), only few permutations are needed. But for \\(\hat{p}\\) near \\(\alpha\\), it may be impossible to perform sufficient permutations to confidently reject \\(H_0\\).
+For example, let's say I performed 1000 permutations and achieved a \\(\hat{p}\\) of 0.048 (true story). Should I reject the null hypothesis? To calculate a 95% confidence interval, I will plug in \\(z = 1.96\\) to the equations above, which gives the interval \\([0.035, 0.061]\\). For an \\(\alpha\\) of 0.05, I cannot reject the null hypothesis because the extreme of my confidence interval exceeds 0.05. The size of the confidence interval will increase with \\(\hat{p}\\) and decrease with the number of permutations. So for very small \\(\hat{p}\\), only few permutations are needed. But for \\(\hat{p}\\) near \\(\alpha\\), it may be impossible to perform sufficient permutations to confidently reject \\(H_0\\).  
 
 <img src={{ site.baseurl }}"/images/std_p.png" alt="Standard deviation" width="2000">
 
@@ -43,16 +43,18 @@ M & = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\big)^
 \end{align*}
 $$
 
-Thus, for the example above, if I choose \\(\alpha=0.05\\) and \\(z=1.96\\) for 95% confidence, I would need to perform 43,884 permutations in order to reject \\(H_0\\) with \\(p=0.048\\). Alternatively, had I found \\(p=0.03\\), I would only have needed 280 permutations.  
+Thus, for the example above, if I choose \\(\alpha=0.05\\) and \\(z=1.96\\) for 95% confidence, I would need to perform 43,884 permutations in order to reject \\(H_0\\) with \\(p=0.048\\). Alternatively, had I found \\(p=0.03\\), I would only have needed 280 permutations.
 
 <img src={{ site.baseurl }}"/images/how-many-perms.png" alt="Permutations required" width="2000">
 
-So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform "as many as you can" to maximize the precision of your p value since you won't know \\(\hat{p}\\) ahead of time. I wonder if there could be some procedure to estimate \\(\hat{p}\\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose. Please comment below if you have other ideas. 
+So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform "as many as you can" to maximize the precision of your p value since you won't know \\(\hat{p}\\) ahead of time. How to maximize precision while minimizing the number of required permutations appears to be an open area of research. I wonder if there could be some procedure to estimate \\(\hat{p}\\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose.  Please comment below if you have other ideas. 
 
 ## References
 
-* Ernst, M. D. (2004). [Permutation Methods: A Basis for Exact Inference](http://http://www.win.tue.nl/~rmcastro/AppStat2013/files/Ernst_Permutation.pdf). Statistical Science, 19(4), 676–685. doi:10.1214/088342304000000396
-* Wallis, S. (retrieved Aug 10 2016) [Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods](http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf)
-* [Calculation Of The Confidence Interval](http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm) (retrieved Aug 10 2016)
-* Eklund, A., Nichols, T. E., & Knutsson, H. (2016). [Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates](http://www.pnas.org/content/113/28/7900.abstract). Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113
+1. Ernst, M. D. (2004). [Permutation Methods: A Basis for Exact Inference](http://http://www.win.tue.nl/~rmcastro/AppStat2013/files/Ernst_Permutation.pdf). Statistical Science, 19(4), 676–685. doi:10.1214/088342304000000396
+2. Wallis, S. (retrieved Aug 10 2016) [Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods](http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf)
+3. [Calculation Of The Confidence Interval](http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm) (retrieved Aug 10 2016)
+4. Eklund, A., Nichols, T. E., & Knutsson, H. (2016). [Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates](http://www.pnas.org/content/113/28/7900.abstract). Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113
+5. Phipson, B., and Smyth, G. K. (2010). [Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn](http://www.statsci.org/webguide/smyth/pubs/permp.pdf. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.
+6. Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) [Fewer permutations, more accurate P-values](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/). Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211
 

@@ -5,8 +5,8 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Aug 2016 10:23:06 +0200</pubDate>
-    <lastBuildDate>Thu, 11 Aug 2016 10:23:06 +0200</lastBuildDate>
+    <pubDate>Thu, 11 Aug 2016 12:23:27 +0200</pubDate>
+    <lastBuildDate>Thu, 11 Aug 2016 12:23:27 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -49,16 +49,18 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
 
 &lt;p&gt;&lt;img src=&quot;/images/how-many-perms.png&quot; alt=&quot;Permutations required&quot; width=&quot;2000&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform “as many as you can” to maximize the precision of your p value since you won’t know \(\hat{p}\) ahead of time. I wonder if there could be some procedure to estimate \(\hat{p}\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose. Please comment below if you have other ideas.&lt;/p&gt;
+&lt;p&gt;So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform “as many as you can” to maximize the precision of your p value since you won’t know \(\hat{p}\) ahead of time. How to maximize precision while minimizing the number of required permutations appears to be an open area of research. I wonder if there could be some procedure to estimate \(\hat{p}\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose.  Please comment below if you have other ideas.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;ul&gt;
+&lt;ol&gt;
   &lt;li&gt;Ernst, M. D. (2004). &lt;a href=&quot;http://http://www.win.tue.nl/~rmcastro/AppStat2013/files/Ernst_Permutation.pdf&quot;&gt;Permutation Methods: A Basis for Exact Inference&lt;/a&gt;. Statistical Science, 19(4), 676–685. doi:10.1214/088342304000000396&lt;/li&gt;
   &lt;li&gt;Wallis, S. (retrieved Aug 10 2016) &lt;a href=&quot;http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf&quot;&gt;Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm&quot;&gt;Calculation Of The Confidence Interval&lt;/a&gt; (retrieved Aug 10 2016)&lt;/li&gt;
   &lt;li&gt;Eklund, A., Nichols, T. E., &amp;amp; Knutsson, H. (2016). &lt;a href=&quot;http://www.pnas.org/content/113/28/7900.abstract&quot;&gt;Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates&lt;/a&gt;. Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113&lt;/li&gt;
-&lt;/ul&gt;
+  &lt;li&gt;Phipson, B., and Smyth, G. K. (2010). [Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn](http://www.statsci.org/webguide/smyth/pubs/permp.pdf. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.&lt;/li&gt;
+  &lt;li&gt;Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/&quot;&gt;Fewer permutations, more accurate P-values&lt;/a&gt;. Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211&lt;/li&gt;
+&lt;/ol&gt;
 
 </description>
         <pubDate>Wed, 10 Aug 2016 14:05:00 +0200</pubDate>
