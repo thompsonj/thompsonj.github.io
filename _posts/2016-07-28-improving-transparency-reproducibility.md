@@ -25,17 +25,17 @@ Openly accessible data allows for:
 * novel analyses
 * combining data from multiple sources
 * more citations
-* maximizing benefits to research participants 
+* maximizing benefits to research participants
 
 But there are several hurdles to making neuroimaging data openly available:
 
 ### Consent Forms
 
-Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several [templates](http://open-brain-consent.readthedocs.io/en/latest/ultimate.html) of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information. 
+Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several [templates](http://open-brain-consent.readthedocs.io/en/latest/ultimate.html) of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information.
 
 ### Data Organization
 
-We need common standards of data description and organization to facilitate sharing. The [Brain Imaging Data Structure (BIDS)](http://www.nature.com/articles/sdata201644) was recently proposed as a simple scheme to describe most MRI datasets. 
+We need common standards of data description and organization to facilitate sharing. The [Brain Imaging Data Structure (BIDS)](http://www.nature.com/articles/sdata201644) was recently proposed as a simple scheme to describe most MRI datasets.
 
 ### Publishing Data
 
@@ -64,7 +64,7 @@ Other suggestions:
 
 ## Code
 
-Sharing of analysis code is incredibly important not just for the interpretation and validation of results but also to address new research questions and accelerate science. 
+Sharing of analysis code is incredibly important not just for the interpretation and validation of results but also to address new research questions and accelerate science.
 
 Reasons people don't share code:
 
@@ -81,18 +81,18 @@ Why you should do it anyway:
 
 How to improve the quality and "sharability" of your code:
 
-* Use a version control system (VCS) like git. Version control will change your life, seriously. See [A Quick Introduction to Version Control with Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668) or this great free [Udacity course](https://www.udacity.com/course/how-to-use-git-and-github--ud775). 
-* Automate whenever possible. A series of GUI clicks is not reproducible in the way that a script is. The authors have created a [fully automated analysis pipeline](https://github.com/poldrack/myconnectome-vm). 
-* Adopt philosophy of "literate programming" for interactive data interrogation, combining analysis code, plots and text narrative. Tools like [Jupyter](http://jupyter.org) (for R, Python and Julia), [R Markdown](http://rmarkdown.rstudio.com) (for R), and [matlabweb](https://www.ctan.org/pkg/matlabweb) (for MATLAB) allow you to revisit a past interactive analysis and share with collaborators. 
+* Use a version control system (VCS) like git. Version control will change your life, seriously. See [A Quick Introduction to Version Control with Git and GitHub](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668) or this great free [Udacity course](https://www.udacity.com/course/how-to-use-git-and-github--ud775).
+* Automate whenever possible. A series of GUI clicks is not reproducible in the way that a script is. The authors have created a [fully automated analysis pipeline](https://github.com/poldrack/myconnectome-vm).
+* Adopt philosophy of "literate programming" for interactive data interrogation, combining analysis code, plots and text narrative. Tools like [Jupyter](http://jupyter.org) (for R, Python and Julia), [R Markdown](http://rmarkdown.rstudio.com) (for R), and [matlabweb](https://www.ctan.org/pkg/matlabweb) (for MATLAB) allow you to revisit a past interactive analysis and share with collaborators.
 * Share with an appropriate license, such as Apache 2.0, MIT, or GNU General Public License.
 
 ## Publications
 
-* In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript. 
+* In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript.
 * All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.
 * See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) [report](http://www. humanbrainmapping.org/cobidas/) for detailed recommendations on reporting.
-* Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal. 
-* Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See [SherPa/ROMEO](http://www.sherpa.ac. uk/romeo) to check what you are allowed to share. 
+* Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal. (See Niko Kriegeskorte's post [The Selfish Scientist's Guide to Preprint Posting](https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/))
+* Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See [SherPa/ROMEO](http://www.sherpa.ac. uk/romeo) to check what you are allowed to share.
 
 ## Emerging Trends
 
@@ -101,7 +101,7 @@ How to improve the quality and "sharability" of your code:
 
 <p></p>
 <div class="well well-sm"><h2>Simple Steps towards Open Science</h2>
-Data: 
+Data:
 <ul><li>Include a section about data sharing in your consent forms.</li>
 <li>Share your raw data upon paper submission using a repository dedicated to neuroimaging.</li>
 <li>Consider writing a separate data paper for more complex and interesting datasets.</li>
@@ -113,7 +113,7 @@ Code:
 <li>Set up a mailing list for user-related questions.</li>
 <li>People reusing the code you shared will cite the relevant papers.</li>
 </ul>
-Papers: 
+Papers:
 <ul><li>Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.</li>
 <li>Submit preprints to claim precedence, solicit feedback, and give access to your research.</li>
 </ul>
