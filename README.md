@@ -72,6 +72,8 @@ bundle install
 
 ```
 jekyll serve --watch
+OR
+bundle exec jekyll serve --watch
 ```
 
 ### :warning: Warning :warning:

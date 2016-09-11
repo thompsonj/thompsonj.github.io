@@ -5,9 +5,91 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 11 Aug 2016 15:16:54 +0200</pubDate>
-    <lastBuildDate>Thu, 11 Aug 2016 15:16:54 +0200</lastBuildDate>
+    <pubDate>Sun, 11 Sep 2016 15:06:19 +0200</pubDate>
+    <lastBuildDate>Sun, 11 Sep 2016 15:06:19 +0200</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Introduction to Alphabet Soup series</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/alphabet_soup.jpg&quot; alt=&quot;Alphabet Soup&quot; width=&quot;2000&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m currently reading &lt;a href=&quot;https://he.palgrave.com/page/detail/?sf1=barcode&amp;amp;st1=9780230542303&quot;&gt;Understanding Psychology as a Science&lt;/a&gt; by Zoltàn Dienes (Thanks to Marian Schneider for the recommendation!). The first couple chapters review the philosophy of science of Karl Popper, Thomas Kuhn, and Imre Lakatos. In the section on Kuhn, Dienes describes the “Kuhnian crisis”. Kuhn suggests that scientific revolutions occur when significant doubt is cast on an accepted paradigm. Such a crisis can lead to new paradigms that move the field forward. In Kuhn’s view, a paradigm defines the problems that need solving and consequently how to interpret experimental observations. Kuhn used the term ‘incommensurability’ to describe the possible mismatch between paradigms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If paradigms disagree over what needs solving, then claiming to have solved a non-existent problem by methods that do not count as providing a solution will not impress adherents of a different paradigm.” (p. 36).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this post, I want to focus on the role of language and communication in the incommensurability of paradigms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Paradigms are also incommensurable because of disagreement over how to describe basic observations. Terms refer in different way in different paradigms: &lt;em&gt;because&lt;/em&gt; of the change in theory of the solar system, before Copernicus the term ‘planet’ included the sun and moon; and only afterwards did it include the earth. If terms change meaning, then what counts as a basic description of the data changes too.” (p.36)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Kuhn eventually narrowed down his definition of incommensurability to exactly this: “the way terms can refer differently before and after theory change”.&lt;/p&gt;
+
+&lt;p&gt;In my research, I interface with the fields of machine learning, cognitive science and neuroscience. These fields have some shared history, but generally look at different questions. However, I would suggest that they are asking increasingly similar questions and that we may be moving towards a paradigm shift wherein these fields adopt overlapping paradigms—a shared set of problems to solve by working together. To this aim, I have decided to begin a series called Alphabet Soup for the purpose of disambiguating terms that I notice are used differently by different people in different times and places. First on my list are “representation” and “information processing”. Feel free to suggest others in the comments below. Stay tuned!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 14:15:00 +0200</pubDate>
+        <link>http://thompsonj.github.io/alphabet-soup</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/alphabet-soup</guid>
+        
+        
+        <category>alphabet soup</category>
+        
+      </item>
+    
+      <item>
+        <title>Review of &lt;em&gt;Representational models: A common framework for understanding encoding, pattern-component, and representational-similarity analysis&lt;/em&gt; by Joern Diedrichsen and Nikolaus Kriegeskorte</title>
+        <description>&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;Representational models: A common framework for understanding encoding, pattern-component, and representational-similarity analysis.
+Joern Diedrichsen, Nikolaus Kriegeskorte.
+bioRxiv 071472; doi: http://dx.doi.org/10.1101/071472&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;This &lt;a href=&quot;http://biorxiv.org/content/early/2016/08/24/071472&quot;&gt;paper&lt;/a&gt; was recently posted on bioRxiv and does not appear to have been peer-reviewed yet. It is very much along the same lines that I have been thinking lately and so I will take notes on it here. I will put my own views in italics, otherwise, what it written comes from the paper. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I find this quote from their introduction to well summarize the goal of this vein of research. &lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“In order to translate advances in brain-activity measurement into advances in computational theory, researchers increasingly seek to test representational models that capture both what information is represented in a population of neurons and &lt;mark&gt;in what format it is represented&lt;/mark&gt;. Knowing the content and format of representations provides strong constraints for computational models of
+brain information processing.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Why do we care so much about representations? Because characterizations of representations and the types of computational architectures that generate brain-like representations constrain computational models of neural information processing. I especially like that they specifically mention the goal of capturing the format of the representation and not only the information contained in population activity.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The authors point out that encoding, RSA, and PCM all evaluate the 2nd moment of the activity pattern and therefore can be described under a common formal framework.&lt;/p&gt;
+
+&lt;h2 id=&quot;definitions&quot;&gt;Definitions&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Activity profile&lt;/strong&gt;: a vector of responses of one measurement channel across the experimental conditions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;: characterize the experimental conditions&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representation&lt;/strong&gt;: a represented variable can be linearly decoded from a downstream area
+(&lt;em&gt;I take issue with this definition. From a representation learning perspective, the  input signal has a particular representation and subsequent representational transformations are learned to make some information more accessible. The output at each stage—the result of the transformation—is a particular representation of the original signal. These representations will contain the same information or a subset of the information contained in the original signal. &lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representational models&lt;/strong&gt;: hypotheses about the content and format of brain representations. A representational model predicts a probability distribution over the space of activity profiles.  (&lt;em&gt;But does it really?&lt;/em&gt;)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How should we evaluate how well the predicted distribution of activity profiles matches the measurements? From the perspective of a neuron that reads out the activity of an area, i.e. a linear decoder, any difference between activity patterns across conditions is equally meaningful. Some features (for example, stimulus intensity) may be encoded in the mean response, with overall higher activity for condition A than B. Other properties (for example, stimulus identity) may be encoded in relative activity differences, with some measurement channels responding more to condition 1 and others more to 2. If we want to summarize what information can be linearly decoded from population activity, we require a measure that captures both of these scenarios. It turns out that the second-moment matrix of the activity profiles provides a sufficient statistic for characterizing linear decodability.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;If any difference between activity patterns across conditions is equally meaningful from the perspective of a linear decoder, does that not suggest that we should be interested in more than linear decodability in order to describe the nature/format of the representation?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;They define the second moment matrix of the activity profiles as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+G  \equiv \frac{\sum^p_i \textbf{u}_i \textbf{u}^T_i}{p}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;where \(\textbf{u}\)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Aug 2016 14:05:00 +0200</pubDate>
+        <link>http://thompsonj.github.io/representational-models</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/representational-models</guid>
+        
+        
+        <category>stats</category>
+        
+      </item>
     
       <item>
         <title>How many permutations should you perform?</title>
@@ -76,7 +158,9 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
     
       <item>
         <title>Papers related to the integration of deep learning and neuroscience</title>
-        <description>&lt;p&gt;Towards the integration of deep learning and neuroscience&lt;/p&gt;
+        <description>&lt;p&gt;[Towards the integration of deep learning and neuroscience]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0022249616300475&quot;&gt;Integrating theoretical models with functional neuroimaging&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 30 Jul 2016 15:34:00 +0200</pubDate>
         <link>http://thompsonj.github.io/deep-learning-neuroscience</link>
@@ -236,7 +320,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
   &lt;li&gt;In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript.&lt;/li&gt;
   &lt;li&gt;All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.&lt;/li&gt;
   &lt;li&gt;See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) &lt;a href=&quot;http://www. humanbrainmapping.org/cobidas/&quot;&gt;report&lt;/a&gt; for detailed recommendations on reporting.&lt;/li&gt;
-  &lt;li&gt;Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal.&lt;/li&gt;
+  &lt;li&gt;Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal. (See Niko Kriegeskorte’s post &lt;a href=&quot;https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/&quot;&gt;The Selfish Scientist’s Guide to Preprint Posting&lt;/a&gt;)&lt;/li&gt;
   &lt;li&gt;Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See &lt;a href=&quot;http://www.sherpa.ac. uk/romeo&quot;&gt;SherPa/ROMEO&lt;/a&gt; to check what you are allowed to share.&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -249,7 +333,7 @@ Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency 
 
 &lt;p&gt;&lt;/p&gt;
 &lt;div class=&quot;well well-sm&quot;&gt;&lt;h2&gt;Simple Steps towards Open Science&lt;/h2&gt;
-Data: 
+Data:
 &lt;ul&gt;&lt;li&gt;Include a section about data sharing in your consent forms.&lt;/li&gt;
 &lt;li&gt;Share your raw data upon paper submission using a repository dedicated to neuroimaging.&lt;/li&gt;
 &lt;li&gt;Consider writing a separate data paper for more complex and interesting datasets.&lt;/li&gt;
@@ -261,7 +345,7 @@ Code:
 &lt;li&gt;Set up a mailing list for user-related questions.&lt;/li&gt;
 &lt;li&gt;People reusing the code you shared will cite the relevant papers.&lt;/li&gt;
 &lt;/ul&gt;
-Papers: 
+Papers:
 &lt;ul&gt;&lt;li&gt;Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.&lt;/li&gt;
 &lt;li&gt;Submit preprints to claim precedence, solicit feedback, and give access to your research.&lt;/li&gt;
 &lt;/ul&gt;
