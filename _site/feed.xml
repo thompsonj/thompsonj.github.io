@@ -5,9 +5,47 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 31 Jan 2017 21:51:47 -0500</pubDate>
-    <lastBuildDate>Tue, 31 Jan 2017 21:51:47 -0500</lastBuildDate>
+    <pubDate>Tue, 21 Feb 2017 12:48:48 -0500</pubDate>
+    <lastBuildDate>Tue, 21 Feb 2017 12:48:48 -0500</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Software for deep learning</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;https://mila.umontreal.ca/&quot;&gt;Montreal Institute for Learning Algorithms (MILA)&lt;/a&gt; maintains a long &lt;a href=&quot;http://deeplearning.net/software_links/&quot;&gt;list of deep learning software&lt;/a&gt;. I’ve only ever used Theano and Pylearn2 and need to familiarize myself with the current state of deep learning tools as I re-boot an existing project. This post is my attempt to organize basic information about a limited set of tools to help me decide exactly what to use for my current project.&lt;/p&gt;
+
+&lt;h2 id=&quot;computation-engines-back-ends&quot;&gt;Computation Engines (Back ends)&lt;/h2&gt;
+&lt;p&gt;Name | Language | Description
+–|—|–
+&lt;a href=&quot;http://deeplearning.net/software/theano&quot;&gt;Theano&lt;/a&gt; | Python | Define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently to run on CPU or GPU
+&lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensor Flow&lt;/a&gt; | Python | Numerical computation using data flow graphs, similar to Theano
+&lt;a href=&quot;http://torch.ch/&quot;&gt;Torch&lt;/a&gt; | Lua | Scientific computing framework, Tensor computation with strong GPU acceleration
+&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe&lt;/a&gt; | Python | Machine vision library that ported Matlab fast CNNs to C and C++, not intended for other data types
+&lt;a href=&quot;http://nd4j.org/&quot;&gt;ND4J&lt;/a&gt; | Java | Scientific computing libraries for the JVM&lt;/p&gt;
+
+&lt;h2 id=&quot;interface-libraries&quot;&gt;Interface Libraries&lt;/h2&gt;
+&lt;p&gt;Name | Language  |  Description | Back ends&lt;br /&gt;
+–|—|–
+&lt;a href=&quot;https://github.com/lisa-lab/pylearn2&quot;&gt;Pylearn2&lt;/a&gt; | Python | Provides reusable common components, no longer actively developped | Theano
+&lt;a href=&quot;https://github.com/lisa-groundhog/GroundHog&quot;&gt;GroundHog&lt;/a&gt;  | Python  | Complex recurrent neural network models, development discontinued, moved to Blocks   |   Theano
+&lt;a href=&quot;http://lasagne.readthedocs.io/en/latest/index.html&quot;&gt;Lasagne&lt;/a&gt;  | Python  | Lightweight library to build and train neural networks in Theano. | Theano
+&lt;a href=&quot;https://keras.io/&quot;&gt;Keras&lt;/a&gt;  | Python  | High-level library for fast experimentation | Theano, TensorFlow
+&lt;a href=&quot;http://blocks.readthedocs.io/en/latest/&quot;&gt;Blocks&lt;/a&gt;  | Python | Quick prototyping of complex neural network models, annotates the Theano computational graph instead of adding abstractions, consists of Bricks (reusable common components), large graph management, training algorithms and training abilities.  | Theano
+&lt;a href=&quot;https://github.com/mila-udem/fuel&quot;&gt;Fuel&lt;/a&gt; | Python |  Download/iterate/preprocess datasets to pipe into Blocks  | Theano
+&lt;a href=&quot;http://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;  | Python  | Not a Python binding into a C++ framework, can use it naturally like you would use numpy / scipy / scikit-learn | Torch
+&lt;a href=&quot;http://deeplearning4j.org&quot;&gt;Deeplearning4j&lt;/a&gt; | Java | Distributed deep-learning in Java and Scala | ND4J&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://deeplearning.net/software_links/&lt;/li&gt;
+  &lt;li&gt;https://deeplearning4j.org/compare-dl4j-torch7-pylearn&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 21 Feb 2017 12:40:00 -0500</pubDate>
+        <link>http://thompsonj.github.io/software-for-deep-learning</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/software-for-deep-learning</guid>
+        
+        
+      </item>
     
       <item>
         <title>Experience, perception, and physicality in experimental music: An argument for the role of neuroscience in music phenomenology</title>
