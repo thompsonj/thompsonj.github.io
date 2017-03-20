@@ -2,6 +2,7 @@
 layout: "post"
 title: "Custom workstation build"
 date: "2017-03-20 18:21:33 -0400"
+comments: true
 ---
 Last weekend I built a computer. This machine was designed as a workstation for my research, considering the resources needed for the analysis and modelling of large 7T fMRI data and the training/testing of deep neural networks. I used [PCPartPicker](https://ca.pcpartpicker.com) to help me test out different configurations and check for compatibility issues. Here is the parts list:
 
@@ -26,8 +27,10 @@ I had never assembled a computer before so I asked my friend Joe Thibodeau to co
 
 ## Looking forward
 
-I will need considerably more storage but I can start with this for now and wait for the price of high-capacity SSDs to go down even more. I'd like to take advantage of the 2nd m.2 port on the motherboard and put at least another 1TB there, perhaps in some convenient configuration with the one I already have so that I can access them as one device. There is also a spot for another SSD bracket behind the motherboard. 
+I will need considerably more storage but I can start with this for now and wait for the price of high-capacity SSDs to go down even more. I'd like to take advantage of the 2nd m.2 port on the motherboard and put at least another 1TB there, perhaps in some convenient configuration with the one I already have so that I can access them as one device. There is also a spot for another SSD bracket behind the motherboard.
 
 I would consider getting another GPU just to run the graphics, reserving the Pascal Titan X as just a GPGPU. But I will wait to see how it goes.
+
+Benchmarks and OS install in the next post.
 
 Fun times ahead!

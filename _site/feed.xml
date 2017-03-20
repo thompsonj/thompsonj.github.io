@@ -5,8 +5,8 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 20 Mar 2017 18:25:28 -0400</pubDate>
-    <lastBuildDate>Mon, 20 Mar 2017 18:25:28 -0400</lastBuildDate>
+    <pubDate>Mon, 20 Mar 2017 18:39:30 -0400</pubDate>
+    <lastBuildDate>Mon, 20 Mar 2017 18:39:30 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -39,6 +39,48 @@
 &lt;p&gt;I will need considerably more storage but I can start with this for now and wait for the price of high-capacity SSDs to go down even more. I’d like to take advantage of the 2nd m.2 port on the motherboard and put at least another 1TB there, perhaps in some convenient configuration with the one I already have so that I can access them as one device. There is also a spot for another SSD bracket behind the motherboard.&lt;/p&gt;
 
 &lt;p&gt;I would consider getting another GPU just to run the graphics, reserving the Pascal Titan X as just a GPGPU. But I will wait to see how it goes.&lt;/p&gt;
+
+&lt;p&gt;Fun times ahead!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 18:21:33 -0400</pubDate>
+        <link>http://thompsonj.github.io/custom-workstation-build</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/custom-workstation-build</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Custom workstation build</title>
+        <description>&lt;p&gt;Last weekend I built a computer. This machine was designed as a workstation for my research, considering the resources needed for the analysis and modelling of large 7T fMRI data and the training/testing of deep neural networks. I used &lt;a href=&quot;https://ca.pcpartpicker.com&quot;&gt;PCPartPicker&lt;/a&gt; to help me test out different configurations and check for compatibility issues. Here is the parts list:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/partslist.png&quot; alt=&quot;parts list&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 13.35.11.jpg&quot; alt=&quot;parts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had never assembled a computer before so I asked my friend Joe Thibodeau to come over to supervise. Working together, the assembly was actually relatively painless (Thanks Joe!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 16.33.25.jpg&quot; alt=&quot;mobo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 17.22.54.jpg&quot; alt=&quot;cpucooler&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 18.54.43.jpg&quot; alt=&quot;case960evo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Since I’m not them right now, we removed both of the HDD cages for better airflow. The front 200mm fan that came with the case now has clear access to the GPU.&lt;/li&gt;
+  &lt;li&gt;The 250GB Samsung 850 EVO slips into a removeable SSD bracket behind the motherboard&lt;/li&gt;
+  &lt;li&gt;The 1TB Samsung 960 EVO is an nvme ssd with m.2 connector and so plugs right into the motherboard. There is actually a 2nd m.2 slot on the motherboad for further expansion.&lt;/li&gt;
+  &lt;li&gt;In addition to the two fans that came with the case, I added two 120mm fans on the top panel for outtake. So air comes in through the front and out and up through the back and top, creating good airflow over the GPU and CPU and a slight negative pressure inside the case (which I heard is good?).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;looking-forward&quot;&gt;Looking forward&lt;/h2&gt;
+
+&lt;p&gt;I will need considerably more storage but I can start with this for now and wait for the price of high-capacity SSDs to go down even more. I’d like to take advantage of the 2nd m.2 port on the motherboard and put at least another 1TB there, perhaps in some convenient configuration with the one I already have so that I can access them as one device. There is also a spot for another SSD bracket behind the motherboard.&lt;/p&gt;
+
+&lt;p&gt;I would consider getting another GPU just to run the graphics, reserving the Pascal Titan X as just a GPGPU. But I will wait to see how it goes.&lt;/p&gt;
+
+&lt;p&gt;Benchmarks and OS install in the next post.&lt;/p&gt;
 
 &lt;p&gt;Fun times ahead!&lt;/p&gt;
 </description>
@@ -357,53 +399,6 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
         
         
         <category>Deep learning</category>
-        
-      </item>
-    
-      <item>
-        <title>List of tools for encoding style neuroimage analysis</title>
-        <description>&lt;h2 id=&quot;matlab&quot;&gt;MATLAB&lt;/h2&gt;
-
-&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;pyMVPA&lt;/li&gt;
-  &lt;li&gt;nilearn&lt;/li&gt;
-  &lt;li&gt;pandas&lt;/li&gt;
-  &lt;li&gt;seaborn&lt;/li&gt;
-  &lt;li&gt;matplotlib&lt;/li&gt;
-  &lt;li&gt;scikit-learn&lt;/li&gt;
-  &lt;li&gt;statsmodels&lt;/li&gt;
-  &lt;li&gt;nipype
-*&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Name&lt;/th&gt;
-      &lt;th&gt;Language&lt;/th&gt;
-      &lt;th&gt;Use&lt;/th&gt;
-      &lt;th&gt;Use&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Elle&lt;/td&gt;
-      &lt;td&gt;Kasai&lt;/td&gt;
-      &lt;td&gt;&lt;a href=&quot;http://twitter.com/ellekasai&quot;&gt;@ellekasai&lt;/a&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        <pubDate>Fri, 29 Jul 2016 09:34:00 -0400</pubDate>
-        <link>http://thompsonj.github.io/open-ni-tools</link>
-        <guid isPermaLink="true">http://thompsonj.github.io/open-ni-tools</guid>
-        
-        
-        <category>Python</category>
-        
-        <category>Tools</category>
         
       </item>
     

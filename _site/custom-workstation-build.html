@@ -101,6 +101,29 @@
 
 </div>
 
+  <div id="disqus_thread"></div>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+        
+        var disqus_config = function () {
+            // this.page.url = ;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = page.title; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+            var d = document, s = d.createElement('script');
+            
+            s.src = '//thompsonj.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
 
 
   
@@ -110,11 +133,10 @@
           <h3 class="section-header">
             Older
             <span class="text-muted"> &middot; </span>
-            <a href="/archive">View Archive (12)</a>
+            <a href="/archive">View Archive (13)</a>
           </h3>
-          <h2 class="post-title-link"><a href="/debian-installation-and-setup">Debian installation and configuration</a></h2>
-          <h2 id="os-install">OS Install</h2>
-<p>I decided to go with Debian for the operating system because I wanted to be able to use the <a href="http://neuro.debian.net/">NeuroDebian</a> repository. I may experiment with other Debian derivatives in the future. I wrote the Live disk image for Debian 8 “Jessie” (with firmware + nonfree) to a bootable USB drive for the installation.</p>
+          <h2 class="post-title-link"><a href="/custom-workstation-build">Custom workstation build</a></h2>
+          <p>Last weekend I built a computer. This machine was designed as a workstation for my research, considering the resources needed for the analysis and modelling of large 7T fMRI data and the training/testing of deep neural networks. I used <a href="https://ca.pcpartpicker.com">PCPartPicker</a> to help me test out different configurations and check for compatibility issues. Here is the parts list:</p>
 
 
         </div>
