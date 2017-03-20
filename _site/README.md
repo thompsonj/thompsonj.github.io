@@ -1,4 +1,16 @@
-# :ribbon: Hi! I'm Shiori, a Bootstrap-based Jekyll Theme. :ribbon:
+## This site uses GitHub Pages and Jekyll with the [Shiori Theme](http://ellekasai.github.io/shiori).
+
+### To serve this website locally:
+Install jekyll and bundler
+```sudo gem install jekyll bundler```
+
+Navigate to the site directory to install necessary gems by running ```bundle install```. This may require installing other dependencies if you run into errors.
+
+To serve the site:
+```bundle exec jekyll serve```
+
+
+<!-- # :ribbon: Hi! I'm Shiori, a Bootstrap-based Jekyll Theme. :ribbon:
 
 ![](https://cloud.githubusercontent.com/assets/992008/3955483/2b9a77ae-2702-11e4-9f28-6afb051271de.png)
 
@@ -144,4 +156,4 @@ If you want to make category pages, you must manually push the generated `_site`
 
 ### License
 
-[MIT License](http://ellekasai.mit-license.org/)
+[MIT License](http://ellekasai.mit-license.org/) -->

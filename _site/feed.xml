@@ -5,9 +5,90 @@
     <description></description>
     <link>http://thompsonj.github.io/</link>
     <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 21 Feb 2017 12:48:48 -0500</pubDate>
-    <lastBuildDate>Tue, 21 Feb 2017 12:48:48 -0500</lastBuildDate>
+    <pubDate>Mon, 20 Mar 2017 18:25:28 -0400</pubDate>
+    <lastBuildDate>Mon, 20 Mar 2017 18:25:28 -0400</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Custom workstation build</title>
+        <description>&lt;p&gt;Last weekend I built a computer. This machine was designed as a workstation for my research, considering the resources needed for the analysis and modelling of large 7T fMRI data and the training/testing of deep neural networks. I used &lt;a href=&quot;https://ca.pcpartpicker.com&quot;&gt;PCPartPicker&lt;/a&gt; to help me test out different configurations and check for compatibility issues. Here is the parts list:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/partslist.png&quot; alt=&quot;parts list&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 13.35.11.jpg&quot; alt=&quot;parts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had never assembled a computer before so I asked my friend Joe Thibodeau to come over to supervise. Working together, the assembly was actually relatively painless (Thanks Joe!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 16.33.25.jpg&quot; alt=&quot;mobo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 17.22.54.jpg&quot; alt=&quot;cpucooler&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 18.54.43.jpg&quot; alt=&quot;case960evo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Since I’m not them right now, we removed both of the HDD cages for better airflow. The front 200mm fan that came with the case now has clear access to the GPU.&lt;/li&gt;
+  &lt;li&gt;The 250GB Samsung 850 EVO slips into a removeable SSD bracket behind the motherboard&lt;/li&gt;
+  &lt;li&gt;The 1TB Samsung 960 EVO is an nvme ssd with m.2 connector and so plugs right into the motherboard. There is actually a 2nd m.2 slot on the motherboad for further expansion.&lt;/li&gt;
+  &lt;li&gt;In addition to the two fans that came with the case, I added two 120mm fans on the top panel for outtake. So air comes in through the front and out and up through the back and top, creating good airflow over the GPU and CPU and a slight negative pressure inside the case (which I heard is good?).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;looking-forward&quot;&gt;Looking forward&lt;/h2&gt;
+
+&lt;p&gt;I will need considerably more storage but I can start with this for now and wait for the price of high-capacity SSDs to go down even more. I’d like to take advantage of the 2nd m.2 port on the motherboard and put at least another 1TB there, perhaps in some convenient configuration with the one I already have so that I can access them as one device. There is also a spot for another SSD bracket behind the motherboard.&lt;/p&gt;
+
+&lt;p&gt;I would consider getting another GPU just to run the graphics, reserving the Pascal Titan X as just a GPGPU. But I will wait to see how it goes.&lt;/p&gt;
+
+&lt;p&gt;Fun times ahead!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 18:21:33 -0400</pubDate>
+        <link>http://thompsonj.github.io/custom-workstation-build</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/custom-workstation-build</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Debian installation and configuration</title>
+        <description>&lt;h2 id=&quot;os-install&quot;&gt;OS Install&lt;/h2&gt;
+&lt;p&gt;I decided to go with Debian for the operating system because I wanted to be able to use the &lt;a href=&quot;http://neuro.debian.net/&quot;&gt;NeuroDebian&lt;/a&gt; repository. I may experiment with other Debian derivatives in the future. I wrote the Live disk image for Debian 8 “Jessie” (with firmware + nonfree) to a bootable USB drive for the installation.&lt;/p&gt;
+
+&lt;p&gt;After installation, at first I was stuck in tty1—could not get the X window system to start. Adding the following Grub options at the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;linux&lt;/code&gt; call allowed me to start the GNOME desktop with the nouveau graphics driver:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;nomodeset xforcevesa vga=791&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;nvidia-driver&quot;&gt;NVIDIA Driver&lt;/h2&gt;
+
+&lt;p&gt;Useful packages/commands for debugging:
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-detect&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;xstart&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xinit&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;modinfo&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;dkms status&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;inxi -Fxz&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;lsmod | grep nvidia&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;lshw -s video&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;lspci | grep VGA&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cuda-toolkit&quot;&gt;CUDA Toolkit&lt;/h2&gt;
+
+&lt;h2 id=&quot;vpn&quot;&gt;VPN&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;to replace Cisco AnyConnect VPN: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install openconnect&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;NetworkConnect requires 32-bit libraries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;disk-partitionning&quot;&gt;Disk partitionning&lt;/h2&gt;
+
+&lt;h2 id=&quot;benchmarking&quot;&gt;Benchmarking&lt;/h2&gt;
+
+&lt;h2 id=&quot;dotfiles-and-configurations&quot;&gt;Dotfiles and configurations&lt;/h2&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 15:41:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/debian-installation-and-setup</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/debian-installation-and-setup</guid>
+        
+        
+      </item>
     
       <item>
         <title>Software for deep learning</title>
@@ -164,6 +245,42 @@ G  \equiv \frac{\sum^p_i \textbf{u}_i \textbf{u}^T_i}{p}
       </item>
     
       <item>
+        <title>Alphabet soup: Representation</title>
+        <description>&lt;p&gt;In the Alphabet Soup series, I disambiguate terms that are commonly used in many different ways depending on the field of study or author.&lt;/p&gt;
+
+&lt;p&gt;Representation&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Representation learning&lt;/li&gt;
+  &lt;li&gt;Neuroimaging/Representational similarity analysis&lt;/li&gt;
+  &lt;li&gt;Cognitive Science -&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Marr 1984
+&amp;gt; A &lt;em&gt;representation&lt;/em&gt; is a formal system for making explicit certain entities or types of information, together with a specification of how the system does this. And I shall call the result of using a representation to describe a given entity a &lt;em&gt;description&lt;/em&gt; of the entity in that representation (Marr and Nishihara, 1978) p. 20&lt;/p&gt;
+
+&lt;p&gt;37 is the Arabic numeral system’s description of the number, which makes explicit certain information about the number’s decomposition into powers of 10. Other numerical representations would describe the same number with different specific information. From the arabic representation, it is easy to determine whether the number is a power of 10, but difficult to discover whether it is a power of 2 (difficult for us). Any representation makes some information explicit at the cost of other information. How information is represented affects what can be done with it.&lt;/p&gt;
+
+&lt;p&gt;more examples of representations:  musical score, alphabet, shape&lt;/p&gt;
+
+&lt;p&gt;“formal scheme” information processing systems use symbols to represent things, formal scheme is set of rules for putting symbols together&lt;/p&gt;
+
+&lt;p&gt;future terms:
+“generative”
+“top-down, bottom-up, inside-out, outside-in”
+“black-box”
+“feature” “dimension”&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Aug 2016 08:05:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/as-representation</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/as-representation</guid>
+        
+        
+        <category>alphabet soup</category>
+        
+      </item>
+    
+      <item>
         <title>How many permutations should you perform?</title>
         <description>&lt;p&gt;Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions of the data. In the recent &lt;a href=&quot;http://www.pnas.org/content/113/28/7900.abstract&quot;&gt;paper by Eklund et al.&lt;/a&gt; non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range.&lt;/p&gt;
 
@@ -245,15 +362,20 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
     
       <item>
         <title>List of tools for encoding style neuroimage analysis</title>
-        <description>&lt;p&gt;How does markdown work?&lt;/p&gt;
-
-&lt;h2 id=&quot;matlab&quot;&gt;MATLAB&lt;/h2&gt;
+        <description>&lt;h2 id=&quot;matlab&quot;&gt;MATLAB&lt;/h2&gt;
 
 &lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;pyMVPA&lt;/li&gt;
   &lt;li&gt;nilearn&lt;/li&gt;
+  &lt;li&gt;pandas&lt;/li&gt;
+  &lt;li&gt;seaborn&lt;/li&gt;
+  &lt;li&gt;matplotlib&lt;/li&gt;
+  &lt;li&gt;scikit-learn&lt;/li&gt;
+  &lt;li&gt;statsmodels&lt;/li&gt;
+  &lt;li&gt;nipype
+*&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;table&gt;
@@ -267,7 +389,7 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;pyMVPA&lt;/td&gt;
+      &lt;td&gt;Elle&lt;/td&gt;
       &lt;td&gt;Kasai&lt;/td&gt;
       &lt;td&gt;&lt;a href=&quot;http://twitter.com/ellekasai&quot;&gt;@ellekasai&lt;/a&gt;&lt;/td&gt;
     &lt;/tr&gt;
@@ -275,176 +397,13 @@ M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\b
 &lt;/table&gt;
 </description>
         <pubDate>Fri, 29 Jul 2016 09:34:00 -0400</pubDate>
-        <link>http://thompsonj.github.io/encoding-tools</link>
-        <guid isPermaLink="true">http://thompsonj.github.io/encoding-tools</guid>
+        <link>http://thompsonj.github.io/open-ni-tools</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/open-ni-tools</guid>
         
         
         <category>Python</category>
         
         <category>Tools</category>
-        
-      </item>
-    
-      <item>
-        <title>Review: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research</title>
-        <description>&lt;p&gt;&lt;img src=&quot;http://journals.plos.org/plosbiology/article/figure/image?size=inline&amp;amp;id=info:doi/10.1371/journal.pbio.1002506.g001&quot; alt=&quot;Fig 1. Three pillars of Open Science: data, code, and papers.&quot; class=&quot;center-image&quot; /&gt;
-&lt;em&gt;Three pillars of Open Science: data, code, and papers.&lt;/em&gt;&lt;/p&gt;
-
-&lt;!-- &lt;div class=&quot;well well-sm&quot;&gt;
-Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506
-&lt;/div&gt; --&gt;
-&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506&lt;/div&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Having access to a plethora of denoising and modelling algorithms can be both good and bad. On one side, there are many aspects of brain anatomy and function that we can extract and use as dependent variables, which maximizes the chances of finding the most appropriate and powerful measure to ask a particular question. On the other side, the incentive structure of the current scientific enterprise combined with methodological plurality can be a dangerous mix. Scientists rarely approach a problem without a theory, hypothesis, or a set of assumptions, and the high number of “researcher degrees of freedom” can implicitly drive researchers to choose analysis workflows that provide results that are most consistent with their hypotheses.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As we stand on the verge of a reproducibility crisis&lt;a href=&quot;http://pps.sagepub.com/content/7/6/657&quot;&gt;*&lt;/a&gt; in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their &lt;a href=&quot;http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506&quot;&gt;paper&lt;/a&gt; succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort. Here is my bullet point version of their paper.&lt;/p&gt;
-
-&lt;h2 id=&quot;data&quot;&gt;Data&lt;/h2&gt;
-
-&lt;p&gt;Openly accessible data allows for:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;validation of results&lt;/li&gt;
-  &lt;li&gt;novel analyses&lt;/li&gt;
-  &lt;li&gt;combining data from multiple sources&lt;/li&gt;
-  &lt;li&gt;more citations&lt;/li&gt;
-  &lt;li&gt;maximizing benefits to research participants&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But there are several hurdles to making neuroimaging data openly available:&lt;/p&gt;
-
-&lt;h3 id=&quot;consent-forms&quot;&gt;Consent Forms&lt;/h3&gt;
-
-&lt;p&gt;Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several &lt;a href=&quot;http://open-brain-consent.readthedocs.io/en/latest/ultimate.html&quot;&gt;templates&lt;/a&gt; of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information.&lt;/p&gt;
-
-&lt;h3 id=&quot;data-organization&quot;&gt;Data Organization&lt;/h3&gt;
-
-&lt;p&gt;We need common standards of data description and organization to facilitate sharing. The &lt;a href=&quot;http://www.nature.com/articles/sdata201644&quot;&gt;Brain Imaging Data Structure (BIDS)&lt;/a&gt; was recently proposed as a simple scheme to describe most MRI datasets.&lt;/p&gt;
-
-&lt;h3 id=&quot;publishing-data&quot;&gt;Publishing Data&lt;/h3&gt;
-
-&lt;p&gt;Data should be uploaded to a repository &lt;em&gt;before&lt;/em&gt; the work is submitted for publication.&lt;/p&gt;
-
-&lt;p&gt;Field-specific Repositories:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Functional Connectome Project/International Neuroimaging Data-Sharing Initiative (FCP/INDI)&lt;/li&gt;
-  &lt;li&gt;OpenfMRI&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Field-agnostic repositories:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;FigShare&lt;/li&gt;
-  &lt;li&gt;Dryad&lt;/li&gt;
-  &lt;li&gt;DataVerse&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Other suggestions:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Consider long-term data retention&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;www.osf.io&quot;&gt;Open Science Framework (OSF)&lt;/a&gt; to link datasets with code and preprints&lt;/li&gt;
-  &lt;li&gt;Embargo period on submitted dataset to protect against “scooping”&lt;/li&gt;
-  &lt;li&gt;Make sure the necessary data and metadata are present using BIDS or XML-based Clinical and Experimental Data Exchange (XCEDE)&lt;/li&gt;
-  &lt;li&gt;Data paper - publication to describe new dataset rather than its analysis when dataset is large or complicated&lt;/li&gt;
-  &lt;li&gt;Share preprocessed volumes, statistical maps (see &lt;a href=&quot;http://NeuroVault.org&quot;&gt;NeuroVault.org&lt;/a&gt;), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.&lt;/li&gt;
-  &lt;li&gt;Accompany data with an appropriate license. The authors recommend an unrestricted Public Domain license (such as &lt;a href=&quot;https://wiki.creativecommons.org/wiki/CC0_use_ for_data&quot;&gt;CC0&lt;/a&gt; or PDDL). Note that data a treated differently than creative works or software by the legal system.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;code&quot;&gt;Code&lt;/h2&gt;
-
-&lt;p&gt;Sharing of analysis code is incredibly important not just for the interpretation and validation of results but also to address new research questions and accelerate science.&lt;/p&gt;
-
-&lt;p&gt;Reasons people don’t share code:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Most researchers are not trained in software engineering so the code may be undocumented and lack formal tests&lt;/li&gt;
-  &lt;li&gt;Fear of obligation to provide user support&lt;/li&gt;
-  &lt;li&gt;Few incentives to spend the time writing high-quality, well documented code&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“Changes in the incentive structure of science will take years, but in the meantime, perceived poor quality of code and lack of thorough documentation should not prevent scientists from publishing it.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Why you should do it anyway:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Sharing undocumented code is much better than not sharing code at all. See &lt;a href=&quot;http://www.nature.com/news/2010/101013/full/467753a.html&quot;&gt;Publish your computer code: it is good enough&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Sharing does not oblige to provide user support - consider establishing community-driven user support systems (e.g. google groups, NeuroStars.org).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;How to improve the quality and “sharability” of your code:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Use a version control system (VCS) like git. Version control will change your life, seriously. See &lt;a href=&quot;http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668&quot;&gt;A Quick Introduction to Version Control with Git and GitHub&lt;/a&gt; or this great free &lt;a href=&quot;https://www.udacity.com/course/how-to-use-git-and-github--ud775&quot;&gt;Udacity course&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Automate whenever possible. A series of GUI clicks is not reproducible in the way that a script is. The authors have created a &lt;a href=&quot;https://github.com/poldrack/myconnectome-vm&quot;&gt;fully automated analysis pipeline&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Adopt philosophy of “literate programming” for interactive data interrogation, combining analysis code, plots and text narrative. Tools like &lt;a href=&quot;http://jupyter.org&quot;&gt;Jupyter&lt;/a&gt; (for R, Python and Julia), &lt;a href=&quot;http://rmarkdown.rstudio.com&quot;&gt;R Markdown&lt;/a&gt; (for R), and &lt;a href=&quot;https://www.ctan.org/pkg/matlabweb&quot;&gt;matlabweb&lt;/a&gt; (for MATLAB) allow you to revisit a past interactive analysis and share with collaborators.&lt;/li&gt;
-  &lt;li&gt;Share with an appropriate license, such as Apache 2.0, MIT, or GNU General Public License.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;publications&quot;&gt;Publications&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript.&lt;/li&gt;
-  &lt;li&gt;All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.&lt;/li&gt;
-  &lt;li&gt;See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) &lt;a href=&quot;http://www. humanbrainmapping.org/cobidas/&quot;&gt;report&lt;/a&gt; for detailed recommendations on reporting.&lt;/li&gt;
-  &lt;li&gt;Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal. (See Niko Kriegeskorte’s post &lt;a href=&quot;https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/&quot;&gt;The Selfish Scientist’s Guide to Preprint Posting&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See &lt;a href=&quot;http://www.sherpa.ac. uk/romeo&quot;&gt;SherPa/ROMEO&lt;/a&gt; to check what you are allowed to share.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;emerging-trends&quot;&gt;Emerging Trends&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Preregistration - Write and register a study plan to reduce biases in published results. Some journals are participating in the Registered Reports program, wherein an experimental plan can receive “in-principle acceptance” and the journal guarantees to publish the final version of the paper.&lt;/li&gt;
-  &lt;li&gt;Public reviews - To motivate better quality reviews and give credit to reviewers. On occasions where anonymous reviews remain important, there should still be some method of assigning credit to the reviewers.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;div class=&quot;well well-sm&quot;&gt;&lt;h2&gt;Simple Steps towards Open Science&lt;/h2&gt;
-Data:
-&lt;ul&gt;&lt;li&gt;Include a section about data sharing in your consent forms.&lt;/li&gt;
-&lt;li&gt;Share your raw data upon paper submission using a repository dedicated to neuroimaging.&lt;/li&gt;
-&lt;li&gt;Consider writing a separate data paper for more complex and interesting datasets.&lt;/li&gt;
-&lt;li&gt;Remember that sharing your data improves the impact and citation rates of your research!&lt;/li&gt;
-&lt;/ul&gt;
-Code:
-&lt;ul&gt;&lt;li&gt;Use VCS’s for all your projects.&lt;/li&gt;
-&lt;li&gt;Share your code on GitHub.com &lt;mark&gt;even if it’s not well documented&lt;/mark&gt;.&lt;/li&gt;
-&lt;li&gt;Set up a mailing list for user-related questions.&lt;/li&gt;
-&lt;li&gt;People reusing the code you shared will cite the relevant papers.&lt;/li&gt;
-&lt;/ul&gt;
-Papers:
-&lt;ul&gt;&lt;li&gt;Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.&lt;/li&gt;
-&lt;li&gt;Submit preprints to claim precedence, solicit feedback, and give access to your research.&lt;/li&gt;
-&lt;/ul&gt;
-*Courtesy of Gorgolewski and Poldrack 2016*
-
-&lt;!-- You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated. --&gt;
-&lt;/div&gt;
-</description>
-        <pubDate>Thu, 28 Jul 2016 08:05:00 -0400</pubDate>
-        <link>http://thompsonj.github.io/improving-transparency-reproducibility</link>
-        <guid isPermaLink="true">http://thompsonj.github.io/improving-transparency-reproducibility</guid>
-        
-        
-        <category>Journal club</category>
-        
-      </item>
-    
-      <item>
-        <title>First post</title>
-        <description>&lt;p&gt;I’ve wanted to make a new blog/website using github pages for a while now. I like the idea of hosting everything on github for free and the simplicity yet flexibility of Jekyll. We considered it briefly when we were deciding what to use for the new &lt;a href=&quot;http://wimlworkshop.org&quot;&gt;Women in Machine Learning&lt;/a&gt; website but ended up going with wordpress instead, which was almost definitely the right choice in retrospect and I’m happy with how that website is shaping up. But for my own page, wordpress seemed like overkill and I much prefer to have access to all the moving parts :grin:&lt;/p&gt;
-
-&lt;p&gt;I finally decided to make this page after various conversations about the value of open science and about how to make the process of actually doing science more open and collaborative, not just at the publication stage. I recently heard the term “&lt;a href=&quot;https://en.wikipedia.org/wiki/Open_notebook_science&quot;&gt;open notebook science&lt;/a&gt;” which refers to the idea of keeping a public record of the evolution of a research project. I like the idea of structuring my work around blog posts: “I need to write a blog post about this paper” instead of “I need to read this paper and understand it” gives me something more concrete and documented to work on. So this blog can be a place to discuss recent papers and half-baked ideas and will hopefully help me to document my own process as well, even if no one reads. I’ve enabled comments with disqus so that folks who &lt;em&gt;do&lt;/em&gt; read can (please!) leave a note to participate in the discussion.&lt;/p&gt;
-</description>
-        <pubDate>Wed, 27 Jul 2016 08:34:00 -0400</pubDate>
-        <link>http://thompsonj.github.io/first-post</link>
-        <guid isPermaLink="true">http://thompsonj.github.io/first-post</guid>
-        
         
       </item>
     
