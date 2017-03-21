@@ -22,8 +22,9 @@ I had never assembled a computer before so I asked my friend Joe Thibodeau to co
 
 * Since I'm not using them right now, we removed both of the HDD cages for better airflow. The front 200mm fan that came with the case now has clear access to the GPU.
 * The 250GB Samsung 850 EVO slips into a removeable SSD bracket behind the motherboard
-* The 1TB Samsung 960 EVO is an nvme ssd with m.2 connector and so plugs right into the motherboard. There is actually a 2nd m.2 slot on the motherboad for further expansion.
+* The 1TB Samsung 960 EVO is an nvme ssd with m.2 connector and so plugs right into the motherboard (where it can reach write speeds of upto 3200 MHz). There is actually a 2nd m.2 slot on the motherboad for further expansion.
 * In addition to the two fans that came with the case, I added two 120mm fans on the top panel for outtake. So air comes in through the front and out and up through the back and top, creating good airflow over the GPU and CPU and a slight negative pressure inside the case (which I heard is good?).
+* The PSU is a bit overkill currently but it leaves room for expansion and better to overdo than undercut with these things.
 
 ## Looking forward
 
