@@ -18,8 +18,8 @@ Name | Language | Description
 
 
 ## Interface Libraries
-Name | Language  |  Description | Back ends  
---|---|--
+Name | Language  |  Description | Back ends
+--|---|---|--
 [Pylearn2](https://github.com/lisa-lab/pylearn2) | Python | Provides reusable common components, no longer actively developped | Theano
 [GroundHog](https://github.com/lisa-groundhog/GroundHog)  | Python  | Complex recurrent neural network models, development discontinued, moved to Blocks   |   Theano
 [Lasagne](http://lasagne.readthedocs.io/en/latest/index.html)  | Python  | Lightweight library to build and train neural networks in Theano. | Theano
