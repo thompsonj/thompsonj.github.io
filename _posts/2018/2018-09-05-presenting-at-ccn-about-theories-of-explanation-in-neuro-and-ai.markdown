@@ -4,8 +4,8 @@ title: Presenting at CCN about theories of explanation in neuro and AI
 date: '2018-09-05 17:53'
 ---
 
-Tomorrow I will be presenting a poster at the Cognitive Computational Neuroscience (CCN) conference entitled "Towards a theory of explanation for biological and artificial intelligence". Here is the poster along with the [short paper]({{ site.baseurl }}/ccn_Thompson.pdf) that goes with it, as well as some [slides]({{ site.baseurl }}/Thompson_CCN2018_slides.pdf) that I used in a previous presentation.
-<iframe src={{ site.baseurl }}"/pdfs/Thompson_CCN2018_poster.pdf" width="100%" height="800"></iframe>
+Tomorrow I will be presenting a poster at the Cognitive Computational Neuroscience (CCN) conference entitled "Towards a theory of explanation for biological and artificial intelligence". Here is the poster along with the [short paper]({{ site.baseurl }}/pdfs/ccn_Thompson.pdf) that goes with it, as well as some [slides]({{ site.baseurl }}/pdfs/Thompson_CCN2018_slides.pdf) that I used in a previous presentation.
+<iframe src={{site.baseurl }}"/pdfs/Thompson_CCN2018_poster.pdf" width="100%"></iframe>
 
 All of these documents are incomplete, but the poster is a good outline of the main ideas I'd like to think about with the community. This work comes out of trying to situate my own research into a broader scientific enterprise and finding that to be more challenging than I expected. The more a read and think about philosophical theories of explanation, cognition and computation, the more I become aware that many of my intuitions about how this type of science progresses are hard to back up formally. I recognize that neuroscience is messy and exploratory, but ultimately I want to be doing science that is motivated by reference to an satisfactory theory of explanation (and theory of scientific progress). I claim that none of the theories of explanation that I've reviewed are satisfactory for explaining intelligent phenomena in artificial and biological systems and that this represents an obstacle to defining scientific progress in this domain. Without any roadmap, our science is just hunch following.
 
