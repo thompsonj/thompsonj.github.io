@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NeurIPS2018
+title: NeurIPS 2018
 date: '2018-12-01 20:23'
 ---
 

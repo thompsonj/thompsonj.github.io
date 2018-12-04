@@ -8,7 +8,7 @@ permalink: /about/
 
 I am a PhD candidate at Université de Montréal where I am supervised by Marc Schönwiesner, formerly of the International Laboratory for Brain, Music and Sound Research (BRAMS) (now at the Institute for Biology at Leipzig University) and Yoshua Bengio of the Quebec Institute for Learning Algorithms (Mila).
 
-I am also on the executive committee of Women in Machine Learning Inc., a non-profit organization that runs events and programs to support machine learning researchers and practitioners who identify primarily as women. In my free time, I like to read, knit, garden, hike, and listen to electronic music.
+I am also on the executive committee of Women in Machine Learning Inc., an organization that runs events and programs to support machine learning researchers and practitioners who identify primarily as women. In my free time, I like to read, knit, garden, hike, and listen to electronic music.
 
 # Research Statement
 My current research interests lie at the intersection of neuroscience, deep learning and philosophy of explanation. I am interested in how **neuroscience-inspired analysis** methods can help to explain and describe the function of deep learning systems and how machine **learning theory** may impact our understanding of biologically intelligent systems. I'm particularly interested in how **philosophy of mind and philosophy of explanation** may help to formulate challenging problems related to the **explainability** of intelligent agents, be they biological or artificial.
