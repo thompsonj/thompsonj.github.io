@@ -6,7 +6,7 @@ date: '2018-12-01 20:23'
 
 I'll present a poster at the NeurIPS 2018 workshop on Interpretability and Robustness in Audio, Speech and Language. Check out our short [paper](https://openreview.net/pdf?id=HkgPMupoj7) "How transferable are features in convolutional neural network acoustic models across languages?".
 
-
+<iframe src={{ site.baseurl }}"/pdfs/Thompson_poster_IRASL2018.pdf" width="100%" height="375"></iframe> 
 ### Abstract:
 Characterization of the representations learned in intermediate layers of deep networks can provide valuable insight into the nature of a task and can guide the development of well-tailored learning strategies. Here we study convolutional neural network-based acoustic models in the context of automatic speech recognition. Adapting a method proposed by Yosinski et al. [2014], we measure the transferability of each layer between German and English to assess the their language-specifity. We observe three distinct regions of transferability: (1) the first two layers are entirely transferable between languages, (2) layers 2–8 are also highly transferable but we find evidence of some language specificity, (3) the subsequent fully connected layers are more language specific but can be successfully finetuned to the target language. To further probe the effect of weight freezing, we performed follow-up experiments using freeze-training [Raghu et al., 2017]. Our results are consistent with the observation that CCNs converge 'bottom up' during training and demonstrate the benefit of freeze training, especially for transfer learning.
 
