@@ -126,7 +126,7 @@ Once the preprocessing was complete, my next goal was to do a simple sanity chec
 
     Nistats was looking for files named according to older conventions than what was output by fmriprep. This problem was mentioned in an open [issue](https://github.com/nistats/nistats/issues/225) on github.
 
-    I created a fork of nistats and updated the relevant functions involved in creating a first level model from a BIDS dataset to use the latest conventions. I eventually submitted these changes as a pull request but it is still in progress. Eventually, it would make sense to do a more major overhaul of nistats to use pybids for this kind of thing.
+    I created a fork of nistats and updated the relevant functions involved in creating a first level model from a BIDS dataset to use the latest conventions. I eventually submitted these changes as a [pull request](https://github.com/nistats/nistats/pull/373) but it is still in progress. Eventually, it would make sense to do a more major overhaul of nistats to use pybids for this kind of thing.
 
     *Note: The current official BIDS specification doesn't cover derivatives other than to say that derivatives should be in a folder called 'derivatives' and should not share file names with their corresponding raw/unprocessed files. However, there is a [BIDS Extension Proposal](https://github.com/bids-standard/bids-specification/pull/265) to cover derivatives which has been evolving gradually.*
 
