@@ -33,7 +33,7 @@ I ended up needing to setup two environments, one for BIDS/fmriprep and one for 
 Every fMRI analysis package has their own version of this tool which goes through the dicom files as retrieved from the scanner and organizes them into folders with one folder for each acquisition (e.g. T1w, run1). I used freesurfer's [dicom-rename](http://www.freesurfer.net/pub/dist/freesurfer/dev_binaries/centos7_x86_64/dicom-rename).
 
 # Step 3: Create BIDS formatted Datalad dataset
-I wanted to use Datalad to version control any changes that I make to the data and also because I ultimately want to share this dataset. I followed the tutorial [here](http://reproducibility.stanford.edu/bids-tutorial-series-part-1b/) which links to a bash script to convert dicoms to nifti files in BIDS data structure format. In retrospect, I should have followed [this one](http://reproducibility.stanford.edu/bids-tutorial-series-part-2a/) which would have made my life easier.
+I wanted to use Datalad to version control any changes that I make to the data and also because I ultimately want to share this dataset. I followed the tutorial [here](http://reproducibility.stanford.edu/bids-tutorial-series-part-1b/) which links to a bash script to convert dicoms to nifti files in BIDS data structure format. In retrospect, I should have followed [this one](http://reproducibility.stanford.edu/bids-tutorial-series-part-2a/) which would have made my life easier. My bash scripts [here](https://github.com/thompsonj/quilts/tree/master/fmri_data).
 
 ## Step 3.1: Install Datalad
 
@@ -54,10 +54,10 @@ Both of the tutorials listed above ultimately use [dcm2niix](https://github.com/
   `conda install -c conda-forge dcm2niix`
 
 ### Step 3.3: Create Nifti files and associated metadata (.json) files
-Like I said above, I did this with a [bash script]() but wish I had done it in python with HeuDiConv.
+Like I said above, I did this with a [bash script](https://github.com/thompsonj/quilts/blob/master/fmri_data/toNifti.sh but wish I had done it in python with HeuDiConv.
 
 ## Step 3.4: Create Event files and associated metadata (.json) files
-I did this with a [bash file]() that processed the logfiles saved during my experiment which I ran with [PsychoPy](https://www.psychopy.org/).
+I did this with a [bash script](https://github.com/thompsonj/quilts/blob/master/fmri_data/createEvents.sh) that processed the logfiles saved during my experiment which I ran with [PsychoPy](https://www.psychopy.org/).
 
 ## Step 3.5: Verify BIDS validity and add additional info
 BIDS specifies how to store information about your participants, tasks and scans in .tsv and .json files.
@@ -65,7 +65,7 @@ BIDS specifies how to store information about your participants, tasks and scans
 I used the online [BIDS validator](https://bids-standard.github.io/bids-validator/) to verify everything was named and organized correctly. The validator found a number of errors that I had to correct which helped me to better understand the BIDS format.
 
 ## Step 3.6: Put the BIDS data into Datalad datasets
-If I had used HeuDiConv, I think this could have happened automatically. Instead, I created my Datalad dataset after the fact. I honestly didn't find the Datalad documentation very clear on what the conventions are for organizing a large Dataset, but gathered somewhat indirectly that the idea is to have several nested Datalad datasets. For example, the highest level folder containing your BIDS dataset would be the highest level Datalad dataset, within which each subject folder 'sub-<sub_label>' would be it's own Datalad dataset. If data were collected over more than one sessions, each session directory 'ses-<session_label>'. I also made my stimuli directory it's own Datalad dataset. This compartmentalization may make the dataset easier to work with and version control in the future.
+If I had used HeuDiConv, I think this could have happened automatically. Instead, I created my Datalad dataset as I converted the dicoms. I honestly didn't find the Datalad documentation very clear on what the conventions are for organizing a large Dataset, but gathered somewhat indirectly that the idea is to have several nested Datalad datasets. For example, the highest level folder containing your BIDS dataset would be the highest level Datalad dataset, within which each subject folder 'sub-<sub_label>' would be it's own Datalad dataset. If data were collected over more than one sessions, each session directory 'ses-<session_label>'. I also made my stimuli directory it's own Datalad dataset. This compartmentalization may make the dataset easier to work with and version control in the future.
 
 Create nested Datalad datasets with `datalad create`
 
