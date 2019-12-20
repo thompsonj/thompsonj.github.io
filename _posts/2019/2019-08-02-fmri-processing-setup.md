@@ -5,6 +5,7 @@ date: '2019-08-02 18:55'
 comments: true
 categories: []
 ---
+EDIT: my nistats [pull request](https://github.com/nistats/nistats/pull/373) related to this blog post was merged!
 
 Despite a desire to participate in developing open-source software and develop good open science practices, my PhD has involved a lot of proprietary and closed datasets and software due to who I was working with. This summer I have been returning to some fMRI data that I collected ages ago but haven't gotten around to analyzing due to other projects. Here I want to summarize my experience trying to adopt some better open-science practices and using new tools and standards. I'm coming to this as a relatively seasoned python programmer and data analyzer but having never used these specific tools. I hope this could be useful for someone starting from scratch or someone interested in a newcomer's experience with these tools.
 
