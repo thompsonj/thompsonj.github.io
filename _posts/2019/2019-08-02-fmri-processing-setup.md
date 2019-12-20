@@ -15,7 +15,7 @@ Main components:
 * Brain Imaging Data Structure (BIDS)
 * Datalad
 * fmriprep
-* nistat/nilearn
+* nistats/nilearn
 
 Also mentioned:
 * Freesurfer
@@ -28,7 +28,7 @@ Also mentioned:
 * Docker
 
 # Step 1: Create your conda environment(s)
-I ended up needing to setup two environments, one for BIDS/fmriprep and one for nilearn/nistat due to some conflicting version requirements.
+I ended up needing to setup two environments, one for BIDS/fmriprep and one for nilearn/nistats due to some conflicting version requirements.
 
 # Step 2: Rename Dicoms
 Every fMRI analysis package has their own version of this tool which goes through the dicom files as retrieved from the scanner and organizes them into folders with one folder for each acquisition (e.g. T1w, run1). I used freesurfer's [dicom-rename](http://www.freesurfer.net/pub/dist/freesurfer/dev_binaries/centos7_x86_64/dicom-rename).
