@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Using similarity analysis to study convolutional neural networks"
+date: "2019-12-4 17:36:26 -0800"
+---
+![Random Networks](images/all_mats_10_2rows_relabeled.png)
+
+I recently presented a poster entitled 'The effect of task and training on intermediate representations in convolutional neural networks revealed with modified RV similarity analysis' at the Conference on Cognitive Computational Neuroscience (CCN) in Berlin, Germany.
+
+The modified RV coefficient (RV2) is a particular case of centered kernel alignment (CKA) which was recently discussed at length in an [ICML workshop paper](https://arxiv.org/abs/1905.00414) by Simon Kornblith, who also gave a [presentation at ICLR2019](https://slideslive.com/38915700/similarity-of-neural-network-representations-revisited).
+
+We used RV2 to compare activation patterns in networks of identical architecture trained in different ways on a transfer learning task. In particular, we investigated why freeze training achieves superior transfer performance, above and beyond similar transfer networks where only the final layers are trained on the target task.
+
+My CCN paper is now on [arXiv](https://arxiv.org/abs/1912.02260)
