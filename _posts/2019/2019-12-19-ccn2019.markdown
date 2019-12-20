@@ -3,7 +3,7 @@ layout: post
 title: "Using similarity analysis to study convolutional neural networks"
 date: "2019-12-4 17:36:26 -0800"
 ---
-![Random Networks](images/all_mats_10_2rows_relabeled.png)
+![Random Networks](images/2019/all_mats_10_2rows_relabeled.png)
 
 I recently presented a poster entitled 'The effect of task and training on intermediate representations in convolutional neural networks revealed with modified RV similarity analysis' at the Conference on Cognitive Computational Neuroscience (CCN) in Berlin, Germany.
 
