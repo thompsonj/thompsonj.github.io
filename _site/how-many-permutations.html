@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/shiori.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="http://thompsonj.github.io/how-many-permutations">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>How many permutations should you perform? | Jessica AF Thompson</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Additions to <head> tags go here. -->
+
+  </head>
+  <body>
+  
+    <div class="navbar navbar-inverse navbar-static-top">
+  
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-toggle-wrapper visible-xs">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <a href="/" class="navbar-brand">Jessica AF Thompson</a>
+        </div>
+        <div class="collapse navbar-collapse js-navbar-collapse">
+          <ul class="navbar-nav nav" data-purplecoat="shiori" data-purplecoat-label="nav.html">
+            
+<li><a href="/about">About</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/archive">Archive</a></li>
+<!-- <li><a href="http://github.com/ellekasai/shiori" target="_blank">Download</a></li> -->
+
+          </ul>
+          <ul class="navbar-nav nav navbar-right" data-purplecoat="shiori" data-purplecoat-label="nav-right.html">
+            <!-- <li class="hidden-xs"><iframe src="http://ghbtns.com/github-btn.html?user=ellekasai&repo=shiori&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" style="margin-top: 14px;"></iframe>
+</li> -->
+<li class="hidden-xs"><iframe src="http://ghbtns.com/github-btn.html?user=thompsonj&repo=thompsonj.github.io&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" style="margin-top: 14px;"></iframe>
+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-sm-8">
+            <div class="post-header">
+  <h1 class="post-title-main">How many permutations should you perform?</h1>
+  <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+
+<p class="text-muted">10 Aug 2016</p>
+
+<p class="text-muted">Filed under <a class='category' href='/categories/stats/'>Stats</a></p>
+
+
+</div>
+<div class="post-content">
+  <p>Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions of the data. In the recent <a href="http://www.pnas.org/content/113/28/7900.abstract">paper by Eklund et al.</a> non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range.</p>
+
+<p>But how many permutations or randomizations should you perform? Answers range from “all of them” to “as many as you can” to “no more than a couple hundred”. Below I briefly describe the relationship between number of permutations performed and the confidence you can have in the resultant p-value.</p>
+
+<p>When performing all possible permutations, the randomization test of \(H_0\) is guaranteed to control the probability of Type I error under the assumption of exchangeability of the randomized conditions. However, due to computational limits, enumeration of all possible permutations is not feasible in some (many) cases. Using a Monte Carlo sampling of the permutation distribution (a subset of all possible permutations), we can estimate the p value as</p>
+
+<script type="math/tex; mode=display">\begin{align*}
+\hat{p} = \frac{1 + \sum_{i=1}^{M}I(t_i \geq t^*)}{M + 1}
+\end{align*}</script>
+
+<p>where \(M\) is the number of permutations performed, \(t^*\) is the observed test statistic and \(t_i\) is the test statistic found on the \(i^{th}\) permutation. The Monte Carlo p value \(\hat{p}\) will vary depending on which subset of all permutations are selected. Since \(\hat{p}\) is an unbiased estimator of \(p\), we can use \(\hat{p}\) to construct a confidence interval for \(p\) based on a Normal approximation of the Binomial distribution. (Note that we <em>could</em> do this part non-parametrically also, but let’s not).</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align}
+\text{standard deviation} & & s = & & \sqrt{\frac{\hat{p}(1-\hat{p})}{M}},\\
+\text{confidence interval} & & (e^-,e^+) = & & (\hat{p}-zs, \hat{p}+zs)
+\end{align} %]]></script>
+
+<p>where \(z\) is the critical value derived from the Normal curve and defines the level of confidence.</p>
+
+<p>For example, let’s say I performed 1000 permutations and achieved a \(\hat{p}\) of 0.048 (true story). Should I reject the null hypothesis? To calculate a 95% confidence interval, I will plug in \(z = 1.96\) to the equations above, which gives the interval \([0.035, 0.061]\). For an \(\alpha\) of 0.05, I cannot reject the null hypothesis because the extreme of my confidence interval exceeds 0.05. The size of the confidence interval will increase with \(\hat{p}\) and decrease with the number of permutations. So for very small \(\hat{p}\), only few permutations are needed. But for \(\hat{p}\) near \(\alpha\), it may be impossible to perform sufficient permutations to confidently reject \(H_0\).</p>
+
+<p><img src="/images/std_p.png" alt="Standard deviation" width="2000" /></p>
+
+<p>We can calculate the number of permutations required to reject \(H_0\) for a given \(\hat{p}\) by setting \(e^+ = \alpha - \epsilon\) and solving for M.</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+\begin{align*}
+e^+ & = \hat{p}+zs \\
+	& = \hat{p}+z\sqrt{\frac{\hat{p}(1-\hat{p})}{M}} = \alpha - \epsilon\\
+\\
+M & = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\big)^2}
+\end{align*} %]]></script>
+
+<p>Thus, for the example above, if I choose \(\alpha=0.05\) and \(z=1.96\) for 95% confidence, I would need to perform 43,884 permutations in order to reject \(H_0\) with \(p=0.048\). Alternatively, had I found \(p=0.03\), I would only have needed 280 permutations.</p>
+
+<p><img src="/images/how-many-perms.png" alt="Permutations required" width="2000" /></p>
+
+<p>So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform “as many as you can” to maximize the precision of your p value since you won’t know \(\hat{p}\) ahead of time. How to maximize precision while minimizing the number of required permutations appears to be an open area of research. I wonder if there could be some procedure to estimate \(\hat{p}\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose.  Please comment below if you have other ideas.</p>
+
+<h2 id="references">References</h2>
+
+<ol>
+  <li>Ernst, M. D. (2004). <a href="http://http://www.win.tue.nl/~rmcastro/AppStat2013/files/Ernst_Permutation.pdf">Permutation Methods: A Basis for Exact Inference</a>. Statistical Science, 19(4), 676–685. doi:10.1214/088342304000000396</li>
+  <li>Wallis, S. (retrieved Aug 10 2016) <a href="http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf">Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods</a></li>
+  <li><a href="http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm">Calculation Of The Confidence Interval</a> (retrieved Aug 10 2016)</li>
+  <li>Eklund, A., Nichols, T. E., &amp; Knutsson, H. (2016). <a href="http://www.pnas.org/content/113/28/7900.abstract">Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates</a>. Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113</li>
+  <li>Phipson, B., and Smyth, G. K. (2010). <a href="http://www.statsci.org/webguide/smyth/pubs/permp.pdf">Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn</a>. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.</li>
+  <li>Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/">Fewer permutations, more accurate P-values</a>. Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211</li>
+</ol>
+
+<p><em>Note: Thanks to Giancarlo Valente for his help with this post!</em></p>
+
+
+</div>
+
+  <div id="disqus_thread"></div>
+    <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
+        
+        var disqus_config = function () {
+            // this.page.url = ;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = page.title; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        
+        (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+            var d = document, s = d.createElement('script');
+            
+            s.src = '//thompsonj.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+            
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+  
+    <div class="post-navs row">
+      
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Older
+            <span class="text-muted"> &middot; </span>
+            <a href="/archive">View Archive (12)</a>
+          </h3>
+          <h2 class="post-title-link"><a href="/deep-learning-neuroscience">Papers related to the integration of deep learning and neuroscience</a></h2>
+          <p>[Towards the integration of deep learning and neuroscience]</p>
+
+
+        </div>
+      
+      
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Newer
+            
+          </h3>
+          <h2 class="post-title-link"><a href="/as-representation">Alphabet soup: Representation</a></h2>
+          <p>In the Alphabet Soup series, I disambiguate terms that are commonly used in many different ways depending on the field of study or author.</p>
+
+
+        </div>
+      
+    </div>
+  
+
+<script id="dsq-count-scr" src="//thompsonj.disqus.com/count.js" async></script>
+
+          </div>
+          <div class="col-sm-4">
+            <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<div data-purplecoat="shiori" data-purplecoat-label="sidebar.html">
+<!--   <h3 class="section-header">
+    Get Shiori
+  </h3> -->
+
+  <!-- <p><a href="https://github.com/ellekasai/shiori" target="_blank" class="btn btn-primary"><i class="fa fa-github fa-lg"></i> View on GitHub &rarr;</a></p> -->
+
+  <h3>
+    Author
+  </h3>
+
+  <p>
+    <div class="media">
+      <img src="https://avatars0.githubusercontent.com/u/796318?v=3&s=460" alt="Jessica Thompson" class="pull-left" width="90writ">
+
+
+      <div class="media-body">
+        <h4 class="media-heading">Jessica Thompson</h4>
+      </div>
+    </div>
+  </p>
+
+  <p><a href="https://twitter.com/tsonj" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-dnt="true" data-size="large">Follow @tsonj</a></p>
+
+</div>
+
+<p></p>
+<!-- <p><button data-purplecoat-toggle="shiori" class="btn btn-default"><i class="fa fa-toggle-on"></i> Toggle Customizable Sections</button></p> -->
+<p><h3>Categories</h3>
+<ul>
+
+
+<li><a href="/categories/deep-learning">Deep learning</a></li>
+
+<li><a href="/categories/journal-club">Journal club</a></li>
+
+<li><a href="/categories/python">Python</a></li>
+
+<li><a href="/categories/tools">Tools</a></li>
+
+<li><a href="/categories/alphabet-soup">Alphabet soup</a></li>
+
+<li><a href="/categories/stats">Stats</a></li>
+
+</ul></p>
+
+<p>&uarr; Powered by <a href="http://ellekasai.github.io/purplecoat.js" target="_blank">Purplecoat</a>.</p>
+          </div>
+        
+      </div>
+      <div class="row footer">
+        <div class="col-sm-12 text-center">
+          <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<div data-purplecoat="shiori" data-purplecoat-label="footer.html">
+&copy;2017.
+Built with <a href="http://jekyllrb.com/">Jekyll</a> and
+<a href="https://github.com/ellekasai/shiori">Shiori Theme</a>.
+</div>
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/purplecoat-min.js"></script>
+    <!-- Place your <script> tags here. -->
+
+<!-- Example: Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

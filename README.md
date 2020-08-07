@@ -1,4 +1,4 @@
-# :ribbon: Hi! I'm Shiori, a Bootstrap-based Jekyll Theme. :ribbon:
+<!-- # :ribbon: Hi! I'm Shiori, a Bootstrap-based Jekyll Theme. :ribbon:
 
 ![](https://cloud.githubusercontent.com/assets/992008/3955483/2b9a77ae-2702-11e4-9f28-6afb051271de.png)
 
@@ -72,6 +72,8 @@ bundle install
 
 ```
 jekyll serve --watch
+OR
+bundle exec jekyll serve --watch
 ```
 
 ### :warning: Warning :warning:
@@ -144,4 +146,4 @@ If you want to make category pages, you must manually push the generated `_site`
 
 ### License
 
-[MIT License](http://ellekasai.mit-license.org/)
+[MIT License](http://ellekasai.mit-license.org/) -->

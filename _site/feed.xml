@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jessica AF Thompson</title>
+    <description></description>
+    <link>http://thompsonj.github.io/</link>
+    <atom:link href="http://thompsonj.github.io/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 21 Mar 2017 12:47:33 -0400</pubDate>
+    <lastBuildDate>Tue, 21 Mar 2017 12:47:33 -0400</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+      <item>
+        <title>Custom workstation build</title>
+        <description>&lt;p&gt;Last weekend I built a computer. This machine was designed as a workstation for my research, considering the resources needed for the analysis and modelling of large 7T fMRI data and the training/testing of deep neural networks. I used &lt;a href=&quot;https://ca.pcpartpicker.com&quot;&gt;PCPartPicker&lt;/a&gt; to help me test out different configurations and check for compatibility issues. Here is the parts list:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/partslist.png&quot; alt=&quot;parts list&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 13.35.11.jpg&quot; alt=&quot;parts&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I had never assembled a computer before so I asked my friend Joe Thibodeau to come over to supervise. Working together, the assembly was actually relatively painless (Thanks Joe!).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 16.33.25.jpg&quot; alt=&quot;mobo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 17.22.54.jpg&quot; alt=&quot;cpucooler&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;images/2017/03/2017-03-10 18.54.43.jpg&quot; alt=&quot;case960evo&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Since I’m not using them right now, we removed both of the HDD cages for better airflow. The front 200mm fan that came with the case now has clear access to the GPU.&lt;/li&gt;
+  &lt;li&gt;The 250GB Samsung 850 EVO slips into a removeable SSD bracket behind the motherboard&lt;/li&gt;
+  &lt;li&gt;The 1TB Samsung 960 EVO is an nvme ssd with m.2 connector and so plugs right into the motherboard (where it can reach write speeds of upto 3200 MHz). There is actually a 2nd m.2 slot on the motherboad for further expansion.&lt;/li&gt;
+  &lt;li&gt;In addition to the two fans that came with the case, I added two 120mm fans on the top panel for outtake. So air comes in through the front and out and up through the back and top, creating good airflow over the GPU and CPU and a slight negative pressure inside the case (which I heard is good?).&lt;/li&gt;
+  &lt;li&gt;The PSU is a bit overkill currently but it leaves room for expansion and better to overdo than undercut with these things.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;looking-forward&quot;&gt;Looking forward&lt;/h2&gt;
+
+&lt;p&gt;I will need considerably more storage but I can start with this for now and wait for the price of high-capacity SSDs to go down even more. I’d like to take advantage of the 2nd m.2 port on the motherboard and put at least another 1TB there, perhaps in some convenient configuration with the one I already have so that I can access them as one device. There is also a spot for another SSD bracket behind the motherboard.&lt;/p&gt;
+
+&lt;p&gt;I would consider getting another GPU just to run the graphics, reserving the Pascal Titan X as just a GPGPU. But I will wait to see how it goes.&lt;/p&gt;
+
+&lt;p&gt;I’ll post some benchmark results later. But with 8-cores (16 threads) @ 3.2 GHz, 64GB of RAM, 12GB of VRAM, and 3584 CUDA cores…fun times ahead!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 18:21:33 -0400</pubDate>
+        <link>http://thompsonj.github.io/custom-workstation-build</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/custom-workstation-build</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Debian installation and configuration</title>
+        <description>&lt;h2 id=&quot;os-install&quot;&gt;OS Install&lt;/h2&gt;
+&lt;p&gt;I decided to go with Debian for the operating system because I wanted to be able to use the &lt;a href=&quot;http://neuro.debian.net/&quot;&gt;NeuroDebian&lt;/a&gt; repository. I may experiment with other Debian derivatives in the future. I wrote the Live disk image for Debian 8 “Jessie” (with firmware + nonfree) to a bootable USB drive for the installation.&lt;/p&gt;
+
+&lt;p&gt;After installation, at first I was stuck in tty1—could not get the X window system to start. Adding the following Grub options at the end of the &lt;code class=&quot;highlighter-rouge&quot;&gt;linux&lt;/code&gt; call allowed me to start the GNOME desktop with the nouveau graphics driver:
+&lt;code class=&quot;highlighter-rouge&quot;&gt;nomodeset xforcevesa vga=791&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;nvidia-driver&quot;&gt;NVIDIA Driver&lt;/h2&gt;
+
+&lt;p&gt;Useful packages/commands for debugging:
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;nvidia-detect&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;xstart&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;xinit&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;modinfo&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;dkms status&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;inxi -Fxz&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;lsmod | grep nvidia&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;lshw -s video&lt;/code&gt;
+* &lt;code class=&quot;highlighter-rouge&quot;&gt;lspci | grep VGA&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;cuda-toolkit&quot;&gt;CUDA Toolkit&lt;/h2&gt;
+
+&lt;h2 id=&quot;vpn&quot;&gt;VPN&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;to replace Cisco AnyConnect VPN: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install openconnect&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;NetworkConnect requires 32-bit libraries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;disk-partitionning&quot;&gt;Disk partitionning&lt;/h2&gt;
+
+&lt;h2 id=&quot;benchmarking&quot;&gt;Benchmarking&lt;/h2&gt;
+
+&lt;h2 id=&quot;dotfiles-and-configurations&quot;&gt;Dotfiles and configurations&lt;/h2&gt;
+
+&lt;h2 id=&quot;development-environment&quot;&gt;Development environment&lt;/h2&gt;
+&lt;p&gt;Conda&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Mar 2017 15:41:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/debian-installation-and-setup</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/debian-installation-and-setup</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Software for deep learning</title>
+        <description>&lt;p&gt;The &lt;a href=&quot;https://mila.umontreal.ca/&quot;&gt;Montreal Institute for Learning Algorithms (MILA)&lt;/a&gt; maintains a long &lt;a href=&quot;http://deeplearning.net/software_links/&quot;&gt;list of deep learning software&lt;/a&gt;. I’ve only ever used Theano and Pylearn2 and need to familiarize myself with the current state of deep learning tools as I re-boot an existing project. This post is my attempt to organize basic information about a limited set of tools to help me decide exactly what to use for my current project.&lt;/p&gt;
+
+&lt;h2 id=&quot;computation-engines-back-ends&quot;&gt;Computation Engines (Back ends)&lt;/h2&gt;
+&lt;p&gt;Name | Language | Description
+–|—|–
+&lt;a href=&quot;http://deeplearning.net/software/theano&quot;&gt;Theano&lt;/a&gt; | Python | Define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently to run on CPU or GPU
+&lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensor Flow&lt;/a&gt; | Python | Numerical computation using data flow graphs, similar to Theano
+&lt;a href=&quot;http://torch.ch/&quot;&gt;Torch&lt;/a&gt; | Lua | Scientific computing framework, Tensor computation with strong GPU acceleration
+&lt;a href=&quot;http://caffe.berkeleyvision.org/&quot;&gt;Caffe&lt;/a&gt; | Python | Machine vision library that ported Matlab fast CNNs to C and C++, not intended for other data types
+&lt;a href=&quot;http://nd4j.org/&quot;&gt;ND4J&lt;/a&gt; | Java | Scientific computing libraries for the JVM&lt;/p&gt;
+
+&lt;h2 id=&quot;interface-libraries&quot;&gt;Interface Libraries&lt;/h2&gt;
+&lt;p&gt;Name | Language  |  Description | Back ends&lt;br /&gt;
+–|—|–
+&lt;a href=&quot;https://github.com/lisa-lab/pylearn2&quot;&gt;Pylearn2&lt;/a&gt; | Python | Provides reusable common components, no longer actively developped | Theano
+&lt;a href=&quot;https://github.com/lisa-groundhog/GroundHog&quot;&gt;GroundHog&lt;/a&gt;  | Python  | Complex recurrent neural network models, development discontinued, moved to Blocks   |   Theano
+&lt;a href=&quot;http://lasagne.readthedocs.io/en/latest/index.html&quot;&gt;Lasagne&lt;/a&gt;  | Python  | Lightweight library to build and train neural networks in Theano. | Theano
+&lt;a href=&quot;https://keras.io/&quot;&gt;Keras&lt;/a&gt;  | Python  | High-level library for fast experimentation | Theano, TensorFlow
+&lt;a href=&quot;http://blocks.readthedocs.io/en/latest/&quot;&gt;Blocks&lt;/a&gt;  | Python | Quick prototyping of complex neural network models, annotates the Theano computational graph instead of adding abstractions, consists of Bricks (reusable common components), large graph management, training algorithms and training abilities.  | Theano
+&lt;a href=&quot;https://github.com/mila-udem/fuel&quot;&gt;Fuel&lt;/a&gt; | Python |  Download/iterate/preprocess datasets to pipe into Blocks  | Theano
+&lt;a href=&quot;http://pytorch.org/&quot;&gt;PyTorch&lt;/a&gt;  | Python  | Not a Python binding into a C++ framework, can use it naturally like you would use numpy / scipy / scikit-learn | Torch
+&lt;a href=&quot;http://deeplearning4j.org&quot;&gt;Deeplearning4j&lt;/a&gt; | Java | Distributed deep-learning in Java and Scala | ND4J&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;http://deeplearning.net/software_links/&lt;/li&gt;
+  &lt;li&gt;https://deeplearning4j.org/compare-dl4j-torch7-pylearn&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 21 Feb 2017 12:40:00 -0500</pubDate>
+        <link>http://thompsonj.github.io/software-for-deep-learning</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/software-for-deep-learning</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Experience, perception, and physicality in experimental music: An argument for the role of neuroscience in music phenomenology</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/amacher.jpg&quot; alt=&quot;Alphabet Soup&quot; width=&quot;300&quot; class=&quot;center-image&quot; /&gt;&lt;/p&gt;
+&lt;center&gt;&lt;em&gt;&lt;small&gt;Maryanne Amacher, composer and installation artist (1938–2009)&lt;/small&gt;&lt;/em&gt;&lt;/center&gt;
+
+&lt;p&gt;
+For some reason today I ended up scrolling back through my old tweets. I came across a link to a post on my old website entitled &quot;Experience, perception, and physicality in experimental music: An argument for the role of neuroscience in music phenomenology&quot;. It was a relatively brief blog post of ideas I later expanded on in my thesis and at some point presented at a small cognitive science conference. I was almost shocked to see my own words discussing topics that fit squarely under the umbrella of humanities more than science, citing mostly composers and scholars of sound studies and communication studies. The ideas felt so distant from what I work on now since I haven&#39;t worked on music since beginning my PhD. It&#39;s almost like I forgot that I wrote a thesis about music. However, the general philosophy that I developed working on this part of my thesis remains integral to my approach to my current research that has little to do with music. Were I to rewrite the post today, I would no doubt change some things, but I decided to copy it here verbatim more to serve for reflection.&lt;/p&gt;
+
+&lt;h2 id=&quot;experience-perception-and-physicality-in-experimental-music-an-argument-for-the-role-of-neuroscience-in-music-phenomenology&quot;&gt;Experience, perception, and physicality in experimental music: An argument for the role of neuroscience in music phenomenology&lt;/h2&gt;
+
+&lt;p&gt;Phenomenology is broadly defined as the study of the structures of experience. However, a more specific definition may describe phenomenology as one of several fields working together toward an understanding of human experience. For example, cognitive neuroscience seeks to uncover the neural mechanisms underlying human perception, while cultural studies analyzes the effect of social activities on experience.  In music, there are several disparate fields that describe various aspects of musical experience, but some of these disciplines rarely interact. I suggest that a phenomenological understanding of music is a common goal among auditory cognitive neuroscience and a variety of other fields and that a collaborative research effort will lead to a better understanding of musical experience.&lt;/p&gt;
+
+&lt;p&gt;Aden Evens, author of Sound Ideas: Music, Machines, and Experience, suggests sound as a starting point for any phenomenological study of music. This positions sound-focused disciplines like sound studies and auditory cognitive neuroscience to be especially relevant to music phenomenology. The word ‘sound’ is often used to refer to the physical vibrations corresponding to an auditory impression. Jonathan Sterne highlights, however, that sound’s very definition is based on the human capacity to hear. The word ‘sound’ sits at the delicate boundary between subjective experience and the physical correlates of perception, but common language often equates the two. There are several examples of everyday perception in which the auditory percept does not correspond to a physical waveform in the material outside the ear (e.g. the missing fundamental, the McGurk effect, binaural beats), yet these are still classified as ‘sound’.&lt;/p&gt;
+
+&lt;p&gt;The tension between the material and perceptual aspects of sound has been especially prominent in electronic music since the development of technologies that control the physical properties of sound, sometimes downplaying the importance of the human listener. I distinguish between two types of physicality in electronic music:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;material physicality, the idea that one’s control over music is one’s control over the physical properties of vibration, and&lt;/li&gt;
+  &lt;li&gt;perceptual physicality, which acknowledges and centers the human participant in the physical world.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Material physicality is common to discourses of technological control in electronic music history. For example, in The Liberation of Sound, Edgard Varèse claims that “the raw material of music is sound” and describes how new technologies will facilitate his compositions by offering precise control over sound.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, several artists, such as David Dunn and Maryanne Amacher, have placed emphasis on music as a process of perception rather than the manipulation of audible vibrations. Pauline Oliveros distinguishes between passive ‘hearing’ and active ‘listening’, the latter of which she describes as a purposeful engagement of attention and memory. Dunn, Amacher, and Oliveros challenge dominant discourses of control over sound through technology (material physicality) and instead theorize interrelations between sounds, bodies and environments (perceptual physicality). By centering human perception in their work, they serve as an important link between humanist and scientific discourses about music.&lt;/p&gt;
+
+&lt;p&gt;Psychoacoustics has traditionally stood at this junction by creating maps between physical vibration and auditory perception. Oliveros points out that there is another step to then incorporate perception into experience and suggests that the brain is integral in this process. Recent results in cognitive neuroscience on multi-stable perception support this theory by showing that the subjective interpretation of ambiguous stimuli can be decoded from brain activity. If we accept that human experience arises from neural activity, then it follows that to study the underlying neural computation is to study the experience itself. I argue that the study of the neural mechanisms underlying auditory experience is a key component in an interdisciplinary effort towards a phenomenological understanding of music.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Sep 2016 16:18:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/experience-physicality-music</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/experience-physicality-music</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Introduction to Alphabet Soup series</title>
+        <description>&lt;p&gt;&lt;img src=&quot;/images/alphabet_soup.jpg&quot; alt=&quot;Alphabet Soup&quot; width=&quot;2000&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I’m currently reading &lt;a href=&quot;https://he.palgrave.com/page/detail/?sf1=barcode&amp;amp;st1=9780230542303&quot;&gt;Understanding Psychology as a Science&lt;/a&gt; by Zoltàn Dienes (Thanks to Marian Schneider for the recommendation!). The first couple chapters review the philosophy of science of Karl Popper, Thomas Kuhn, and Imre Lakatos. In the section on Kuhn, Dienes describes the “Kuhnian crisis”. Kuhn suggests that scientific revolutions occur when significant doubt is cast on an accepted paradigm. Such a crisis can lead to new paradigms that move the field forward. In Kuhn’s view, a paradigm defines the problems that need solving and consequently how to interpret experimental observations. Kuhn used the term ‘incommensurability’ to describe the possible mismatch between paradigms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“If paradigms disagree over what needs solving, then claiming to have solved a non-existent problem by methods that do not count as providing a solution will not impress adherents of a different paradigm.” (p. 36).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In this post, I want to focus on the role of language and communication in the incommensurability of paradigms.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Paradigms are also incommensurable because of disagreement over how to describe basic observations. Terms refer in different way in different paradigms: &lt;em&gt;because&lt;/em&gt; of the change in theory of the solar system, before Copernicus the term ‘planet’ included the sun and moon; and only afterwards did it include the earth. If terms change meaning, then what counts as a basic description of the data changes too.” (p.36)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Kuhn eventually narrowed down his definition of incommensurability to exactly this: “the way terms can refer differently before and after theory change”.&lt;/p&gt;
+
+&lt;p&gt;In my research, I interface with the fields of machine learning, cognitive science and neuroscience. These fields have some shared history, but generally look at different questions. However, I would suggest that they are asking increasingly similar questions and that we may be moving towards a paradigm shift wherein these fields adopt overlapping paradigms—a shared set of problems to solve by working together. To this aim, I have decided to begin a series called Alphabet Soup for the purpose of disambiguating terms that I notice are used differently by different people in different times and places. First on my list are “representation” and “information processing”. Feel free to suggest others in the comments below. Stay tuned!&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Sep 2016 08:15:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/alphabet-soup</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/alphabet-soup</guid>
+        
+        
+        <category>alphabet soup</category>
+        
+      </item>
+    
+      <item>
+        <title>Review of &lt;em&gt;Representational models: A common framework for understanding encoding, pattern-component, and representational-similarity analysis&lt;/em&gt; by Joern Diedrichsen and Nikolaus Kriegeskorte</title>
+        <description>&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;Representational models: A common framework for understanding encoding, pattern-component, and representational-similarity analysis.
+Joern Diedrichsen, Nikolaus Kriegeskorte.
+bioRxiv 071472; doi: http://dx.doi.org/10.1101/071472&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;This &lt;a href=&quot;http://biorxiv.org/content/early/2016/08/24/071472&quot;&gt;paper&lt;/a&gt; was recently posted on bioRxiv and does not appear to have been peer-reviewed yet. It is very much along the same lines that I have been thinking lately and so I will take notes on it here. I will put my own views in italics, otherwise, what it written comes from the paper. &lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I find this quote from their introduction to well summarize the goal of this vein of research. &lt;/em&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“In order to translate advances in brain-activity measurement into advances in computational theory, researchers increasingly seek to test representational models that capture both what information is represented in a population of neurons and &lt;mark&gt;in what format it is represented&lt;/mark&gt;. Knowing the content and format of representations provides strong constraints for computational models of
+brain information processing.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;Why do we care so much about representations? Because characterizations of representations and the types of computational architectures that generate brain-like representations constrain computational models of neural information processing. I especially like that they specifically mention the goal of capturing the format of the representation and not only the information contained in population activity.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The authors point out that encoding, RSA, and PCM all evaluate the 2nd moment of the activity pattern and therefore can be described under a common formal framework.&lt;/p&gt;
+
+&lt;h2 id=&quot;definitions&quot;&gt;Definitions&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Activity profile&lt;/strong&gt;: a vector of responses of one measurement channel across the experimental conditions.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;: characterize the experimental conditions&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representation&lt;/strong&gt;: a represented variable can be linearly decoded from a downstream area
+(&lt;em&gt;I take issue with this definition. From a representation learning perspective, the  input signal has a particular representation and subsequent representational transformations are learned to make some information more accessible. The output at each stage—the result of the transformation—is a particular representation of the original signal. These representations will contain the same information or a subset of the information contained in the original signal. &lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Representational models&lt;/strong&gt;: hypotheses about the content and format of brain representations. A representational model predicts a probability distribution over the space of activity profiles.  (&lt;em&gt;But does it really?&lt;/em&gt;)&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;How should we evaluate how well the predicted distribution of activity profiles matches the measurements? From the perspective of a neuron that reads out the activity of an area, i.e. a linear decoder, any difference between activity patterns across conditions is equally meaningful. Some features (for example, stimulus intensity) may be encoded in the mean response, with overall higher activity for condition A than B. Other properties (for example, stimulus identity) may be encoded in relative activity differences, with some measurement channels responding more to condition 1 and others more to 2. If we want to summarize what information can be linearly decoded from population activity, we require a measure that captures both of these scenarios. It turns out that the second-moment matrix of the activity profiles provides a sufficient statistic for characterizing linear decodability.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;If any difference between activity patterns across conditions is equally meaningful from the perspective of a linear decoder, does that not suggest that we should be interested in more than linear decodability in order to describe the nature/format of the representation?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;They define the second moment matrix of the activity profiles as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+G  \equiv \frac{\sum^p_i \textbf{u}_i \textbf{u}^T_i}{p}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;where \(\textbf{u}\)&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Aug 2016 08:05:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/representational-models</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/representational-models</guid>
+        
+        
+        <category>stats</category>
+        
+      </item>
+    
+      <item>
+        <title>Alphabet soup: Representation</title>
+        <description>&lt;p&gt;In the Alphabet Soup series, I disambiguate terms that are commonly used in many different ways depending on the field of study or author.&lt;/p&gt;
+
+&lt;p&gt;Representation&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Representation learning&lt;/li&gt;
+  &lt;li&gt;Neuroimaging/Representational similarity analysis&lt;/li&gt;
+  &lt;li&gt;Cognitive Science -&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Marr 1984
+&amp;gt; A &lt;em&gt;representation&lt;/em&gt; is a formal system for making explicit certain entities or types of information, together with a specification of how the system does this. And I shall call the result of using a representation to describe a given entity a &lt;em&gt;description&lt;/em&gt; of the entity in that representation (Marr and Nishihara, 1978) p. 20&lt;/p&gt;
+
+&lt;p&gt;37 is the Arabic numeral system’s description of the number, which makes explicit certain information about the number’s decomposition into powers of 10. Other numerical representations would describe the same number with different specific information. From the arabic representation, it is easy to determine whether the number is a power of 10, but difficult to discover whether it is a power of 2 (difficult for us). Any representation makes some information explicit at the cost of other information. How information is represented affects what can be done with it.&lt;/p&gt;
+
+&lt;p&gt;more examples of representations:  musical score, alphabet, shape&lt;/p&gt;
+
+&lt;p&gt;“formal scheme” information processing systems use symbols to represent things, formal scheme is set of rules for putting symbols together&lt;/p&gt;
+
+&lt;p&gt;future terms:
+“generative”
+“top-down, bottom-up, inside-out, outside-in”
+“black-box”
+“feature” “dimension”&lt;/p&gt;
+</description>
+        <pubDate>Mon, 29 Aug 2016 08:05:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/as-representation</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/as-representation</guid>
+        
+        
+        <category>alphabet soup</category>
+        
+      </item>
+    
+      <item>
+        <title>How many permutations should you perform?</title>
+        <description>&lt;p&gt;Non-parametric permutation tests or randomization tests are often recommended because they require fewer assumptions of the data. In the recent &lt;a href=&quot;http://www.pnas.org/content/113/28/7900.abstract&quot;&gt;paper by Eklund et al.&lt;/a&gt; non-parametric permutation testing was the only method that consistently gave false positive rates in the expected range.&lt;/p&gt;
+
+&lt;p&gt;But how many permutations or randomizations should you perform? Answers range from “all of them” to “as many as you can” to “no more than a couple hundred”. Below I briefly describe the relationship between number of permutations performed and the confidence you can have in the resultant p-value.&lt;/p&gt;
+
+&lt;p&gt;When performing all possible permutations, the randomization test of \(H_0\) is guaranteed to control the probability of Type I error under the assumption of exchangeability of the randomized conditions. However, due to computational limits, enumeration of all possible permutations is not feasible in some (many) cases. Using a Monte Carlo sampling of the permutation distribution (a subset of all possible permutations), we can estimate the p value as&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{align*}
+\hat{p} = \frac{1 + \sum_{i=1}^{M}I(t_i \geq t^*)}{M + 1}
+\end{align*}&lt;/script&gt;
+
+&lt;p&gt;where \(M\) is the number of permutations performed, \(t^*\) is the observed test statistic and \(t_i\) is the test statistic found on the \(i^{th}\) permutation. The Monte Carlo p value \(\hat{p}\) will vary depending on which subset of all permutations are selected. Since \(\hat{p}\) is an unbiased estimator of \(p\), we can use \(\hat{p}\) to construct a confidence interval for \(p\) based on a Normal approximation of the Binomial distribution. (Note that we &lt;em&gt;could&lt;/em&gt; do this part non-parametrically also, but let’s not).&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align}
+\text{standard deviation} &amp; &amp; s = &amp; &amp; \sqrt{\frac{\hat{p}(1-\hat{p})}{M}},\\
+\text{confidence interval} &amp; &amp; (e^-,e^+) = &amp; &amp; (\hat{p}-zs, \hat{p}+zs)
+\end{align} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;where \(z\) is the critical value derived from the Normal curve and defines the level of confidence.&lt;/p&gt;
+
+&lt;p&gt;For example, let’s say I performed 1000 permutations and achieved a \(\hat{p}\) of 0.048 (true story). Should I reject the null hypothesis? To calculate a 95% confidence interval, I will plug in \(z = 1.96\) to the equations above, which gives the interval \([0.035, 0.061]\). For an \(\alpha\) of 0.05, I cannot reject the null hypothesis because the extreme of my confidence interval exceeds 0.05. The size of the confidence interval will increase with \(\hat{p}\) and decrease with the number of permutations. So for very small \(\hat{p}\), only few permutations are needed. But for \(\hat{p}\) near \(\alpha\), it may be impossible to perform sufficient permutations to confidently reject \(H_0\).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/std_p.png&quot; alt=&quot;Standard deviation&quot; width=&quot;2000&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We can calculate the number of permutations required to reject \(H_0\) for a given \(\hat{p}\) by setting \(e^+ = \alpha - \epsilon\) and solving for M.&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+\begin{align*}
+e^+ &amp; = \hat{p}+zs \\
+	&amp; = \hat{p}+z\sqrt{\frac{\hat{p}(1-\hat{p})}{M}} = \alpha - \epsilon\\
+\\
+M &amp; = \frac{\hat{p}(1-\hat{p})}{\big(\frac{\alpha - \epsilon - \hat{p}}{z}\big)^2}
+\end{align*} %]]&gt;&lt;/script&gt;
+
+&lt;p&gt;Thus, for the example above, if I choose \(\alpha=0.05\) and \(z=1.96\) for 95% confidence, I would need to perform 43,884 permutations in order to reject \(H_0\) with \(p=0.048\). Alternatively, had I found \(p=0.03\), I would only have needed 280 permutations.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/how-many-perms.png&quot; alt=&quot;Permutations required&quot; width=&quot;2000&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So how many permutations should you perform? Perhaps unsatisfactorily, it does seem prudent to perform “as many as you can” to maximize the precision of your p value since you won’t know \(\hat{p}\) ahead of time. How to maximize precision while minimizing the number of required permutations appears to be an open area of research. I wonder if there could be some procedure to estimate \(\hat{p}\) with say a parametric test first, and then use that estimate to decide how many permutations to perform, but this seems akin to p-hacking somehow. In any case, we now know how to reason about the confidence of our p-values, whatever number of permutations we choose.  Please comment below if you have other ideas.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Ernst, M. D. (2004). &lt;a href=&quot;http://http://www.win.tue.nl/~rmcastro/AppStat2013/files/Ernst_Permutation.pdf&quot;&gt;Permutation Methods: A Basis for Exact Inference&lt;/a&gt;. Statistical Science, 19(4), 676–685. doi:10.1214/088342304000000396&lt;/li&gt;
+  &lt;li&gt;Wallis, S. (retrieved Aug 10 2016) &lt;a href=&quot;http://http://www.ucl.ac.uk/english-usage/staff/sean/resources/binomialpoisson.pdf&quot;&gt;Binomial confidence intervals and contingency tests: mathematical fundamentals and the evaluation of alternative methods&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.bioconsulting.com/calculation_of_the_confidence_interval.htm&quot;&gt;Calculation Of The Confidence Interval&lt;/a&gt; (retrieved Aug 10 2016)&lt;/li&gt;
+  &lt;li&gt;Eklund, A., Nichols, T. E., &amp;amp; Knutsson, H. (2016). &lt;a href=&quot;http://www.pnas.org/content/113/28/7900.abstract&quot;&gt;Cluster failure: Why fMRI inferences for spatial extent have inflated false-positive rates&lt;/a&gt;. Proceedings of the National Academy of Sciences, 113(28), 7900–7905. doi:10.1073/pnas.1602413113&lt;/li&gt;
+  &lt;li&gt;Phipson, B., and Smyth, G. K. (2010). &lt;a href=&quot;http://www.statsci.org/webguide/smyth/pubs/permp.pdf&quot;&gt;Permutation p-values should never be zero: calculating exact p-values when permutations are randomly drawn&lt;/a&gt;. Stat. Appl. Genet. Molec. Biol. Volume 9, Issue 1, Article 39.&lt;/li&gt;
+  &lt;li&gt;Theo A. Knijnenburg, Lodewyk F. A. Wessels, Marcel J. T. Reinders, Ilya Shmulevich (2009) &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2687965/&quot;&gt;Fewer permutations, more accurate P-values&lt;/a&gt;. Bioinformatics.  25(12): i161–i168. doi: 10.1093/bioinformatics/btp211&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;em&gt;Note: Thanks to Giancarlo Valente for his help with this post!&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 10 Aug 2016 08:05:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/how-many-permutations</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/how-many-permutations</guid>
+        
+        
+        <category>stats</category>
+        
+      </item>
+    
+      <item>
+        <title>Papers related to the integration of deep learning and neuroscience</title>
+        <description>&lt;p&gt;[Towards the integration of deep learning and neuroscience]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sciencedirect.com/science/article/pii/S0022249616300475&quot;&gt;Integrating theoretical models with functional neuroimaging&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 30 Jul 2016 09:34:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/deep-learning-neuroscience</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/deep-learning-neuroscience</guid>
+        
+        
+        <category>Deep learning</category>
+        
+      </item>
+    
+      <item>
+        <title>List of tools for encoding style neuroimage analysis</title>
+        <description>&lt;h2 id=&quot;matlab&quot;&gt;MATLAB&lt;/h2&gt;
+
+&lt;h2 id=&quot;python&quot;&gt;Python&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;pyMVPA&lt;/li&gt;
+  &lt;li&gt;nilearn&lt;/li&gt;
+  &lt;li&gt;pandas&lt;/li&gt;
+  &lt;li&gt;seaborn&lt;/li&gt;
+  &lt;li&gt;matplotlib&lt;/li&gt;
+  &lt;li&gt;scikit-learn&lt;/li&gt;
+  &lt;li&gt;statsmodels&lt;/li&gt;
+  &lt;li&gt;nipype&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;papaya&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Name&lt;/th&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+      &lt;th&gt;Use&lt;/th&gt;
+      &lt;th&gt;Use&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Elle&lt;/td&gt;
+      &lt;td&gt;Kasai&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://twitter.com/ellekasai&quot;&gt;@ellekasai&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Fri, 29 Jul 2016 09:34:00 -0400</pubDate>
+        <link>http://thompsonj.github.io/open-ni-tools</link>
+        <guid isPermaLink="true">http://thompsonj.github.io/open-ni-tools</guid>
+        
+        
+        <category>Python</category>
+        
+        <category>Tools</category>
+        
+      </item>
+    
+  </channel>
+</rss>

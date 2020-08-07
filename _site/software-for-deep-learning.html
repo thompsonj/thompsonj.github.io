@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/stylesheets/shiori.css">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="canonical" href="http://thompsonj.github.io/software-for-deep-learning">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>Software for deep learning | Jessica AF Thompson</title>
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Additions to <head> tags go here. -->
+
+  </head>
+  <body>
+  
+    <div class="navbar navbar-inverse navbar-static-top">
+  
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-toggle-wrapper visible-xs">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".js-navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <a href="/" class="navbar-brand">Jessica AF Thompson</a>
+        </div>
+        <div class="collapse navbar-collapse js-navbar-collapse">
+          <ul class="navbar-nav nav" data-purplecoat="shiori" data-purplecoat-label="nav.html">
+            
+<li><a href="/about">About</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><a href="/archive">Archive</a></li>
+<!-- <li><a href="http://github.com/ellekasai/shiori" target="_blank">Download</a></li> -->
+
+          </ul>
+          <ul class="navbar-nav nav navbar-right" data-purplecoat="shiori" data-purplecoat-label="nav-right.html">
+            <!-- <li class="hidden-xs"><iframe src="http://ghbtns.com/github-btn.html?user=ellekasai&repo=shiori&type=watch&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" style="margin-top: 14px;"></iframe>
+</li> -->
+<li class="hidden-xs"><iframe src="http://ghbtns.com/github-btn.html?user=thompsonj&repo=thompsonj.github.io&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" style="margin-top: 14px;"></iframe>
+</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-sm-8">
+            <div class="post-header">
+  <h1 class="post-title-main">Software for deep learning</h1>
+  <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+
+<p class="text-muted">21 Feb 2017</p>
+
+
+</div>
+<div class="post-content">
+  <p>The <a href="https://mila.umontreal.ca/">Montreal Institute for Learning Algorithms (MILA)</a> maintains a long <a href="http://deeplearning.net/software_links/">list of deep learning software</a>. I’ve only ever used Theano and Pylearn2 and need to familiarize myself with the current state of deep learning tools as I re-boot an existing project. This post is my attempt to organize basic information about a limited set of tools to help me decide exactly what to use for my current project.</p>
+
+<h2 id="computation-engines-back-ends">Computation Engines (Back ends)</h2>
+<p>Name | Language | Description
+–|—|–
+<a href="http://deeplearning.net/software/theano">Theano</a> | Python | Define, optimize, and evaluate mathematical expressions involving multi-dimensional arrays efficiently to run on CPU or GPU
+<a href="https://www.tensorflow.org/">Tensor Flow</a> | Python | Numerical computation using data flow graphs, similar to Theano
+<a href="http://torch.ch/">Torch</a> | Lua | Scientific computing framework, Tensor computation with strong GPU acceleration
+<a href="http://caffe.berkeleyvision.org/">Caffe</a> | Python | Machine vision library that ported Matlab fast CNNs to C and C++, not intended for other data types
+<a href="http://nd4j.org/">ND4J</a> | Java | Scientific computing libraries for the JVM</p>
+
+<h2 id="interface-libraries">Interface Libraries</h2>
+<p>Name | Language  |  Description | Back ends<br />
+–|—|–
+<a href="https://github.com/lisa-lab/pylearn2">Pylearn2</a> | Python | Provides reusable common components, no longer actively developped | Theano
+<a href="https://github.com/lisa-groundhog/GroundHog">GroundHog</a>  | Python  | Complex recurrent neural network models, development discontinued, moved to Blocks   |   Theano
+<a href="http://lasagne.readthedocs.io/en/latest/index.html">Lasagne</a>  | Python  | Lightweight library to build and train neural networks in Theano. | Theano
+<a href="https://keras.io/">Keras</a>  | Python  | High-level library for fast experimentation | Theano, TensorFlow
+<a href="http://blocks.readthedocs.io/en/latest/">Blocks</a>  | Python | Quick prototyping of complex neural network models, annotates the Theano computational graph instead of adding abstractions, consists of Bricks (reusable common components), large graph management, training algorithms and training abilities.  | Theano
+<a href="https://github.com/mila-udem/fuel">Fuel</a> | Python |  Download/iterate/preprocess datasets to pipe into Blocks  | Theano
+<a href="http://pytorch.org/">PyTorch</a>  | Python  | Not a Python binding into a C++ framework, can use it naturally like you would use numpy / scipy / scikit-learn | Torch
+<a href="http://deeplearning4j.org">Deeplearning4j</a> | Java | Distributed deep-learning in Java and Scala | ND4J</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>http://deeplearning.net/software_links/</li>
+  <li>https://deeplearning4j.org/compare-dl4j-torch7-pylearn</li>
+</ul>
+
+</div>
+
+
+
+  
+    <div class="post-navs row">
+      
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Older
+            <span class="text-muted"> &middot; </span>
+            <a href="/archive">View Archive (12)</a>
+          </h3>
+          <h2 class="post-title-link"><a href="/experience-physicality-music">Experience, perception, and physicality in experimental music: An argument for the role of neuroscience in music phenomenology</a></h2>
+          <p><img src="/images/amacher.jpg" alt="Alphabet Soup" width="300" class="center-image" /></p>
+<center><em><small>Maryanne Amacher, composer and installation artist (1938–2009)</small></em></center>
+
+
+        </div>
+      
+      
+        <div class="col-md-6 post-nav">
+          <h3 class="section-header">
+            Newer
+            
+          </h3>
+          <h2 class="post-title-link"><a href="/debian-installation-and-setup">Debian installation and configuration</a></h2>
+          <h2 id="os-install">OS Install</h2>
+<p>I decided to go with Debian for the operating system because I wanted to be able to use the <a href="http://neuro.debian.net/">NeuroDebian</a> repository. I may experiment with other Debian derivatives in the future. I wrote the Live disk image for Debian 8 “Jessie” (with firmware + nonfree) to a bootable USB drive for the installation.</p>
+
+
+        </div>
+      
+    </div>
+  
+
+<script id="dsq-count-scr" src="//thompsonj.disqus.com/count.js" async></script>
+
+          </div>
+          <div class="col-sm-4">
+            <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<div data-purplecoat="shiori" data-purplecoat-label="sidebar.html">
+<!--   <h3 class="section-header">
+    Get Shiori
+  </h3> -->
+
+  <!-- <p><a href="https://github.com/ellekasai/shiori" target="_blank" class="btn btn-primary"><i class="fa fa-github fa-lg"></i> View on GitHub &rarr;</a></p> -->
+
+  <h3>
+    Author
+  </h3>
+
+  <p>
+    <div class="media">
+      <img src="https://avatars0.githubusercontent.com/u/796318?v=3&s=460" alt="Jessica Thompson" class="pull-left" width="90writ">
+
+
+      <div class="media-body">
+        <h4 class="media-heading">Jessica Thompson</h4>
+      </div>
+    </div>
+  </p>
+
+  <p><a href="https://twitter.com/tsonj" class="twitter-follow-button" data-show-screen-name="false" data-show-count="true" data-dnt="true" data-size="large">Follow @tsonj</a></p>
+
+</div>
+
+<p></p>
+<!-- <p><button data-purplecoat-toggle="shiori" class="btn btn-default"><i class="fa fa-toggle-on"></i> Toggle Customizable Sections</button></p> -->
+<p><h3>Categories</h3>
+<ul>
+
+
+<li><a href="/categories/deep-learning">Deep learning</a></li>
+
+<li><a href="/categories/journal-club">Journal club</a></li>
+
+<li><a href="/categories/python">Python</a></li>
+
+<li><a href="/categories/tools">Tools</a></li>
+
+<li><a href="/categories/alphabet-soup">Alphabet soup</a></li>
+
+<li><a href="/categories/stats">Stats</a></li>
+
+</ul></p>
+
+<p>&uarr; Powered by <a href="http://ellekasai.github.io/purplecoat.js" target="_blank">Purplecoat</a>.</p>
+          </div>
+        
+      </div>
+      <div class="row footer">
+        <div class="col-sm-12 text-center">
+          <!-- Feel free to remove this div. Uses purplecoat: http://ellekasai.github.io/purplecoat.js -->
+<div data-purplecoat="shiori" data-purplecoat-label="footer.html">
+&copy;2017.
+Built with <a href="http://jekyllrb.com/">Jekyll</a> and
+<a href="https://github.com/ellekasai/shiori">Shiori Theme</a>.
+</div>
+        </div>
+      </div>
+    </div>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/purplecoat-min.js"></script>
+    <!-- Place your <script> tags here. -->
+
+<!-- Example: Twitter -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  </body>
+</html>

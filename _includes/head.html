@@ -1,1 +1,4 @@
 <!-- Additions to <head> tags go here. -->
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}
