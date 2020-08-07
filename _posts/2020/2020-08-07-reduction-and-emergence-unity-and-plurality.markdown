@@ -3,7 +3,7 @@ layout: post
 title: 'Rough notes on reduction and emergence, unity and plurality'
 date: '2020-08-07 13:22'
 ---
-![Reductionism](thompsonj.github.io/images/2020/Reductionism_Digesting_Duck.jpg)
+![Reductionism](https://upload.wikimedia.org/wikipedia/commons/8/8f/Digesting_Duck.jpg)
 
 ## Michael Silberstein (2002) Reduction, Emergence and Explanation, in _The Blackwell Guide to the Philosophy of Science_
 
