@@ -28,7 +28,7 @@ Context-specific strategies for reduction, rather than universal. Good reason to
 
 Although some would still say that it is just our ignorance that prevents us from unification. (_I'm not convinced_)
 
-## Miłkowski, M., & Hohol, M. (2020). Explanations in cognitive science: Unification versus pluralism. Synthese.
+## Miłkowski, M., & Hohol, M. (2020). Explanations in cognitive science: Unification versus pluralism. _Synthese_.
 
 Special issue in _Synthese_ on Explanations in cognitive science: unification versus pluralism. "Does cognitive science need a grand unifying theory? Should explanatory pluralism be embraced instead? Or maybe local integrative efforts are needed? What are the advantages of explanatory unification as compared to the benefits of explanatory pluralism?"
 
