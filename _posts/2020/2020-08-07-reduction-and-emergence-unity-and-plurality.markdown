@@ -4,7 +4,7 @@ title: 'Rough notes on reduction and emergence, unity and plurality'
 date: '2020-08-07 13:22'
 ---
 
-# Michael Silberstein (2002) Reduction, Emergence and Explanation, in _The Blackwell Guide to the Philosophy of Science_
+## Michael Silberstein (2002) Reduction, Emergence and Explanation, in _The Blackwell Guide to the Philosophy of Science_
 
 Two types of reduction:
 
@@ -27,7 +27,7 @@ Context-specific strategies for reduction, rather than universal. Good reason to
 
 Although some would still say that it is just our ignorance that prevents us from unification. (_I'm not convinced_)
 
-# Miłkowski, M., & Hohol, M. (2020). Explanations in cognitive science: Unification versus pluralism. Synthese.
+##Miłkowski, M., & Hohol, M. (2020). Explanations in cognitive science: Unification versus pluralism. Synthese.
 
 Special issue in _Synthese_ on Explanations in cognitive science: unification versus pluralism. "Does cognitive science need a grand unifying theory? Should explanatory pluralism be embraced instead? Or maybe local integrative efforts are needed? What are the advantages of explanatory unification as compared to the benefits of explanatory pluralism?"
 
@@ -41,11 +41,11 @@ Problems for the received view of reduction in cognitive science:
 * Multiple realizability: "the kinds in the theory to be reduced cannot be neatly identified with (collections of) the kinds in the reducing theory, in which there are usually multiple possible kinds that could realize the kinds of the theory to be reduced"
 * received view requires theories to take the form of propositional logic and law like statements (and typically assumes a variant of the deductive nomological theory of explanation which states that explanations are deductive arguments). Law like statements, generally defined as exceptionless regularities, are rarely found in cognitive science. Instead, theories in cogsci "are sometimes stated in terms of formal specifications in artificial languages, not all of which are declarative; some are stated in a mixture of diagrams and verbal descriptions, and some as software" (Cooper and Guest 2014) so we can derive one theory from another (as the received view of reductionism would have us do)
 
-## Integrative coordination
+### Integrative coordination
 Coordinated or integrated fields, theories, or explanations are not fully autonomous, e.g. psychological theories are constrained by biological facts.
 Example: Cognitive neuroscience as the integration of cognitive psychology and neuroscience, searching for the neural mechanisms underlying cognitive phenomena.
 
-### Carl Craver's 'Mosaic Unity of Neuroscience' view
+#### Carl Craver's 'Mosaic Unity of Neuroscience' view
 Craver proposes that good explanations in neuroscience describe constitutive mechanisms, span multiple levels and integrate multiple fields.
 "mechanistic explanations force piecemeal integration" because
 * describing constitutive mechanisms involves identification of the component parts, and how their organization and activities realize the phenomenon to be explained
