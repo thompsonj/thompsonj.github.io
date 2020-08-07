@@ -28,7 +28,7 @@ Context-specific strategies for reduction, rather than universal. Good reason to
 
 Although some would still say that it is just our ignorance that prevents us from unification. (_I'm not convinced_)
 
-##Miłkowski, M., & Hohol, M. (2020). Explanations in cognitive science: Unification versus pluralism. Synthese.
+## Miłkowski, M., & Hohol, M. (2020). Explanations in cognitive science: Unification versus pluralism. Synthese.
 
 Special issue in _Synthese_ on Explanations in cognitive science: unification versus pluralism. "Does cognitive science need a grand unifying theory? Should explanatory pluralism be embraced instead? Or maybe local integrative efforts are needed? What are the advantages of explanatory unification as compared to the benefits of explanatory pluralism?"
 
@@ -40,7 +40,7 @@ Two, non-exhaustive types of unification:
 
 Problems for the received view of reduction in cognitive science:
 * Multiple realizability: "the kinds in the theory to be reduced cannot be neatly identified with (collections of) the kinds in the reducing theory, in which there are usually multiple possible kinds that could realize the kinds of the theory to be reduced"
-* received view requires theories to take the form of propositional logic and law like statements (and typically assumes a variant of the deductive nomological theory of explanation which states that explanations are deductive arguments). Law like statements, generally defined as exceptionless regularities, are rarely found in cognitive science. Instead, theories in cogsci "are sometimes stated in terms of formal specifications in artificial languages, not all of which are declarative; some are stated in a mixture of diagrams and verbal descriptions, and some as software" (Cooper and Guest 2014) so we can derive one theory from another (as the received view of reductionism would have us do)
+* received view requires theories to take the form of propositional logic and law like statements (and typically assumes a variant of the deductive nomological theory of explanation which states that explanations are deductive arguments). Law like statements, generally defined as exceptionless regularities, are rarely found in cognitive science. Instead, theories in cogsci "are sometimes stated in terms of formal specifications in artificial languages, not all of which are declarative; some are stated in a mixture of diagrams and verbal descriptions, and some as software" (Cooper and Guest 2014) so we cannot derive one theory from another (as the received view of reductionism would have us do)
 
 ### Integrative coordination
 Coordinated or integrated fields, theories, or explanations are not fully autonomous, e.g. psychological theories are constrained by biological facts.
@@ -59,7 +59,7 @@ Explanatory pluralism is default in cog sci, and this _can_ go hand in hand with
 ### Unifying cognitive science
 
 Alan Newell: "without unification, cognitive science will cease to be cumulative"
-In 1973, he wrote "You can't play 20 questions with Nature and Win" in which he questioned where current trends in experimental psychology would lead. He finds a large chasm between the general concerns of high level theories and the day-to-day decisions of psychological experiments which occur at lower levels. He makes the observation that much of what the field of experimental psychology accomplishes is description of increasingly long lists of psychological capacities and phenomena—cataloguing psychological effects—without much attempt to unify these phenomena or to build theories that would encompass them. He sees this as a crisis, that, if left unchecked, would leave the field to stagnate. Later (1990), he published _Unified Theories of Cognition_, where grand unifying theories were supposed to be the cure for the crisis of non-progress he observed in psychology, but without an appeal to reduction. This is perhaps a third sense of unification that is more about understanding and explanation rather than reduction or integration. The alternative strategies proposed in cogsci might take the form of:
+In 1973, he wrote the article "You can't play 20 questions with Nature and Win" in which he questioned where current trends in experimental psychology would lead. He finds a large chasm between the general concerns of high level theories and the day-to-day decisions of psychological experiments which occur at lower levels. He makes the observation that much of what the field of experimental psychology accomplishes is description of increasingly long lists of psychological capacities and phenomena—cataloguing psychological effects—without much attempt to unify these phenomena or to build theories that would encompass them. He sees this as a crisis, that, if left unchecked, would leave the field to stagnate. Later (1990), he published _Unified Theories of Cognition_, where grand unifying theories were supposed to be the cure for the crisis of non-progress he observed in psychology, but without an appeal to reduction. This is perhaps a third sense of unification that is more about understanding and explanation rather than reduction or integration. The alternative strategies proposed in cogsci might take the form of:
 * building a theory of entities that are responsible for all observed phenomena (defended in mainstream cogsci, e.g. unified theories of cognition that are theories about mechanisms or representations underlying all of cognition),
   - Difficult to build and also to test.
 * or study general principles that govern them, appeal to grand principles:
@@ -69,7 +69,7 @@ In 1973, he wrote "You can't play 20 questions with Nature and Win" in which he 
     - does not suffice to explain individual phenomena, does not offer local misunderstanding
 
 ### Unification and pluralism in practice
-"For defenders of grand principles, simplicity and the universal scope of a theory may be more important than its evidential support. Integration seems more related to evidential support and consistency instead. The defenders of the new mechanistic approach to explanation, for example, usually treat generality as an optional feature of scientific explanation (Craver 2008). Thus, a defender of integration may proceed in a different fashion than a defender of unificatory strategies."
+"For defenders of grand principles, simplicity and the universal scope of a theory may be more important than its evidential support. Integration seems more related to evidential support and consistency instead. The defenders of the new mechanistic approach to explanation, for example, usually treat generality as an optional feature of scientific explanation (Craver 2008). Thus, a defender of integration may proceed in a different fashion than a defender of unificatory strategies." (p. 9)
 
 Unification, defined by dimensions like simplicity, generality and scope, and systematicity, still constitutes a notable virtue of research traditions, even if attempts for grand unifying theories fail to encompass all cognition.
 
