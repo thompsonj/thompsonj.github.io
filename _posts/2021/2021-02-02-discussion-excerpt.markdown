@@ -3,7 +3,7 @@ layout: "post"
 title: "Discussion excerpt"
 date: "2021-02-02 12:34:26 -0500"
 ---
-*The  following is an excerpt from the Discussion chapter of my doctoral dissertation which was sucessfully defended Nov 20, 2020.*
+*The following is a mildly edited excerpt from the Discussion chapter of my doctoral dissertation which was successfully defended on Nov 20, 2020.*
 
 ## On using deep neural networks as models of sensory systems
 The use of DNNs as models of animal sensory systems is largely in the context of a model comparison approach to scientific discovery. Through evaluation, comparison, and iterative refinement, models hopefully get closer to some truth about the phenomena under study (or at least the models become more useful, if one prefers a more pragmatic, less realist account). Within this view, models that are more constrained are likely to be closer to the truth since they occupy smaller region of the search space known to include the true model (Fig 1). In practice, however, a priori we don’t usually know which constraints are necessary to answer a specific scientific question or how a particular set of constraints will affect our exploration of the hypothesis space.
