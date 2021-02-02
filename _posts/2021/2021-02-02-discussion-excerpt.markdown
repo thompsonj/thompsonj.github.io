@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "Discussion excerpt"
+title: "Epistemic diversity in a unified neuro-AI"
 date: "2021-02-02 12:34:26 -0500"
 ---
 *The following is a mildly edited excerpt from the Discussion chapter of my doctoral dissertation which was successfully defended on Nov 20, 2020.*
