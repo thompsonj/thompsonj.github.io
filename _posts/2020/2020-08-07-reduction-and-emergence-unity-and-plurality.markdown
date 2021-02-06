@@ -35,7 +35,7 @@ Special issue in _Synthese_ on Explanations in cognitive science: unification ve
 Original motivation for the interdisciplinary field of cognitive science: multiple research perspectives would be required to explain cognitive phenomena. Founders of cogsci were largely pluralistic in their views on explanation, but advocated for a unified research discipline, i.e. a single object of study but pluralistic methodology.
 
 Two, non-exhaustive types of unification:
-* Reductive unity: that all sciences should be reduced on to grant unifying theory, gained some popularity in the 60s. (Carnap 1928, Oppenheim and Putnam 1958). (_Can safely reject this at this point_)
+* Reductive unity: that all sciences should be reduced to one grand unifying theory, gained some popularity in the 60s. (Carnap 1928, Oppenheim and Putnam 1958). (_Can safely reject this at this point_)
 * Integrative coordination: Scientists from multiple fields should coordinate, gathering evidence from multiple sources but ultimately building integrated models (Neurath 1937, Potochnik 2011) (_I'm still on board with this one_)
 
 Problems for the received view of reduction in cognitive science:
