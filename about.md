@@ -32,6 +32,11 @@ While my research trajectory has been varied, it has not been haphazard. I have 
 
 Looking forward, I see a niche that I am well-positioned to contribute to. There is a conceptual gap that plagues efforts to explain the function of neural networks. We need a new philosophical theory of explanation that would apply equally to artificial and biological intelligence. With such a framework, we can develop new ways to study artificial systems and formalize how they might help to better understand biological intelligent systems. I am not currently interested in working with biological neural data because I feel that there is so much theoretical and in silico work to do before I would be able to decide what experiment to run. In practice, I imagine exploring new methods to analyze and probe artificial systems, motivated by fundamental questions in deep learning theory and neuroscience, while simultaneously developing a philosophical framework to account for good explanations of intelligence. Long term, this may generate hypotheses about biological intelligent systems that can be tested through targeted experiments. I think this is how I can best utilize my diverse skills to serve the larger scientific goal of discovering the general principles that underlie biological and artificial intelligence. -->
 
+[Google Scholar](https://scholar.google.com/citations?user=TJweLP0AAAAJ&hl=en)
+
+## Recent recorded lectures:
+* [Comparing the activity of artificial and biological neural networks](https://www.crowdcast.io/e/main2020/30) at the Montreal Artificial Intelligence and Neuroscience Symposium (MAIN2020)
+* [Introduction to Scientific Explanation of Cognition](https://www.crowdcast.io/e/senai2021/1) at the Symposium on Explanation in Neuroscience and Artificial Intelligence
 
 
 <!-- You can find the source code for the Jekyll new theme at:
