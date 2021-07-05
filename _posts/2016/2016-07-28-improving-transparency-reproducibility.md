@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Review: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research"
+title:  "Summary: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research"
 date:   2016-07-28 14:05:00 +0200
 comments: true
 categories: [Journal club]
