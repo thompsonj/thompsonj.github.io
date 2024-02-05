@@ -36,7 +36,14 @@ Looking forward, I see a niche that I am well-positioned to contribute to. There
 
 [Google Scholar](https://scholar.google.com/citations?user=TJweLP0AAAAJ&hl=en)
 
-## Recent recorded lectures:
+## News:
+* I will present my postdoctoral research at COSYNE 2024 in Lisbon.
+* December 2023: I have begun an NSERC postdoctoral fellowship which allows me to continue my resarch in Oxford.
+* December 2023: I am now also a Junior Research Fellow at Somerville College, University of Oxford.
+* December 2023: Chris and my [BBS commentary "Thinking beyond the ventral stream"](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/thinking-beyond-the-ventral-stream-comment-on-bowers-et-al/DAF3167C24D9BABD79086780A2B433B9) is published 
+* October 2023: I presented my postdoctoral research at the Advances in NeuroAI workshop in Montreal, Canada
+
+## Example recorded lectures:
 * [Comparing the activity of artificial and biological neural networks](https://www.crowdcast.io/e/main2020/30) at the Montreal Artificial Intelligence and Neuroscience Symposium (MAIN2020)
 * [Introduction to Scientific Explanation of Cognition](https://www.crowdcast.io/e/senai2021/1) at the Symposium on Explanation in Neuroscience and Artificial Intelligence
 
