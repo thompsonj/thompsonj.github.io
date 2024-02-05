@@ -42,6 +42,7 @@ Looking forward, I see a niche that I am well-positioned to contribute to. There
 * December 2023: I am now also a Junior Research Fellow at Somerville College, University of Oxford.
 * December 2023: Chris and my [BBS commentary "Thinking beyond the ventral stream"](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/thinking-beyond-the-ventral-stream-comment-on-bowers-et-al/DAF3167C24D9BABD79086780A2B433B9) is published 
 * October 2023: I presented my postdoctoral research at the Advances in NeuroAI workshop in Montreal, Canada
+* Augsut 2023: I participated in a [GAC](https://gac.ccneuro.org/gacs-by-year/2023-gacs/2023-2) and presented a poster at CCN 2023 in Oxford, UK
 
 ## Example recorded lectures:
 * [Comparing the activity of artificial and biological neural networks](https://www.crowdcast.io/e/main2020/30) at the Montreal Artificial Intelligence and Neuroscience Symposium (MAIN2020)
