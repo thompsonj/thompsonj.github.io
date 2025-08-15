@@ -6,7 +6,7 @@ date: "2025-08-12 12:00:00 +0100"
 
 ![Science for social good tree](../images/2025/science_for_social_good_tree.png)
 
-_The following is a transcript of the opening remarks given at the [Science for Social Good satellite event](https://anneurai.net/2025/05/05/ccn-for-social-good-2025-satellite-event/) at the Cognitive Computational Neuroscience conference organized by Anne Urai, Ili Ma and myself in Amsterdam on August 11, 2025. You can read Georgia Turner's blog post about the event on Anne Urai's website._
+_The following is a transcript of the opening remarks given at the [Science for Social Good satellite event](https://anneurai.net/2025/05/05/ccn-for-social-good-2025-satellite-event/) at the Cognitive Computational Neuroscience conference organized by Anne Urai, Ili Ma and myself in Amsterdam on August 11, 2025. Check out [Georgia Turner](https://bsky.app/profile/georgiaturner.bsky.social)'s [blog post](https://anneurai.net/2025/08/14/reflections-on-the-science-for-social-good-satellite-event-at-ccn-2025/) about the event posted on Anne Urai's website._
 
 [Prezi](https://prezi.com/view/ocYWFEGbHdeNnbWJmW15/)
 
