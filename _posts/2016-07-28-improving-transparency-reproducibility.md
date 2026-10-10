@@ -90,9 +90,9 @@ How to improve the quality and "sharability" of your code:
 
 * In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript.
 * All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.
-* See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) [report](http://www. humanbrainmapping.org/cobidas/) for detailed recommendations on reporting.
+* See  the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) [report](https://www.humanbrainmapping.org/cobidas/) for detailed recommendations on reporting.
 * Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal. (See Niko Kriegeskorte's post [The Selfish Scientist's Guide to Preprint Posting](https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/))
-* Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See [SherPa/ROMEO](http://www.sherpa.ac. uk/romeo) to check what you are allowed to share.
+* Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See [SherPa/ROMEO](https://v2.sherpa.ac.uk/romeo/) to check what you are allowed to share.
 
 ## Emerging Trends
 
