@@ -1,0 +1,316 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> Summary: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research | Jessica A. F. Thompson </title> <meta name="author" content="Jessica A. F. Thompson"> <meta name="description" content="I study learning in humans and machines, in individuals and in groups. "> <meta name="keywords" content="learning, teaching, communication, cooperation, cognitive science, computational neuroscience, neural networks, AI, large language models, AI for science, University of Glasgow"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%A7%A0&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://thompsonj.github.io/improving-transparency-reproducibility.html"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Jessica</span> A. F. Thompson </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/join/">join </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Summary: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research</h1> <p class="post-meta"> Created on July 28, 2016 </p> <p class="post-tags"> <i class="fa-solid fa-calendar fa-sm"></i> 2016   ·   <i class="fa-solid fa-tag fa-sm"></i> Journal club </p> </header> <article class="post-content"> <div id="markdown-content"> <p><img src="https://journals.plos.org/plosbiology/article/figure/image?size=inline&amp;id=info:doi/10.1371/journal.pbio.1002506.g001" alt="Fig 1. Three pillars of Open Science: data, code, and papers." class="img-fluid"> <em>Three pillars of Open Science: data, code, and papers.</em></p> <div class="alert alert-success" role="alert">Gorgolewski KJ, Poldrack RA (2016) A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research. PLoS Biol 14(7): e1002506</div> <blockquote> <p>“Having access to a plethora of denoising and modelling algorithms can be both good and bad. On one side, there are many aspects of brain anatomy and function that we can extract and use as dependent variables, which maximizes the chances of finding the most appropriate and powerful measure to ask a particular question. On the other side, the incentive structure of the current scientific enterprise combined with methodological plurality can be a dangerous mix. Scientists rarely approach a problem without a theory, hypothesis, or a set of assumptions, and the high number of “researcher degrees of freedom” can implicitly drive researchers to choose analysis workflows that provide results that are most consistent with their hypotheses.”</p> </blockquote> <p>As we stand on the verge of a reproducibility crisis<a href="http://pps.sagepub.com/content/7/6/657" rel="external nofollow noopener" target="_blank">*</a> in neuroscience and psychology research, Gorgolewski and Poldrack advocate for the adoption of open science practices to improve transparency and reproducibility. Their <a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002506" rel="external nofollow noopener" target="_blank">paper</a> succinctly outlines best practices for dealing with data, code and publication in ways that maximize reproducibility while minimizing additional effort. Here is my bullet point version of their paper.</p> <h2 id="data">Data</h2> <p>Openly accessible data allows for:</p> <ul> <li>validation of results</li> <li>novel analyses</li> <li>combining data from multiple sources</li> <li>more citations</li> <li>maximizing benefits to research participants</li> </ul> <p>But there are several hurdles to making neuroimaging data openly available:</p> <h3 id="consent-forms">Consent Forms</h3> <p>Get written consent from subject to share their data (and therefore maximize the benefits or their participation!). The authors have prepared several <a href="http://open-brain-consent.readthedocs.io/en/latest/ultimate.html" rel="external nofollow noopener" target="_blank">templates</a> of data sharing clauses that can be inserted into consent forms. They provide clauses for normal populations and generic data and also clauses for sensitive populations/data, which may require that some of the data be approved by a data sharing committee to ensure protection of sensitive information.</p> <h3 id="data-organization">Data Organization</h3> <p>We need common standards of data description and organization to facilitate sharing. The <a href="http://www.nature.com/articles/sdata201644" rel="external nofollow noopener" target="_blank">Brain Imaging Data Structure (BIDS)</a> was recently proposed as a simple scheme to describe most MRI datasets.</p> <h3 id="publishing-data">Publishing Data</h3> <p>Data should be uploaded to a repository <em>before</em> the work is submitted for publication.</p> <p>Field-specific Repositories:</p> <ul> <li>Functional Connectome Project/International Neuroimaging Data-Sharing Initiative (FCP/INDI)</li> <li>OpenfMRI</li> </ul> <p>Field-agnostic repositories:</p> <ul> <li>FigShare</li> <li>Dryad</li> <li>DataVerse</li> </ul> <p>Other suggestions:</p> <ul> <li>Consider long-term data retention</li> <li> <a href="www.osf.io">Open Science Framework (OSF)</a> to link datasets with code and preprints</li> <li>Embargo period on submitted dataset to protect against “scooping”</li> <li>Make sure the necessary data and metadata are present using BIDS or XML-based Clinical and Experimental Data Exchange (XCEDE)</li> <li>Data paper - publication to describe new dataset rather than its analysis when dataset is large or complicated</li> <li>Share preprocessed volumes, statistical maps (see <a href="http://NeuroVault.org" rel="external nofollow noopener" target="_blank">NeuroVault.org</a>), connectivity matrices (see UCLA Multimodal Connectivity Database), not just raw data.</li> <li>Accompany data with an appropriate license. The authors recommend an unrestricted Public Domain license (such as <a href="https://wiki.creativecommons.org/wiki/CC0_use_%20for_data" rel="external nofollow noopener" target="_blank">CC0</a> or PDDL). Note that data a treated differently than creative works or software by the legal system.</li> </ul> <h2 id="code">Code</h2> <p>Sharing of analysis code is incredibly important not just for the interpretation and validation of results but also to address new research questions and accelerate science.</p> <p>Reasons people don’t share code:</p> <ul> <li>Most researchers are not trained in software engineering so the code may be undocumented and lack formal tests</li> <li>Fear of obligation to provide user support</li> <li>Few incentives to spend the time writing high-quality, well documented code</li> </ul> <blockquote> <p>“Changes in the incentive structure of science will take years, but in the meantime, perceived poor quality of code and lack of thorough documentation should not prevent scientists from publishing it.”</p> </blockquote> <p>Why you should do it anyway:</p> <ul> <li>Sharing undocumented code is much better than not sharing code at all. See <a href="http://www.nature.com/news/2010/101013/full/467753a.html" rel="external nofollow noopener" target="_blank">Publish your computer code: it is good enough</a> </li> <li>Sharing does not oblige to provide user support - consider establishing community-driven user support systems (e.g. google groups, NeuroStars.org).</li> </ul> <p>How to improve the quality and “sharability” of your code:</p> <ul> <li>Use a version control system (VCS) like git. Version control will change your life, seriously. See <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004668" rel="external nofollow noopener" target="_blank">A Quick Introduction to Version Control with Git and GitHub</a> or this great free <a href="https://www.udacity.com/course/how-to-use-git-and-github--ud775" rel="external nofollow noopener" target="_blank">Udacity course</a>.</li> <li>Automate whenever possible. A series of GUI clicks is not reproducible in the way that a script is. The authors have created a <a href="https://github.com/poldrack/myconnectome-vm" rel="external nofollow noopener" target="_blank">fully automated analysis pipeline</a>.</li> <li>Adopt philosophy of “literate programming” for interactive data interrogation, combining analysis code, plots and text narrative. Tools like <a href="http://jupyter.org" rel="external nofollow noopener" target="_blank">Jupyter</a> (for R, Python and Julia), <a href="http://rmarkdown.rstudio.com" rel="external nofollow noopener" target="_blank">R Markdown</a> (for R), and <a href="https://www.ctan.org/pkg/matlabweb" rel="external nofollow noopener" target="_blank">matlabweb</a> (for MATLAB) allow you to revisit a past interactive analysis and share with collaborators.</li> <li>Share with an appropriate license, such as Apache 2.0, MIT, or GNU General Public License.</li> </ul> <h2 id="publications">Publications</h2> <ul> <li>In addition to linking to data and code, accurate and thorough description of methods and data should be included in the supplementary material, if not in the main manuscript.</li> <li>All results, even null ones, should be available somehow. For example, all additional contrasts that were not significant. Especially given how hard it is to publish null results separately.</li> <li>See the Organization for Human Brain Mapping’s Committee on Best Practices in Data Analysis and Sharing (COBIDAS) <a href="http://www.%20humanbrainmapping.org/cobidas/" rel="external nofollow noopener" target="_blank">report</a> for detailed recommendations on reporting.</li> <li>Make the manuscript publicly available. Preprints can be published on Biorxiv or arXiv. This allows for more feedback, can establish precedence, and, since preprints have DOIs, they can be referenced even before the manuscript is accepted for publication by a journal. (See Niko Kriegeskorte’s post <a href="https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/" rel="external nofollow noopener" target="_blank">The Selfish Scientist’s Guide to Preprint Posting</a>)</li> <li>Consider sharing papers that have already been published in subscription-based journals. Some publishers allow for authors to post their manuscripts on noncommercial websites. See <a href="http://www.sherpa.ac.%20uk/romeo" rel="external nofollow noopener" target="_blank">SherPa/ROMEO</a> to check what you are allowed to share.</li> </ul> <h2 id="emerging-trends">Emerging Trends</h2> <ul> <li>Preregistration - Write and register a study plan to reduce biases in published results. Some journals are participating in the Registered Reports program, wherein an experimental plan can receive “in-principle acceptance” and the journal guarantees to publish the final version of the paper.</li> <li>Public reviews - To motivate better quality reviews and give credit to reviewers. On occasions where anonymous reviews remain important, there should still be some method of assigning credit to the reviewers.</li> </ul> <p></p> <div class="well well-sm"> <h2>Simple Steps towards Open Science</h2> Data: <ul> <li>Include a section about data sharing in your consent forms.</li> <li>Share your raw data upon paper submission using a repository dedicated to neuroimaging.</li> <li>Consider writing a separate data paper for more complex and interesting datasets.</li> <li>Remember that sharing your data improves the impact and citation rates of your research!</li> </ul> Code: <ul> <li>Use VCS’s for all your projects.</li> <li>Share your code on GitHub.com <mark>even if it’s not well documented</mark>.</li> <li>Set up a mailing list for user-related questions.</li> <li>People reusing the code you shared will cite the relevant papers.</li> </ul> Papers: <ul> <li>Include all extra analyses and null results in the supplementary materials without sacrificing the clarity of the message in the main body of the manuscript.</li> <li>Submit preprints to claim precedence, solicit feedback, and give access to your research.</li> </ul> *Courtesy of Gorgolewski and Poldrack 2016* </div> </div> </article> <br> <hr> <br> <h2 class="text-3xl font-semibold mb-4 mt-12">Enjoy Reading This Article?</h2> <p class="mb-2">Here are some more articles you might like to read next:</p> <ul class="list-disc pl-7 my-3 space-y-2 marker:text-[var(--global-theme-color)]"> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/CCN_for_social_good.html">Science for Social Good</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/strikes.html">Striking for the first time as an early career researcher</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/recorded-talks.html">Recorded Talks</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/discussion-excerpt.html">Epistemic diversity in a unified neuro-AI</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/reduction-and-emergence-unity-and-plurality.html">Rough notes on reduction and emergence, unity and plurality</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/asking-the-right-questions.html">asking the right questions</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/ccn2019.html">Using similarity analysis to study convolutional neural networks</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/fmri-processing-setup.html">99% python fMRI processing setup</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/commentary-on-brette.html">Commentary on Brette</a> </li> <li class="leading-relaxed"> <a class="underline decoration-1 hover:text-[var(--global-hover-color)]" href="/neurips2018.html">NeurIPS 2018</a> </li> </ul> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Jessica A. F. Thompson. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-publications",
+          title: "publications",
+          description: "in reverse chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-join",
+          title: "join",
+          description: "Students, postdocs, and collaborators. I&#39;d love to hear from you.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/join/";
+          },
+        },{id: "post-science-for-social-good",
+        
+          title: "Science for Social Good",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/CCN_for_social_good.html";
+          
+        },
+      },{id: "post-striking-for-the-first-time-as-an-early-career-researcher",
+        
+          title: "Striking for the first time as an early career researcher",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/strikes.html";
+          
+        },
+      },{id: "post-recorded-talks",
+        
+          title: "Recorded Talks",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/recorded-talks.html";
+          
+        },
+      },{id: "post-epistemic-diversity-in-a-unified-neuro-ai",
+        
+          title: "Epistemic diversity in a unified neuro-AI",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/discussion-excerpt.html";
+          
+        },
+      },{id: "post-rough-notes-on-reduction-and-emergence-unity-and-plurality",
+        
+          title: "Rough notes on reduction and emergence, unity and plurality",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/reduction-and-emergence-unity-and-plurality.html";
+          
+        },
+      },{id: "post-asking-the-right-questions",
+        
+          title: "asking the right questions",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/asking-the-right-questions.html";
+          
+        },
+      },{id: "post-using-similarity-analysis-to-study-convolutional-neural-networks",
+        
+          title: "Using similarity analysis to study convolutional neural networks",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/ccn2019.html";
+          
+        },
+      },{id: "post-99-python-fmri-processing-setup",
+        
+          title: "99% python fMRI processing setup",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/fmri-processing-setup.html";
+          
+        },
+      },{id: "post-commentary-on-brette",
+        
+          title: "Commentary on Brette",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/commentary-on-brette.html";
+          
+        },
+      },{id: "post-neurips-2018",
+        
+          title: "NeurIPS 2018",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/neurips2018.html";
+          
+        },
+      },{id: "post-presenting-at-ccn-about-theories-of-explanation-in-neuro-and-ai",
+        
+          title: "Presenting at CCN about theories of explanation in neuro and AI",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/presenting-at-ccn-about-theories-of-explanation-in-neuro-and-ai.html";
+          
+        },
+      },{id: "post-towards-a-common-philosophy-of-explanation-in-ai-and-neuroscience-part-i",
+        
+          title: "Towards a common philosophy of explanation in AI and neuroscience. Part I",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/towards-a-common-philosophy-of-explanation-in-AI-and-neuroscience-part-i.html";
+          
+        },
+      },{id: "post-custom-workstation-build",
+        
+          title: "Custom workstation build",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/custom-workstation-build.html";
+          
+        },
+      },{id: "post-experience-perception-and-physicality-in-experimental-music-an-argument-for-the-role-of-neuroscience-in-music-phenomenology",
+        
+          title: "Experience, perception, and physicality in experimental music: An argument for the role of...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/experience-physicality-music.html";
+          
+        },
+      },{id: "post-how-many-permutations-should-you-perform",
+        
+          title: "How many permutations should you perform?",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/how-many-permutations.html";
+          
+        },
+      },{id: "post-summary-a-practical-guide-for-improving-transparency-and-reproducibility-in-neuroimaging-research",
+        
+          title: "Summary: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/improving-transparency-reproducibility.html";
+          
+        },
+      },{id: "news-i-participated-in-a-generative-adversarial-collaboration-gac-https-gac-ccneuro-org-gacs-by-year-2023-gacs-2023-2-and-presented-a-poster-at-ccn-2023-in-oxford-uk",
+          title: 'I participated in a [Generative Adversarial Collaboration (GAC)](https://gac.ccneuro.org/gacs-by-year/2023-gacs/2023-2) and presented a poster at...',
+          description: "",
+          section: "News",},{id: "news-i-presented-my-postdoctoral-research-at-the-advances-in-neuroai-workshop-in-montreal-canada",
+          title: 'I presented my postdoctoral research at the Advances in NeuroAI workshop in Montreal,...',
+          description: "",
+          section: "News",},{id: "news-chris-and-my-bbs-commentary-quot-thinking-beyond-the-ventral-stream-quot-https-www-cambridge-org-core-journals-behavioral-and-brain-sciences-article-abs-thinking-beyond-the-ventral-stream-comment-on-bowers-et-al-daf3167c24d9babd79086780a2b433b9-is-published",
+          title: 'Chris and my [BBS commentary &amp;quot;Thinking beyond the ventral stream&amp;quot;](https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/abs/thinking-beyond-the-ventral-stream-comment-on-bowers-et-al/DAF3167C24D9BABD79086780A2B433B9) is published.',
+          description: "",
+          section: "News",},{id: "news-i-am-now-also-a-junior-research-fellow-at-somerville-college-university-of-oxford",
+          title: 'I am now also a Junior Research Fellow at Somerville College, University of...',
+          description: "",
+          section: "News",},{id: "news-i-have-begun-an-nserc-postdoctoral-fellowship-which-allows-me-to-continue-my-research-in-oxford",
+          title: 'I have begun an NSERC postdoctoral fellowship, which allows me to continue my...',
+          description: "",
+          section: "News",},{id: "news-i-will-present-my-postdoctoral-research-at-cosyne-2024-in-lisbon",
+          title: 'I will present my postdoctoral research at COSYNE 2024 in Lisbon.',
+          description: "",
+          section: "News",},{id: "news-i-gave-an-oral-presentation-using-behavioural-cloning-to-accelerate-human-language-learning-at-the-behavioral-clones-workshop-https-machinebehavior-science-behavioral-clones-ws-of-the-machine-behavior-conference-in-berlin-joint-work-with-jirko-rubruck-mohammed-amara-vincent-adam-nicholas-marsh-and-chris-summerfield",
+          title: 'I gave an oral presentation, _Using behavioural cloning to accelerate human language learning_,...',
+          description: "",
+          section: "News",},{id: "news-i-39-m-excited-to-share-that-i-will-join-the-school-of-psychology-and-neuroscience-https-www-gla-ac-uk-schools-psychologyneuroscience-at-the-university-of-glasgow-as-a-lecturer-in-december-2026-i-39-m-looking-for-students-and-collaborators-get-in-touch-39-join-39-relative-url",
+          title: 'I&amp;#39;m excited to share that I will join the [School of Psychology and...',
+          description: "",
+          section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%6A%65%73%73%69%63%61.%74%68%6F%6D%70%73%6F%6E@%70%73%79.%6F%78.%61%63.%75%6B", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=TJweLP0AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/thompsonj", "_blank");
+        },
+      },{
+        id: 'social-bluesky',
+        title: 'Bluesky',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://bsky.app/profile/tsonj.bsky.social", "_blank");
+        },
+      },{
+        id: 'social-mastodon',
+        title: 'Mastodon',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://neuromatch.social/@jess", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
