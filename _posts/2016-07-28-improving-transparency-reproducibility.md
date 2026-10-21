@@ -55,7 +55,7 @@ Field-agnostic repositories:
 Other suggestions:
 
 * Consider long-term data retention
-* [Open Science Framework (OSF)](www.osf.io) to link datasets with code and preprints
+* [Open Science Framework (OSF)](https://osf.io/) to link datasets with code and preprints
 * Embargo period on submitted dataset to protect against "scooping"
 * Make sure the necessary data and metadata are present using BIDS or XML-based Clinical and Experimental Data Exchange (XCEDE)
 * Data paper - publication to describe new dataset rather than its analysis when dataset is large or complicated
