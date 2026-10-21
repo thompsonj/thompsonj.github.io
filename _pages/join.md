@@ -4,7 +4,7 @@ title: join
 permalink: /join/
 description: Students, postdocs, and collaborators. I'd love to hear from you.
 nav: true
-nav_order: 3
+nav_order: 4
 ---
 
 From December 2026, I will be a Lecturer in the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/) at the University of Glasgow, where I'm starting a research group. If you're curious about working together, please get in touch.
@@ -17,9 +17,9 @@ From December 2026, I will be a Lecturer in the [School of Psychology and Neuros
 
 ## What I work on
 
-My research has always crossed disciplinary boundaries. I have worked in cognitive science, computational neuroscience, AI alignment and safety, behavioural modelling, and philosophy of science, often several at once. The common thread is learning: how people learn, teach, communicate, and work together to solve problems, and how AI can both help us understand these capacities and help support them.
+My research has always crossed disciplinary boundaries. I have worked in cognitive science, computational neuroscience, AI alignment, behavioural modelling, and philosophy of science, often several at once. The common thread is learning: how people learn, teach, communicate, and work together to solve problems, and how AI can both help us understand these capacities and help support them.
 
-I'm particularly keen to hear from people working in any of those areas. I would also love to find collaborators in:
+I'm keen to hear from people working in any of those areas and I would also love to find collaborators in:
 
 - metascience
 - computational social science
