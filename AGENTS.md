@@ -4,6 +4,10 @@
 
 `al-folio` v1.x is a **thin Jekyll starter, not a theme**. This repo owns starter wiring, example content, docs, and cross-plugin tests. All runtime — layouts, includes, Sass, Liquid tags, filters, feature JS — lives in versioned gems published under [`al-org-dev`](https://github.com/al-org-dev).
 
+## Site content style
+
+Prose on this site (pages, news, new posts) uses **Oxford spelling**: British forms (behaviour, modelling, centre, centring, judgement) with **-ize** endings (generalization, organize, homogenizing), but **-yse** for analyse/paralyse. Keep proper names as they are (e.g. "Behavioral Clones Workshop"). CSS and code keep US spellings (`color`, `center`).
+
 ## Route your change
 
 Find your change on the left; edit only what is on the right.

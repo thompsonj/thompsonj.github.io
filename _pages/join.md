@@ -17,13 +17,15 @@ From December 2026, I will be a Lecturer in the [School of Psychology and Neuros
 
 ## What I work on
 
-My research has always crossed disciplinary boundaries. I have worked in cognitive science, computational neuroscience, AI alignment, behavioural modelling, and philosophy of science, often several at once. The common thread is learning: how people learn, teach, communicate, and work together to solve problems, and how AI can both help us understand these capacities and help support them.
+My research has always crossed disciplinary boundaries. I have worked in cognitive science, computational neuroscience, deep learning, AI alignment, and philosophy of science, often several at once. The common thread is learning: how people learn, teach, communicate, and work together to solve problems, and how AI can both help us understand these capacities and help support them.
 
-I'm keen to hear from people working in any of those areas and I would also love to find collaborators in:
+In my new lab, the main focus will be collective learning: how groups learn, teach, and reason together, and what makes some communities wiser than their members and others less wise. You can read more about the questions I hope to pursue on my [research page]({{ '/research/#collective-learning-in-epistemic-communities' | relative_url }}).
+
+I'm keen to hear from people working in any of the areas above, and I would also love to find collaborators in:
 
 - metascience
 - computational social science
-- environmental psychology
+- environmental psychology and the psychology of climate change
 
 You don't need to fit neatly into any one of these. If your interests sit between fields, we may get along well.
 
@@ -37,4 +39,5 @@ Email me at [jessica.thompson@psy.ox.ac.uk](mailto:jessica.thompson@psy.ox.ac.uk
 
 PhD and fellowship funding deadlines are often many months before the start date, so it's worth getting in touch early.
 
+<!-- TODO: replace the Oxford email (no forwarding after the move) with the Glasgow address once it exists. -->
 <!-- TODO: add specific funding routes (doctoral programmes, scholarships, fellowships) once at Glasgow. -->
