@@ -31,9 +31,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I study learning in humans and machines, in individuals and in groups.
+I study learning in humans and machines, in individuals and in groups, with the aim of helping people learn and act better together.
 
-I'm interested in how people learn, teach, communicate, and work together to solve problems. So far I have approached these questions by building neural network models of how people learn and generalize, using behavioural cloning to develop AI tools that support human learning, and studying the values encoded in large language models from a cognitive science perspective. I am also interested in philosophy of science, and in how AI is changing the way science is done. In my new lab, I'll extend this work to learning in groups.
+I work at the intersection of machine learning and cognitive science. I use neural networks to build computational theories of human learning, use AI as a tool for scientific discovery (for example, behavioural cloning), and study AI systems, including the values they learn, with the methods of cognitive science. I also work on philosophy of science and metascience: science itself is a form of collective learning, increasingly one in which humans learn alongside AI. In my new lab, these strands come together where the psychological meets the social—how individual minds shape, and are shaped by, the groups they learn and act in.
 
 I am currently a postdoctoral researcher in [Chris Summerfield's group](https://humaninformationprocessing.com/) at the University of Oxford. In December 2026 I will join the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/) at the University of Glasgow as a Lecturer. I did my PhD at the University of Montreal, at the International Laboratory for Brain, Music & Sound Research (BRAMS) and Mila (the Quebec AI Institute), where I compared representations in artificial neural networks and the human auditory system.
 
