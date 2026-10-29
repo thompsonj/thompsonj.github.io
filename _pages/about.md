@@ -3,6 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: >
+  <small>Pronouns: she/her</small><br>
   Postdoctoral researcher, <a href='https://humaninformationprocessing.com/'>Human Information Processing Lab</a>, University of Oxford<br>
   <strong>Soon:</strong> Lecturer, <a href='https://www.gla.ac.uk/schools/psychologyneuroscience/'>School of Psychology and Neuroscience</a>, University of Glasgow (from December 2026)
 
@@ -33,7 +34,7 @@ latest_posts:
 
 I study learning in humans and machines, in individuals and in groups, with the aim of helping people learn and act better together.
 
-I work at the intersection of machine learning and cognitive science. I use neural networks to build computational theories of human learning, use AI as a tool for scientific discovery (for example, behavioural cloning), and study AI systems, including the values they learn, with methods informed by cognitive science. I'm also interested in philosophy of science and metascience. Science itself is a form of collective learning, increasingly one in which humans learn alongside AI. In my new lab, these strands come together where the psychological meets the social—how individual minds shape, and are shaped by, the groups they learn and act in.
+I work at the intersection of machine learning and cognitive science. I use neural networks to build computational theories of human learning, use AI as a tool for scientific discovery (for example, behavioural cloning), and study AI systems, including the values they learn, with methods informed by cognitive science. I'm also interested in philosophy of science and metascience. Science itself is a form of collective learning, increasingly one in which humans learn alongside AI. In my new lab, these strands come together where the psychological meets the social—how individual minds shape, and are shaped by, the groups and institutions they learn and act in.
 
 I am currently a postdoctoral researcher in [Chris Summerfield's group](https://humaninformationprocessing.com/) at the University of Oxford. In December 2026 I will join the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/) at the University of Glasgow as a Lecturer. I did my PhD at the University of Montreal, at the International Laboratory for Brain, Music & Sound Research (BRAMS) and Mila (the Quebec AI Institute), where I compared representations in artificial neural networks and the human auditory system.
 
