@@ -52,7 +52,7 @@ Kimmerer shows us science by Indigenous people, for Indigenous people, something
 
 [^5]: J. E. Lewis et al., “Making Kin with the Machines,” *Journal of Design and Science* (July 2018): [https://doi.org/10.21428/bfafd97b](https://doi.org/10.21428/bfafd97b).
 
-[^ai]: Jason Edward Lewis, Hēmi Whaanga, and Ceyda Yolgörmez, “Abundant Intelligences: Placing AI within Indigenous Knowledge Frameworks,” *AI & Society* (2024), <https://doi.org/10.1007/s00146-024-02099-4>; “A New Research Program Led by Concordia Is Indigenizing Artificial Intelligence,” Concordia University, January 14, 2025, <https://www.concordia.ca/news/stories/2025/01/14/a-new-research-program-led-by-concordia-is-indigenizing-artificial-intelligence.html>.
+[^ai]: Jason Edward Lewis, Hēmi Whaanga, and Ceyda Yolgörmez, “Abundant Intelligences: Placing AI within Indigenous Knowledge Frameworks,” *AI & Society* (2024), <https://doi.org/10.1007/s00146-024-02099-4>; Abundant Intelligences, <https://abundant-intelligences.net/>.
 
 [^6]: There may be other scientific evidence that should cause us to question the dominance of anthropocentric moral frameworks. In *Pieces of Mind*, Carrie Figdor suggests that progress in computational understanding of cognition, which makes apparent the common mechanisms of processes like decision making in humans and non-human animals, makes it more difficult to defend an anthropocentric morality. Carrie Figdor, *Pieces of Mind: The Proper Domain of Psychological Predicates* (Oxford: Oxford University Press, 2018), <https://doi.org/10.1093/oso/9780198809524.001.0001>.
 
