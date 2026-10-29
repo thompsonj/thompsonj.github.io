@@ -17,7 +17,7 @@ profile:
     <p>South Parks Road, Oxford</p>
     <p>OX1 3EL, UK</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -39,12 +39,12 @@ I am currently a postdoctoral researcher in [Chris Summerfield's group](https://
 
 #### Where I'm heading
 
-Cognitive science has traditionally studied the abilities of individuals in isolation. But in real life, we rarely do anything truly alone; we are always learning and working together. Humanity's greatest achievements come from our capacity to learn from and with each other and to organize ourselves around shared goals, and many of the defining crises of our time reflect our failure to do so. 
+Cognitive science has traditionally studied individuals in isolation. But we rarely do anything truly alone. Humanity's greatest achievements come from our capacity to learn from and with each other and to organize ourselves around shared goals, and many of the defining crises of our time reflect our failure to do so. 
 <!-- There is also mounting evidence that what is uniquely human about our learning and reasoning is inextricably linked to our sociality. -->
 
-At Glasgow, I will continue to study the computational principles of human learning while centring the fact that all human learning is socially embedded. When people learn together, a group can become wiser than any of its members, or it can amplify its members' errors and biases. I want to know what separates the wisdom of crowds from the madness of mobs. When does learning with others, by discussing, explaining, and teaching, help us learn more than learning alone? Which patterns of communication help a community learn, and which lead it astray? And how might tools that help each individual, such as generative AI, harm the community as a whole, for example by homogenizing the group? You can read more about these questions on my [research page]({{ '/research/' | relative_url }}).
+At Glasgow, I will continue to study the computational principles of human learning while centring the fact that all human learning is socially embedded. When people learn together, a group can become wiser than any of its members, or it can amplify its members' errors and biases. What separates the wisdom of crowds from the madness of mobs? When does discussing, explaining, and teaching help us learn more than learning alone? Which patterns of communication help a community learn, and which lead it astray? And how might tools that help each individual, such as generative AI, harm the community as a whole, for example by homogenizing the group? You can read more about these questions on my [research page]({{ '/research/' | relative_url }}).
 
-These questions matter well beyond the lab. Many of the problems we now face, such as climate change, can only be solved by large groups acting together, and that is exactly where coordination is hardest. As Nick Chater and George Loewenstein write in _It's On You_, paraphrasing Mancur Olson, "the concentrated interests of the few are so powerful because they can most easily be aligned and coordinated to carry through a coherent plan of action. But coordinated action by the many, once achieved, is unstoppable." In a hyperconnected, globalized world, our actions have far-reaching effects that are difficult to anticipate. We did not evolve to reason in such a world. I want to do research that supports the collective intelligence and coordinated action of the many, drawing on new technologies where they help and mitigating their harms where they don't.
+These questions matter well beyond the lab. Many of the problems we now face, such as climate change, can only be solved by large groups acting together. Yet in a hyperconnected, globalized world, our actions have far-reaching effects that are difficult to anticipate, and we did not evolve to reason or coordinate at that scale. As Nick Chater and George Loewenstein write, paraphrasing Mancur Olson, "the concentrated interests of the few are so powerful because they can most easily be aligned and coordinated to carry through a coherent plan of action. But coordinated action by the many, once achieved, is unstoppable." I want to do research that supports the collective intelligence and coordinated action of the many, aided by new technologies where they help and mitigating their harms where they don't.
 
 <!-- In my free time, I like to read, knit, garden, hike, and listen to electronic music. -->
 
