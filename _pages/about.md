@@ -12,11 +12,14 @@ profile:
   image: Jessica-Thompson_headshot_2018.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
+    <div style="font-size: 0.8rem;">
     <p>Department of Experimental Psychology</p>
     <p>University of Oxford</p>
     <p>Life and Mind Building</p>
     <p>South Parks Road, Oxford</p>
     <p>OX1 3EL, UK</p>
+    <p><a href='mailto:jessica.thompson@psy.ox.ac.uk'>jessica.thompson@psy.ox.ac.uk</a></p>
+    </div>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
