@@ -41,7 +41,7 @@ I work at the intersection of machine learning and cognitive science. I use neur
 
 I am currently a postdoctoral researcher in [Chris Summerfield's group](https://humaninformationprocessing.com/) at the University of Oxford. In December 2026 I will join the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/) at the University of Glasgow as a Lecturer.
 
-- **[About me]({{ '/about/' | relative_url }})**: where my research is heading, and how I got here
+- **[About me]({{ '/about/' | relative_url }})**: my background, and where my research is heading
 - **[Research]({{ '/research/' | relative_url }})**: the questions I work on, and the people I work with
 - **[Publications]({{ '/publications/' | relative_url }})** and **[CV]({{ '/cv/' | relative_url }})**
 - **[Join]({{ '/join/' | relative_url }})**: I'm looking for students, postdocs, and collaborators
