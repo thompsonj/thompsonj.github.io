@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Presenting at CCN about theories of explanation in neuro and AI
+description: "My CCN 2018 poster, short paper, and slides on developing a common theory of explanation for biological and artificial intelligence."
 date: '2018-09-05 17:53'
 permalink: /presenting-at-ccn-about-theories-of-explanation-in-neuro-and-ai.html
 ---

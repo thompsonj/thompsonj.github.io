@@ -1,6 +1,7 @@
 ---
 layout: page
 title: cv
+description: "My curriculum vitae: education, research positions, publications, talks, teaching, and awards."
 permalink: /cv/
 nav: true
 nav_order: 1.5

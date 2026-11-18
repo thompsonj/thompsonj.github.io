@@ -193,7 +193,7 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
+    output: false # news items are all inline (shown in full on the home and news pages), so no separate pages
   projects:
     output: true
   teachings:

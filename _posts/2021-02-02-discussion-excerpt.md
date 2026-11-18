@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Epistemic diversity in a unified neuro-AI"
+description: "An excerpt from the discussion chapter of my PhD dissertation, on epistemic diversity and the many kinds of models in a unified neuro-AI."
 date: "2021-02-02 12:34:26 -0500"
 permalink: /discussion-excerpt.html
 thumbnail: assets/img/blog/2021/model_comparison_hypothesis_space-480.webp

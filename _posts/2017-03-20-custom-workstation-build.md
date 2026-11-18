@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Custom workstation build"
+description: "Building a workstation for analysing 7T fMRI data and training deep neural networks: the parts list, and assembling a computer for the first time."
 date: "2017-03-20 18:21:33 -0400"
 permalink: /custom-workstation-build.html
 thumbnail: assets/img/blog/2017/partslist-480.webp

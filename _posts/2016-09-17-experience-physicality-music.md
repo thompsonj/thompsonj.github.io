@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Experience, perception, and physicality in experimental music: An argument for the role of neuroscience in music phenomenology"
+description: "An argument that neuroscience has a role to play in the phenomenology of experimental music, revisiting ideas I later developed in my thesis."
 date: "2016-09-17 16:18"
 categories:
 permalink: /experience-physicality-music.html

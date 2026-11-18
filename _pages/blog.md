@@ -2,6 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
+description: "Notes on cognitive science, AI, philosophy of science, and academic life, including book reviews, conference posters, and reading notes."
 nav: true
 nav_order: 2
 pagination:

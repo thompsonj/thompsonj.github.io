@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Towards a common philosophy of explanation in AI and neuroscience. Part I"
+description: "Part I of a series on explanation in AI and neuroscience: why integrating deep learning and neuroscience is harder in practice than it sounds."
 date: "2018-04-04 17:39:43 -0400"
 permalink: /towards-a-common-philosophy-of-explanation-in-AI-and-neuroscience-part-i.html
 thumbnail: assets/img/blog/2018/CCN_Panel1-480.webp

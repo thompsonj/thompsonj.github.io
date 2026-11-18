@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Recorded Talks"
+description: "Recorded tutorials on comparing artificial and biological neural networks (MAIN 2020) and on scientific explanation of cognition (SENAI 2021)."
 date: "2021-07-02 19:03:55 +0100"
 permalink: /recorded-talks.html
 ---

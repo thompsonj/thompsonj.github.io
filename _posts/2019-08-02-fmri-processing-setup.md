@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 99% python fMRI processing setup
+description: "Setting up an almost entirely Python-based fMRI analysis pipeline with open-source tools, and contributing a fix to nistats along the way."
 date: '2019-08-02 18:55'
 categories: []
 permalink: /fmri-processing-setup.html

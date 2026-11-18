@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Summary: A Practical Guide for Improving Transparency and Reproducibility in Neuroimaging Research"
+description: "A summary of Gorgolewski and Poldrack's practical guide to transparency and reproducibility in neuroimaging: sharing data, code, and papers."
 date:   2016-07-28 14:05:00 +0200
 categories: [Journal club]
 permalink: /improving-transparency-reproducibility.html

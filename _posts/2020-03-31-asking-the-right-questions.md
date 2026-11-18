@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "asking the right questions"
+description: "On using deep neural networks as models of the brain: which questions should we be asking in an era of data-driven neuroscience?"
 date: "2020-03-31 17:42:28 -0400"
 permalink: /asking-the-right-questions.html
 ---

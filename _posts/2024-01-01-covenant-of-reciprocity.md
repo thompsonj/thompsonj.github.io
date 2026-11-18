@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Covenant of Reciprocity: A Review of Braiding Sweetgrass by Robin Wall Kimmerer"
-description: "A review of Robin Wall Kimmerer's Braiding Sweetgrass."
+description: "A review of Robin Wall Kimmerer's Braiding Sweetgrass: Indigenous and scientific ways of knowing, the gift relation, and reciprocity with the natural world."
 date: 2024-01-01 12:00:00+0000
 categories: [Science for the People]
 ---

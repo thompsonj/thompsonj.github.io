@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "How many permutations should you perform?"
+description: "How many permutations should a permutation test use? The relationship between the number of permutations and how confident you can be in the resulting p-value."
 date:   2016-08-10 14:05:00 +0200
 categories: [stats]
 permalink: /how-many-permutations.html

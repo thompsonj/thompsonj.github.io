@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: in reverse chronological order.
+description: "Papers, chapters, and preprints on learning in humans and machines, AI alignment, and philosophy of science, in reverse chronological order."
 nav: true
 nav_order: 1
 ---

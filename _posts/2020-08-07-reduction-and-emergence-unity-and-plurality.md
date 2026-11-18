@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Rough notes on reduction and emergence, unity and plurality'
+description: "Rough reading notes on reduction and emergence, unity and plurality in the philosophy of science, starting from Michael Silberstein's 2002 chapter."
 date: '2020-08-07 13:22'
 permalink: /reduction-and-emergence-unity-and-plurality.html
 thumbnail: assets/img/blog/2020/Reductionism_Digesting_Duck-480.webp

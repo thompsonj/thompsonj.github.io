@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Science for Social Good"
+description: "Transcript of my opening remarks at the Science for Social Good satellite event at CCN 2025 in Amsterdam, co-organized with Anne Urai and Ili Ma."
 date: "2025-08-12 12:00:00 +0100"
 permalink: /CCN_for_social_good.html
 thumbnail: assets/img/blog/2025/science_for_social_good_tree-480.webp

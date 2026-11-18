@@ -2,7 +2,7 @@
 layout: page
 title: research
 permalink: /research/
-description: Themes in my past, current, and future work.
+description: "Themes in my past, current, and future work: computational models of learning, behavioural cloning, philosophy of science, AI alignment, and collective learning."
 nav: true
 nav_order: 0
 ---

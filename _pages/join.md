@@ -2,7 +2,7 @@
 layout: page
 title: join
 permalink: /join/
-description: Students, postdocs, and collaborators. I'd love to hear from you.
+description: "Prospective PhD students, postdocs, visitors, and collaborators: who I'm looking for, funding routes, and how to get in touch. I'd love to hear from you."
 nav: true
 nav_order: 4
 ---

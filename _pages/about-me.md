@@ -2,7 +2,7 @@
 layout: page
 title: about
 permalink: /about/
-description:
+description: "A brief academic bio, and where my research is heading: collective learning, and helping people learn and act better together."
 nav: true
 nav_order: -1
 ---

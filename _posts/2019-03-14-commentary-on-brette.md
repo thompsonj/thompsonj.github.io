@@ -1,6 +1,7 @@
 ---
 layout: "post"
 title: "Commentary on Brette"
+description: "Our response, with philosopher Corey Maley, to the call for commentary on Romain Brette's 'Is coding a relevant metaphor for the brain?'"
 date: "2019-03-14 11:10:17 -0400"
 permalink: /commentary-on-brette.html
 ---
