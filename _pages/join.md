@@ -8,7 +8,7 @@ nav_order: 4
 ---
 
 <style>/* description is for search engines only; visible subtitle below */ .post-header .post-description { display: none; }</style>
-<p class="post-description" style="margin-top: -1rem;">Students, postdocs, and collaborators. I'd love to hear from you.</p>
+<p class="post-description">Students, postdocs, and collaborators. I'd love to hear from you.</p>
 
 From December 2026, I will be a Lecturer in the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/) at the University of Glasgow, where I'm starting a research group. If you're curious about working together, please get in touch.
 

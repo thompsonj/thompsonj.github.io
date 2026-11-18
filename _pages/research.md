@@ -8,7 +8,7 @@ nav_order: 0
 ---
 
 <style>/* description is for search engines only; visible subtitle below */ .post-header .post-description { display: none; }</style>
-<p class="post-description" style="margin-top: -1rem;">Themes in my past, current, and future work.</p>
+<p class="post-description">Themes in my past, current, and future work.</p>
 
 My research spans cognitive science, computational neuroscience, deep learning, AI alignment, and philosophy of science. Below are the main themes, with related papers and open questions.
 
