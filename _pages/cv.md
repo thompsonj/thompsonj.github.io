@@ -7,6 +7,8 @@ nav: true
 nav_order: 1.5
 ---
 
+<style>/* description is for search engines only */ .post-header .post-description { display: none; }</style>
+
 {% assign cv = site.data.socials.cv_pdf | relative_url %}
 
 <p><a href="{{ cv }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i> Download my CV (PDF)</a></p>

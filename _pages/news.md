@@ -7,4 +7,6 @@ nav: true
 nav_order: 3
 ---
 
+<style>/* description is for search engines only */ .post-header .post-description { display: none; }</style>
+
 {% include news.liquid %}

@@ -7,6 +7,9 @@ nav: true
 nav_order: 1
 ---
 
+<style>/* description is for search engines only; visible subtitle below */ .post-header .post-description { display: none; }</style>
+<p class="post-description" style="margin-top: -1rem;">in reverse chronological order.</p>
+
 <!-- _pages/publications.md -->
 
 <!-- Bibsearch Feature -->

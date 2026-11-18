@@ -7,6 +7,8 @@ nav: true
 nav_order: -1
 ---
 
+<style>/* description is for search engines only */ .post-header .post-description { display: none; }</style>
+
 #### Brief academic bio
 
 I am a postdoctoral researcher in [Chris Summerfield's](https://humaninformationprocessing.com/) Human Information Processing Lab at the University of Oxford, where I was also a Junior Research Fellow at Somerville College and an NSERC postdoctoral fellow from 2023 to 2025. In December 2026, I will join the [School of Psychology and Neuroscience](https://www.gla.ac.uk/schools/psychologyneuroscience/) at the University of Glasgow as a Lecturer. I did my PhD in cognitive science and neuropsychology at the University of Montreal, supervised by [Marc Schönwiesner](https://brams.org/members/marc-schonwiesner/) and [Yoshua Bengio](https://yoshuabengio.org/) at [BRAMS](https://brams.org/) and [Mila](https://mila.quebec/en). During my PhD, I was a visiting researcher at Maastricht University and a Mitacs fellow at Nuance Communications. I hold an MA in Digital Musics from Dartmouth College and a BA in psychology, computer science, and music technology from McGill University.
